@@ -9,26 +9,7 @@
 
   const pages = getPages();
 
-  //   let pages = [
-  //     {
-  //       number: 1,
-  //       description: "Ukrajina",
-  //       texts: [
-  //         { text: "Vzduchoprázdniny nad lesem", top: 10, left: 10 },
-  //         { text: "Matěj Traktor", top: 85, left: 10 },
-
-  //         { text: "Mezi na mezi", top: 50, left: 50 },
-  //       ],
-  //     },
-  //     {
-  //       number: 2,
-  //       description: "Kočka",
-  //       texts: [
-  //         { text: "Mňau", top: 20, left: 25 },
-  //         { text: "Kočka", top: 85, left: 50 },
-  //       ],
-  //     },
-  //   ];
+  let autoplay = false;
 </script>
 
 <svelte:head>
@@ -49,11 +30,18 @@
   </p>
 
   <div>
+    <label>
+      Autoplay
+      <input type="checkbox" bind:checked={autoplay} />
+    </label>
+  </div>
+
+  <div>
     {#await pages}
       <p>Loading...</p>
     {:then pages}
       {#each pages as page, i}
-        <Page {...page} />
+        <Page {autoplay} {...page} />
       {/each}
     {:catch error}
       <p style="color: red">{error.message}</p>
