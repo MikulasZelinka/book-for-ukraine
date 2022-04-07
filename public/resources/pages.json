@@ -4,17 +4,26 @@
         "description": "Ukrajina",
         "texts": [
             {
-                "text": "Vzduchoprázdniny nad lesem",
+                "translations": {
+                    "cs": "Vzduchoprázdniny nad lesem",
+                    "ua": "Повітряні канікули над лісом"
+                },
                 "top": 10,
                 "left": 10
             },
             {
-                "text": "Matěj Traktor",
+                "translations": {
+                    "cs": "Matěj Traktor",
+                    "ua": "Матей Трактор"
+                },
                 "top": 85,
                 "left": 10
             },
             {
-                "text": "Mezi na mezi",
+                "translations": {
+                    "cs": "Mezi na mezi",
+                    "ua": "Між на між"
+                },
                 "top": 50,
                 "left": 50
             }
@@ -25,12 +34,18 @@
         "description": "Kočka",
         "texts": [
             {
-                "text": "Mňau",
-                "top": 20,
+                "translations": {
+                    "cs": "Mňau",
+                    "ua": "Мяу"
+                },
+                "top": 15,
                 "left": 25
             },
             {
-                "text": "Kočka",
+                "translations": {
+                    "cs": "Kočka",
+                    "ua": "кіт"
+                },
                 "top": 85,
                 "left": 50
             }

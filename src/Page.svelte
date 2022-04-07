@@ -7,10 +7,10 @@
 </script>
 
 <figure class="image is-2by1">
-  <img src="resources/{number}.png" alt={description} />
+  <img src="resources/images/{number}.png" alt={description} />
 
   {#each texts as text}
-    <Text {...text} />
+    <Text page={number} {...text} />
   {/each}
 </figure>
 <p>{number}</p>
