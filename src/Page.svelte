@@ -1,16 +1,19 @@
-<script>
+<script type="ts">
   import Text from "./Text.svelte";
 
-  export let number;
-  export let description;
+  export let number: number;
+  export let description: string;
   export let texts;
-  export let autoplay = true;
+
+  import autoplay from "./Settings.svelte";
 
   let textElements = {};
 
   function handleAudioEnd(event) {
     console.log("handling", event.detail);
     let i = parseInt(event.detail.id);
+    // if (autoplay == Autoplay.OneLanguage)
+    // if (autoplay == Autoplay.OneLanguage && texts.length > i + 1) {
     if (autoplay && texts.length > i + 1) {
       textElements[i + 1].play(event.detail.language);
     }

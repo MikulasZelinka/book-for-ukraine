@@ -1,4 +1,5 @@
-<script>
+<script lang="ts">
+  import Settings from "./Settings.svelte";
   import Page from "./Page.svelte";
 
   async function getPages() {
@@ -8,8 +9,6 @@
   }
 
   const pages = getPages();
-
-  let autoplay = false;
 </script>
 
 <svelte:head>
@@ -29,19 +28,16 @@
     ve <a href="https://svelte.dev/">Svelte</a>.
   </p>
 
-  <div>
-    <label>
-      Autoplay
-      <input type="checkbox" bind:checked={autoplay} />
-    </label>
-  </div>
+  <Settings />
+
+  <hr />
 
   <div>
     {#await pages}
       <p>Loading...</p>
     {:then pages}
       {#each pages as page, i}
-        <Page {autoplay} {...page} />
+        <Page {...page} />
       {/each}
     {:catch error}
       <p style="color: red">{error.message}</p>

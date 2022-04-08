@@ -1,4 +1,7 @@
 <script>
+  import { createEventDispatcher } from "svelte";
+  const dispatch = createEventDispatcher();
+
   export let page;
   export let id;
 
@@ -10,9 +13,25 @@
   let langToAudio = {};
   let langIsPlaying = {};
 
-  import { createEventDispatcher } from "svelte";
+  import { languageOrder } from "./settings.ts";
+  // console.log("tr:", JSON.stringify(translations));
 
-  const dispatch = createEventDispatcher();
+  // console.log(
+  //   "tr sorted:",
+  //   JSON.stringify(
+  //     Object.entries(translations).sort(
+  //       ([a, aa], [b, bb]) =>
+  //         $languageOrder.indexOf(a) - $languageOrder.indexOf(b)
+  //     )
+  //   )
+  // );
+  // console.log("lor", $languageOrder);
+
+  $: textsSorted = Object.entries(translations).sort(
+    ([a, aa], [b, bb]) => $languageOrder.indexOf(a) - $languageOrder.indexOf(b)
+  );
+
+  // console.log("ts:", JSON.stringify(textsSorted));
 
   function onAudioEnd(language, id) {
     langIsPlaying[language] = false;
@@ -24,24 +43,26 @@
   }
 
   export function play(language) {
+    console.debug("playing lang", language);
     langIsPlaying[language] = true;
     langToAudio[language].play();
   }
 </script>
 
-<!-- Audio controls for each language -->
-{#each Object.entries(translations) as [language, text]}
-  <audio
-    bind:this={langToAudio[language]}
-    on:ended={(e) => onAudioEnd(language, id)}
-  >
-    <source src="resources/audio/{page}_{text}.mp3" type="audio/mpeg" />
-  </audio>
-{/each}
+{console.log(languageOrder)}
 
-<!-- Text for each language -->
 <div style="position: absolute; top: {top}%; left: {left}%;">
-  {#each Object.entries(translations) as [language, text]}
+  <!-- {#each Object.entries(translations) as [language, text]} -->
+  {#each textsSorted as [language, text]}
+    <!-- Audio controls for each language -->
+    <audio
+      bind:this={langToAudio[language]}
+      on:ended={(e) => onAudioEnd(language, id)}
+    >
+      <source src="resources/audio/{page}_{text}.mp3" type="audio/mpeg" />
+    </audio>
+
+    <!-- Text for each language -->
     <p on:click={() => play(language)} class:playing={langIsPlaying[language]}>
       {text}
     </p>
