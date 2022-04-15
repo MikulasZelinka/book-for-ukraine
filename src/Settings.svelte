@@ -1,31 +1,50 @@
-<script context="module" lang="ts">
-  //   import { Autoplay } from "./types/autoplay.enum";
-
-  //   export let autoplay: string = Autoplay.Off;
-</script>
-
 <script lang="ts">
   //   https://github.com/jwlarocque/svelte-dragdroplist
   import DragDropList from "svelte-dragdroplist";
 
-  import { languageOrder } from "./settings.ts";
+  import { Autoplay } from "./types/autoplay.enum";
+
+  import { autoplay, languageOrder } from "./settings.ts";
 
   console.debug(JSON.stringify($languageOrder));
 
-  let l = [...$languageOrder];
+  let _autoplay: Autoplay = Autoplay[autoplay];
+  let _languageOrder: Array<string> = [...$languageOrder];
 
-  $: if (l != $languageOrder) {
-    console.debug("setting lO", $languageOrder, "to: ", l);
-    languageOrder.set(l);
+  $: if (_languageOrder != $languageOrder) {
+    console.debug(
+      "setting languageOrder",
+      $languageOrder,
+      "to: ",
+      _languageOrder
+    );
+    languageOrder.set(_languageOrder);
+  }
+
+  $: if (_autoplay != $autoplay) {
+    console.debug("setting autoplay", $autoplay, "to: ", _autoplay);
+    autoplay.set(_autoplay);
   }
 </script>
 
-<DragDropList bind:data={l} removesItems={false} />
+<hr />
 
-<!-- <select bind:value={autoplay}>
-  {#each Object.values(Autoplay) as autoplayString}
-    <option value={autoplayString}>
-      {autoplayString}
-    </option>
-  {/each}
-</select> -->
+<form>
+  Language order:
+  <DragDropList bind:data={_languageOrder} removesItems={false} />
+</form>
+
+<hr />
+
+<form>
+  Autoplay:
+  <select bind:value={_autoplay}>
+    {#each Object.values(Autoplay) as autoplayString}
+      <option value={autoplayString} selected>
+        {autoplayString}
+      </option>
+    {/each}
+  </select>
+</form>
+
+<hr />

@@ -5,16 +5,17 @@
   export let description: string;
   export let texts;
 
-  import autoplay from "./Settings.svelte";
+  import { autoplay } from "./settings.ts";
+
+  import { Autoplay } from "./types/autoplay.enum";
 
   let textElements = {};
 
   function handleAudioEnd(event) {
     console.log("handling", event.detail);
     let i = parseInt(event.detail.id);
-    // if (autoplay == Autoplay.OneLanguage)
-    // if (autoplay == Autoplay.OneLanguage && texts.length > i + 1) {
-    if (autoplay && texts.length > i + 1) {
+
+    if ($autoplay == Autoplay.OneLanguage && texts.length > i + 1) {
       textElements[i + 1].play(event.detail.language);
     }
   }
