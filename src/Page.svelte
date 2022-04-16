@@ -5,7 +5,7 @@
   export let description: string;
   export let texts;
 
-  import { autoplay } from "./settings.ts";
+  import { autoplay, languageOrder } from "./settings.ts";
 
   import { Autoplay } from "./types/autoplay.enum";
 
@@ -17,6 +17,12 @@
 
     if ($autoplay == Autoplay.OneLanguage && texts.length > i + 1) {
       textElements[i + 1].play(event.detail.language);
+    } else if ($autoplay == Autoplay.AllLanguages) {
+      let langIndex = $languageOrder.indexOf(event.detail.language);
+
+      if (langIndex >= 0 && langIndex + 1 < $languageOrder.length) {
+        textElements[i].play($languageOrder[langIndex + 1]);
+      }
     }
   }
 </script>

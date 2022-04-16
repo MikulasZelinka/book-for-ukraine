@@ -27,24 +27,34 @@
   }
 </script>
 
-<hr />
+<div class="columns is-vcentered">
+  <div class="column">
+    <!-- <form> -->
 
-<form>
-  Language order:
-  <DragDropList bind:data={_languageOrder} removesItems={false} />
-</form>
+    <div class="columns is-vcentered">
+      <div class="column">Language order</div>
 
-<hr />
+      <div class="column">
+        <!-- TODO: 
+        
+        [Violation] Added non-passive event listener to a scroll-blocking 'touchstart' event. Consider marking event handler as 'passive' to make the page more responsive. See https://www.chromestatus.com/feature/5745543795965952
+        -->
+        <DragDropList bind:data={_languageOrder} removesItems={false} />
+      </div>
+    </div>
 
-<form>
-  Autoplay:
-  <select bind:value={_autoplay}>
-    {#each Object.values(Autoplay) as autoplayString}
-      <option value={autoplayString} selected>
-        {autoplayString}
-      </option>
-    {/each}
-  </select>
-</form>
-
-<hr />
+    <!-- </form> -->
+  </div>
+  <div class="column">
+    <!-- <form> -->
+    Autoplay:
+    <select bind:value={_autoplay}>
+      {#each Object.values(Autoplay) as autoplayString}
+        <option value={autoplayString} selected>
+          {autoplayString}
+        </option>
+      {/each}
+    </select>
+    <!-- </form> -->
+  </div>
+</div>

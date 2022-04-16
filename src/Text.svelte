@@ -1,4 +1,4 @@
-<script>
+<script type="ts">
   import { createEventDispatcher } from "svelte";
   const dispatch = createEventDispatcher();
 
@@ -10,22 +10,11 @@
   export let top;
   export let left;
 
-  let langToAudio = {};
+  let langToAudio = new Map<string, HTMLAudioElement>();
+  // let langToAudio = {};
   let langIsPlaying = {};
 
   import { languageOrder } from "./settings.ts";
-  // console.log("tr:", JSON.stringify(translations));
-
-  // console.log(
-  //   "tr sorted:",
-  //   JSON.stringify(
-  //     Object.entries(translations).sort(
-  //       ([a, aa], [b, bb]) =>
-  //         $languageOrder.indexOf(a) - $languageOrder.indexOf(b)
-  //     )
-  //   )
-  // );
-  // console.log("lor", $languageOrder);
 
   $: textsSorted = Object.entries(translations).sort(
     ([a, aa], [b, bb]) => $languageOrder.indexOf(a) - $languageOrder.indexOf(b)
@@ -44,25 +33,39 @@
 
   export function play(language) {
     console.debug("playing lang", language);
+    console.debug("audio map", langToAudio);
+
     langIsPlaying[language] = true;
     langToAudio[language].play();
   }
+
+  // $: {
+  //   console.debug("Audio: ", langToAudio);
+  //   console.debug("Texts sorted: ", textsSorted);
+  // }
 </script>
 
-{console.log(languageOrder)}
+<!-- {console.log(languageOrder)} -->
+<!-- {console.log("ts:", JSON.stringify(textsSorted))} -->
 
+<!--
+  Audio controls for each language
+
+  For some reason, this needs to be split from the textsSorted each block,
+  otherwise the bindings per-language to langToAudio get messed up.
+-->
+{#each Object.entries(translations) as [language, text]}
+  <audio
+    bind:this={langToAudio[language]}
+    on:ended={(e) => onAudioEnd(language, id)}
+  >
+    <source src="resources/audio/{page}_{text}.mp3" type="audio/mpeg" />
+  </audio>
+{/each}
+
+<!-- Text for each language -->
 <div style="position: absolute; top: {top}%; left: {left}%;">
-  <!-- {#each Object.entries(translations) as [language, text]} -->
   {#each textsSorted as [language, text]}
-    <!-- Audio controls for each language -->
-    <audio
-      bind:this={langToAudio[language]}
-      on:ended={(e) => onAudioEnd(language, id)}
-    >
-      <source src="resources/audio/{page}_{text}.mp3" type="audio/mpeg" />
-    </audio>
-
-    <!-- Text for each language -->
     <p on:click={() => play(language)} class:playing={langIsPlaying[language]}>
       {text}
     </p>
