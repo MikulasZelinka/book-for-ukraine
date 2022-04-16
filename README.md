@@ -2,6 +2,36 @@
 
 Knížka vítej implementovaná jako webová aplikace ve Svelte.
 
+## TODO
+
+### Settings
+
+- [x] Reorder languages
+  - [ ] If we have more languages: allow disabling some languages
+  - [ ] Alternatively, replace by [always selecting two languages](#Languages)
+- [x] Autoplay
+  - [ ] More options: one/many languages, one/many pages
+- [ ] Playback speed
+- [ ] Wait time between paragraphs/pages
+- [ ] Persist/cache settings
+
+### Reading flow
+
+- [ ] Pagination, page jumping
+- [ ] Playback across pages, with smooth jumps
+
+### Presentation
+
+- [ ] Better UI in general
+- [ ] Inform about landscape mode on mobile
+
+### Languages
+
+- [ ] Generalise the website into multiple localisations (info/settings/... – not the actual book texts)
+- [ ] Instead of arbitrary ordering, always select just two languages (and thus get their order implicitly)
+- [ ] Auto translation
+- [ ] Auto TTS
+
 ---
 
 General Svelte instructions are below.
