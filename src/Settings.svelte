@@ -1,7 +1,4 @@
 <script lang="ts">
-  //   https://github.com/jwlarocque/svelte-dragdroplist
-  import DragDropList from "svelte-dragdroplist";
-
   import { Autoplay } from "./types/autoplay.enum";
 
   import { autoplay, languageOrder } from "./settings.ts";
@@ -25,6 +22,23 @@
     console.debug("setting autoplay", $autoplay, "to: ", _autoplay);
     autoplay.set(_autoplay);
   }
+
+  import Select from "svelte-select";
+
+  let items = [
+    { value: "chocolate", label: "Chocolate" },
+    { value: "pizza", label: "Pizza" },
+    { value: "cake", label: "Cake" },
+    { value: "chips", label: "Chips" },
+    { value: "ice-cream", label: "Ice Cream" },
+  ];
+
+  let value = { value: "cake", label: "Cake" };
+
+  function handleSelect(event) {
+    console.log("selected item", event.detail);
+    // .. do something here 🙂
+  }
 </script>
 
 <div class="columns is-vcentered">
@@ -34,13 +48,7 @@
     <div class="columns is-vcentered">
       <div class="column">Language order</div>
 
-      <div class="column">
-        <!-- TODO: 
-        
-        [Violation] Added non-passive event listener to a scroll-blocking 'touchstart' event. Consider marking event handler as 'passive' to make the page more responsive. See https://www.chromestatus.com/feature/5745543795965952
-        -->
-        <DragDropList bind:data={_languageOrder} removesItems={false} />
-      </div>
+      <div class="column" />
     </div>
 
     <!-- </form> -->
@@ -58,3 +66,7 @@
     <!-- </form> -->
   </div>
 </div>
+a
+<span class="fi fi-cz" />
+b
+<Select {items} {value} on:select={handleSelect} />

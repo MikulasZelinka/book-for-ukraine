@@ -1,6 +1,8 @@
 <script lang="ts">
   import Settings from "./Settings.svelte";
   import Page from "./Page.svelte";
+  import Header from "./Header.svelte";
+  import Footer from "./Footer.svelte";
 
   async function getPages() {
     return await fetch("resources/pages.json").then((response) =>
@@ -18,16 +20,9 @@
   />
 </svelte:head>
 
-<main>
-  <h1>Svítej!</h1>
-  <p>
-    Neboli <a
-      href="https://pointa.cz/project/d323a733-b37c-11ec-a145-0242ac120006"
-      >Vítej</a
-    >
-    ve <a href="https://svelte.dev/">Svelte</a>.
-  </p>
+<Header />
 
+<main>
   <Settings />
 
   <hr />
@@ -44,6 +39,8 @@
     {/await}
   </div>
 </main>
+
+<Footer />
 
 <style>
   main {
