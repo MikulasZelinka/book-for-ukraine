@@ -1,0 +1,54 @@
+[
+    {
+        "number": 1,
+        "description": "Ukrajina",
+        "texts": [
+            {
+                "translations": {
+                    "cs": "Vzduchoprázdniny nad lesem",
+                    "ua": "Повітряні канікули над лісом"
+                },
+                "top": 10,
+                "left": 10
+            },
+            {
+                "translations": {
+                    "cs": "Matěj Traktor",
+                    "ua": "Матей Трактор"
+                },
+                "top": 85,
+                "left": 10
+            },
+            {
+                "translations": {
+                    "cs": "Mezi na mezi",
+                    "ua": "Між на між"
+                },
+                "top": 50,
+                "left": 50
+            }
+        ]
+    },
+    {
+        "number": 2,
+        "description": "Kočka",
+        "texts": [
+            {
+                "translations": {
+                    "cs": "Mňau",
+                    "ua": "Мяу"
+                },
+                "top": 15,
+                "left": 25
+            },
+            {
+                "translations": {
+                    "cs": "Kočka",
+                    "ua": "кіт"
+                },
+                "top": 85,
+                "left": 50
+            }
+        ]
+    }
+]
