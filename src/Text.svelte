@@ -3,7 +3,9 @@
   const dispatch = createEventDispatcher();
 
   export let page;
-  export let id;
+  export let order;
+
+  export let id: string;
 
   export let translations;
 
@@ -14,7 +16,7 @@
   // let langToAudio = {};
   let langIsPlaying = {};
 
-  import { languageOrder } from "./settings.ts";
+  import { languageOrder } from "./settings";
 
   $: textsSorted = Object.entries(translations).sort(
     ([a, aa], [b, bb]) => $languageOrder.indexOf(a) - $languageOrder.indexOf(b)
@@ -22,12 +24,12 @@
 
   // console.log("ts:", JSON.stringify(textsSorted));
 
-  function onAudioEnd(language, id) {
+  function onAudioEnd(language, order) {
     langIsPlaying[language] = false;
-    console.log("ended:", page, language, id);
+    console.log("ended:", page, language, order);
     dispatch("message", {
       language: language,
-      id: id,
+      order: order,
     });
   }
 
@@ -57,9 +59,9 @@
 {#each Object.entries(translations) as [language, text]}
   <audio
     bind:this={langToAudio[language]}
-    on:ended={(e) => onAudioEnd(language, id)}
+    on:ended={(e) => onAudioEnd(language, order)}
   >
-    <source src="resources/audio/{page}_{text}.mp3" type="audio/mpeg" />
+    <source src="resources/audio/{language}/{id}.mp3" type="audio/mpeg" />
   </audio>
 {/each}
 
@@ -74,7 +76,10 @@
 
 <style>
   p {
-    font-weight: 400;
+    color: black;
+    white-space: pre-line;
+    text-align: left;
+    font-weight: 600;
     transition: font-weight 0.2s ease-in-out;
   }
 

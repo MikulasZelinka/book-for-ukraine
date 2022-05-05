@@ -1,3 +1,5 @@
+#!/usr/bin/env bash 
+
 mv vitej_a_pojd_si_povidat_web_10-11.jpg z.jpg
 page=0
 for image in $(ls *.jpg)

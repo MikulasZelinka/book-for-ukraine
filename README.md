@@ -14,6 +14,7 @@ Knížka vítej implementovaná jako webová aplikace ve Svelte.
 - [ ] Playback speed
 - [ ] Wait time between paragraphs/pages
 - [ ] Persist/cache settings
+- [ ] Allow alphabet conversions
 
 ### Reading flow
 

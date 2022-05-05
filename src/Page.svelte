@@ -5,7 +5,7 @@
   export let description: string;
   export let texts;
 
-  import { autoplay, languageOrder } from "./settings.ts";
+  import { autoplay, languageOrder } from "./settings";
 
   import { Autoplay } from "./types/autoplay.enum";
 
@@ -13,7 +13,7 @@
 
   function handleAudioEnd(event) {
     console.log("handling", event.detail);
-    let i = parseInt(event.detail.id);
+    let i = parseInt(event.detail.order);
 
     if ($autoplay == Autoplay.OneLanguage && texts.length > i + 1) {
       textElements[i + 1].play(event.detail.language);
@@ -27,17 +27,19 @@
   }
 </script>
 
-<figure class="image is-2by1">
-  <img src="resources/images/{number}.png" alt={description} />
+<div class="column is-half">
+  <figure class="image">
+    <img src="resources/pages/split/{number}.jpg" alt={description} />
 
-  {#each texts as text, i}
-    <Text
-      bind:this={textElements[i]}
-      page={number}
-      id={i}
-      {...text}
-      on:message={handleAudioEnd}
-    />
-  {/each}
-</figure>
-<p>{number}</p>
+    {#each texts as text, i}
+      <Text
+        bind:this={textElements[i]}
+        page={number}
+        order={i}
+        {...text}
+        on:message={handleAudioEnd}
+      />
+    {/each}
+  </figure>
+  <p>{number}</p>
+</div>

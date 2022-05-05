@@ -1,54 +1,118 @@
 [
     {
+        "number": 0,
+        "description": "Modrožlutá krajina",
+        "texts": []
+    },
+    {
         "number": 1,
-        "description": "Ukrajina",
+        "description": "Holubice míru",
+        "texts": []
+    },
+    {
+        "number": 2,
+        "description": "Šnek",
         "texts": [
             {
+                "id": "vazka",
                 "translations": {
-                    "cs": "Vzduchoprázdniny nad lesem",
-                    "ua": "Повітряні канікули над лісом"
+                    "cs": "Zdraví tě pan vážka,\nmotýla je bráška",
+                    "ua": "Пан Бабка тебе вітає,\nйого брат метелик злітає."
                 },
                 "top": 10,
-                "left": 10
+                "left": 40
             },
             {
+                "id": "kviti",
                 "translations": {
-                    "cs": "Matěj Traktor",
-                    "ua": "Матей Трактор"
+                    "cs": "Kvítí roste mezi klasy,\nkonec léta už se hlásí.",
+                    "ua": "Квіти ростуть серед колосків,\nкінець літа вже наближається."
+                },
+                "top": 44,
+                "left": 55
+            },
+            {
+                "id": "snek",
+                "translations": {
+                    "cs": "Snadno dohnat šneka,\nvždyť na tebe čeká!",
+                    "ua": "Легко наздогнати равлика,\nколи він на тебе чекає."
+                },
+                "top": 70,
+                "left": 5
+            },
+            {
+                "id": "jesterka",
+                "translations": {
+                    "cs": "Vidíš ještěrku?\nLeze po štěrku.",
+                    "ua": "Бачиш ящірку?\nЛізе на гравій."
                 },
                 "top": 85,
-                "left": 10
-            },
-            {
-                "translations": {
-                    "cs": "Mezi na mezi",
-                    "ua": "Між на між"
-                },
-                "top": 50,
                 "left": 50
             }
         ]
     },
     {
-        "number": 2,
-        "description": "Kočka",
+        "number": 3,
+        "description": "Cyklista",
         "texts": [
             {
+                "id": "veverka",
                 "translations": {
-                    "cs": "Mňau",
-                    "ua": "Мяу"
+                    "cs": "Veverka má oříšek\na zrzavý kožíšek.",
+                    "ua": "У білочки є горішок\nі руденький кожушок."
                 },
                 "top": 15,
                 "left": 25
             },
             {
+                "id": "cyklista",
                 "translations": {
-                    "cs": "Kočka",
-                    "ua": "кіт"
+                    "cs": "Za lesy, za louky, za pole\nvydal se kamarád na kole.",
+                    "ua": "За ліси, за луки, за поля\nдруг поїхав на велосипеді."
                 },
-                "top": 85,
-                "left": 50
+                "top": 35,
+                "left": 35
             }
         ]
+    },
+    {
+        "number": 4,
+        "description": "TODO",
+        "texts": []
+    },
+    {
+        "number": 5,
+        "description": "TODO",
+        "texts": []
+    },
+    {
+        "number": 6,
+        "description": "TODO",
+        "texts": []
+    },
+    {
+        "number": 7,
+        "description": "TODO",
+        "texts": []
+    },
+    {
+        "number": 8,
+        "description": "TODO",
+        "texts": []
+    },
+    {
+        "number": 9,
+        "description": "TODO",
+        "texts": []
+    },
+    {
+        "number": 10,
+        "description": "TODO",
+        "texts": []
+    },
+    {
+        "number": 11,
+        "description": "TODO",
+        "texts": []
     }
 ]

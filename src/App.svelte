@@ -32,7 +32,7 @@
 
   <hr />
 
-  <div>
+  <div class="columns is-gapless is-multiline">
     {#await pages}
       <p>Loading...</p>
     {:then pages}

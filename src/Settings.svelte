@@ -4,11 +4,11 @@
 
   import { Autoplay } from "./types/autoplay.enum";
 
-  import { autoplay, languageOrder } from "./settings.ts";
+  import { autoplay, languageOrder } from "./settings";
 
   console.debug(JSON.stringify($languageOrder));
 
-  let _autoplay: Autoplay = Autoplay[autoplay];
+  let _autoplay: Autoplay = Autoplay[$autoplay];
   let _languageOrder: Array<string> = [...$languageOrder];
 
   $: if (_languageOrder != $languageOrder) {
