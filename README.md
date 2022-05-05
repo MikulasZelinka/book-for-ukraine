@@ -1,6 +1,12 @@
 # Svítej
 
-Knížka vítej implementovaná jako webová aplikace ve Svelte.
+Svítej\*, an open-source implementation of the Czech-Ukrainian book for children: [Povídání modro-žluté krajiny](https://pointa.cz/project/d323a733-b37c-11ec-a145-0242ac120006).
+
+Available to browse for free: https://svitej.zelinka.dev
+
+More broadly, you could use to project to implement a web-based book with playable text recordings.
+
+\* _Originally,_ Vítej a pojď si povídat _combined with_ Svelte → Svítej.
 
 ## TODO
 
@@ -24,7 +30,9 @@ Knížka vítej implementovaná jako webová aplikace ve Svelte.
 ### Presentation
 
 - [ ] Better UI in general
-- [ ] Inform about landscape mode on mobile
+- [x] Inform about landscape mode on mobile
+  - Solved by displaying single pages on mobile and two facing pages on desktop
+- [ ] Object animations (?)
 
 ### Languages
 
@@ -33,92 +41,37 @@ Knížka vítej implementovaná jako webová aplikace ve Svelte.
 - [ ] Auto translation
 - [ ] Auto TTS
 
----
+## Webdevlog
 
-General Svelte instructions are below.
+### 2022-05-05
 
-## svelte app
+Added actual book images. Pages 2 and 3 now have both texts and recordings in both languages.
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
+As one would expect, some minor tweaks had to be done to accomodate some unforeseen differences in asset formats but nothing too difficult.
 
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
+Most importantly, the website is now responsive and displays single pages on smaller (mobile) devices
+while also seamlessly displaying the two facing pages on larger screens.
+Thankfully, that was extremely easy to do with the [Bulma CSS framework](https://bulma.io/) we're using.
+It required basically just two lines:
 
-```bash
-npx degit sveltejs/template svelte-app
-cd svelte-app
-```
+- [Wrap everything in multiline, gapless `columns`](https://github.com/MikulasZelinka/svitej/commit/a7d33016568e58d17e6f6555b0efcdf5e9721224#diff-d68daa8b73cec8e4419759802bbd91e9f87f8ee02f25cdb1d12582ef6de848dbL35-R35)
+- [Wrap each (single) page in an `is-half` column](https://github.com/MikulasZelinka/svitej/commit/a7d33016568e58d17e6f6555b0efcdf5e9721224#diff-a9e351ab57265f0d5632e5446053858bb66ab0781348bf91f5cdc230540f257aR30)
 
-_Note that you will need to have [Node.js](https://nodejs.org) installed._
+The biggest challenge that remains to be solved is text sizing.
+We want it to be both easily readable as well as reasonably responsive (perhaps scaling with the image size).
 
-### Get started
+Additionally, I've only now realised that the background on all pages is identical
+and we could (should?) thus optimise by rendering background and foreground objects separately
+(only load the background once, of course).
 
-Install the dependencies...
+Another nice-to-have feature might be object animations if we end up treating them as individual objects.
 
-```bash
-cd svelte-app
-npm install
-```
+### Early 2022
 
-...then start [Rollup](https://rollupjs.org):
+Functional website skeleton in Svelte.
 
-```bash
-npm run dev
-```
+The website can display arbitrary images, texts (their position is given in a JSON) and play an audio recording for each text.
+I'm testing it using placeholder data.
+We can also reorder the languages and theoretically support any number of them.
 
-Navigate to [localhost:8080](http://localhost:8080). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
-
-By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `sirv` commands in package.json to include the option `--host 0.0.0.0`.
-
-If you're using [Visual Studio Code](https://code.visualstudio.com/) we recommend installing the official extension [Svelte for VS Code](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode). If you are using other editors you may need to install a plugin in order to get syntax highlighting and intellisense.
-
-### Building and running in production mode
-
-To create an optimised version of the app:
-
-```bash
-npm run build
-```
-
-You can run the newly built app with `npm run start`. This uses [sirv](https://github.com/lukeed/sirv), which is included in your package.json's `dependencies` so that the app will work when you deploy to platforms like [Heroku](https://heroku.com).
-
-### Single-page app mode
-
-By default, sirv will only respond to requests that match files in `public`. This is to maximise compatibility with static fileservers, allowing you to deploy your app anywhere.
-
-If you're building a single-page app (SPA) with multiple routes, sirv needs to be able to respond to requests for _any_ path. You can make it so by editing the `"start"` command in package.json:
-
-```js
-"start": "sirv public --single"
-```
-
-### Deploying to the web
-
-#### With [Vercel](https://vercel.com)
-
-Install `vercel` if you haven't already:
-
-```bash
-npm install -g vercel
-```
-
-Then, from within your project folder:
-
-```bash
-cd public
-vercel deploy --name my-project
-```
-
-#### With [surge](https://surge.sh/)
-
-Install `surge` if you haven't already:
-
-```bash
-npm install -g surge
-```
-
-Then, from within your project folder:
-
-```bash
-npm run build
-surge public my-project.surge.sh
-```
+Whenever we have final assets, simply linking them should be enoug to have a functional web (audio)book :)
