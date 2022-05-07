@@ -3,7 +3,8 @@
   import Page from "./Page.svelte";
 
   async function getPages() {
-    return await fetch("resources/pages.json").then((response) =>
+    // return await fetch("resources/pages.json").then((response) =>
+    return await fetch("resources/pages_with_objects.json").then((response) =>
       response.json()
     );
   }

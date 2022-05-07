@@ -1,0 +1,200 @@
+{
+    "balon": {
+        "left": "67.0",
+        "page": 10,
+        "top": "7.5",
+        "width": "16.2"
+    },
+    "batole": {
+        "left": "28.4",
+        "page": 1,
+        "top": "79.6",
+        "width": "30.5"
+    },
+    "beruska": {
+        "left": "31.6",
+        "page": 4,
+        "top": "84.1",
+        "width": "6.8"
+    },
+    "ctyrlistek": {
+        "left": "68.7",
+        "page": 8,
+        "top": "79.4",
+        "width": "9.4"
+    },
+    "cyklista": {
+        "left": "11.5",
+        "page": 3,
+        "top": "40.8",
+        "width": "62.9"
+    },
+    "duha": {
+        "left": "41.8",
+        "page": 4,
+        "top": "6.0",
+        "width": "57.5"
+    },
+    "holubice": {
+        "left": "44.0",
+        "page": 1,
+        "top": "21.7",
+        "width": "32.7"
+    },
+    "houba": {
+        "left": "16.4",
+        "page": 4,
+        "top": "66.4",
+        "width": "8.4"
+    },
+    "jahody": {
+        "left": "17.6",
+        "page": 6,
+        "top": "71.5",
+        "width": "13.7"
+    },
+    "jelen": {
+        "left": "57.8",
+        "page": 6,
+        "top": "37.4",
+        "width": "35.9"
+    },
+    "jesterka": {
+        "left": "21.0",
+        "page": 2,
+        "top": "85.1",
+        "width": "25.5"
+    },
+    "jezek": {
+        "left": "36.2",
+        "page": 7,
+        "top": "77.7",
+        "width": "24.1"
+    },
+    "kluk": {
+        "left": "72.7",
+        "page": 1,
+        "top": "68.1",
+        "width": "21.6"
+    },
+    "kocarek": {
+        "left": "23.7",
+        "page": 11,
+        "top": "45.9",
+        "width": "58.3"
+    },
+    "kun": {
+        "left": "15.8",
+        "page": 5,
+        "top": "41.4",
+        "width": "72.8"
+    },
+    "kviti": {
+        "left": "65.3",
+        "page": 2,
+        "top": "50.0",
+        "width": "13.6"
+    },
+    "letadlo": {
+        "left": "67.8",
+        "page": 6,
+        "top": "10.4",
+        "width": "21.4"
+    },
+    "liska": {
+        "left": "26.6",
+        "page": 9,
+        "top": "77.2",
+        "width": "59.6"
+    },
+    "motyl": {
+        "left": "15.2",
+        "page": 1,
+        "top": "6.2",
+        "width": "14.3"
+    },
+    "mys": {
+        "left": "21.7",
+        "page": 10,
+        "top": "78.4",
+        "width": "25.4"
+    },
+    "orel": {
+        "left": "40.9",
+        "page": 8,
+        "top": "4.5",
+        "width": "44.2"
+    },
+    "pejskari": {
+        "left": "7.5",
+        "page": 8,
+        "top": "49.2",
+        "width": "42.5"
+    },
+    "pozadi": {
+        "left": "0.0",
+        "page": null,
+        "top": "0.0",
+        "width": "200.0"
+    },
+    "snek": {
+        "left": "16.3",
+        "page": 2,
+        "top": "62.1",
+        "width": "11.2"
+    },
+    "sova": {
+        "left": "70.0",
+        "page": 11,
+        "top": "7.5",
+        "width": "10.3"
+    },
+    "srnka": {
+        "left": "37.6",
+        "page": 6,
+        "top": "37.1",
+        "width": "20.3"
+    },
+    "sykorka": {
+        "left": "48.7",
+        "page": 7,
+        "top": "13.9",
+        "width": "24.2"
+    },
+    "traktor": {
+        "left": "16.1",
+        "page": 9,
+        "top": "41.5",
+        "width": "31.9"
+    },
+    "vazka": {
+        "left": "54.3",
+        "page": 2,
+        "top": "17.8",
+        "width": "9.3"
+    },
+    "vcela": {
+        "left": "28.4",
+        "page": 7,
+        "top": "29.6",
+        "width": "10.0"
+    },
+    "veverka": {
+        "left": "68.2",
+        "page": 3,
+        "top": "12.0",
+        "width": "18.9"
+    },
+    "zaba": {
+        "left": "58.3",
+        "page": 4,
+        "top": "75.3",
+        "width": "13.2"
+    },
+    "zajic": {
+        "left": "41.2",
+        "page": 10,
+        "top": "43.4",
+        "width": "28.1"
+    }
+}

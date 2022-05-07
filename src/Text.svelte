@@ -61,7 +61,10 @@
     bind:this={langToAudio[language]}
     on:ended={(e) => onAudioEnd(language, order)}
   >
-    <source src="resources/audio/{language}/{id}.mp3" type="audio/mpeg" />
+    <source
+      src="resources/audio/{language}/{language}_{id}.mp3"
+      type="audio/mpeg"
+    />
   </audio>
 {/each}
 
