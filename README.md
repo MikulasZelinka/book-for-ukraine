@@ -18,6 +18,7 @@ More broadly, you could use to project to implement a web-based book with playab
 - [x] Autoplay
   - [ ] More options: one/many languages, one/many pages
 - [ ] Playback speed
+- [ ] Playback volume
 - [ ] Wait time between paragraphs/pages
 - [ ] Persist/cache settings
 - [ ] Allow alphabet conversions
@@ -29,7 +30,8 @@ More broadly, you could use to project to implement a web-based book with playab
 
 ### Presentation
 
-- [ ] Better UI in general
+- [ ] Better UI in general (navbar, ...)
+- [ ] Equalise volume across languages (for example, `cs` is currently louder than `ua`)
 - [x] Inform about landscape mode on mobile
   - Solved by displaying single pages on mobile and two facing pages on desktop
 - [ ] Object animations
@@ -41,6 +43,11 @@ More broadly, you could use to project to implement a web-based book with playab
 - [ ] Instead of arbitrary ordering, always select just two languages (and thus get their order implicitly)
 - [ ] Auto translation
 - [ ] Auto TTS
+
+### Tech debt
+
+- [ ] Proper typescriptification, including introducing types for the data structures loaded from jsons
+  - This would be very helpful for development as it would give us type hints among many other things
 
 ## Webdevlog
 
