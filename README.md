@@ -2,7 +2,7 @@
 
 Svítej\*, an open-source implementation of the Czech-Ukrainian book for children: [Povídání modro-žluté krajiny](https://pointa.cz/project/d323a733-b37c-11ec-a145-0242ac120006).
 
-Available to browse for free: https://svitej.zelinka.dev
+Available to browse for free: https://ukrajinskaknizka.cz
 
 More broadly, you could use to project to implement a web-based book with playable text recordings.
 
@@ -32,7 +32,8 @@ More broadly, you could use to project to implement a web-based book with playab
 - [ ] Better UI in general
 - [x] Inform about landscape mode on mobile
   - Solved by displaying single pages on mobile and two facing pages on desktop
-- [ ] Object animations (?)
+- [ ] Object animations
+  - [x] Simple wiggle on hover/click
 
 ### Languages
 
@@ -42,6 +43,23 @@ More broadly, you could use to project to implement a web-based book with playab
 - [ ] Auto TTS
 
 ## Webdevlog
+
+### 2022-05-07
+
+Major update: I've separated foreground objects from background using a [python script](scripts/export_objects_from_layers.py)
+to export all data (image data as well as their metadata) from the original PSD file
+and to also [combine the new objects json with the already existing pages json](public/resources/).
+
+It's ~quick and~ (well, I wish it was quick, really) dirty but it makes the job done.
+
+As a result, the background is now only loaded once (but displayed multiple times) and objects are loaded separately.
+The main advantage is we can now freely animate/click/... them independently.
+
+We now also have a proper domain: https://ukrajinskaknizka.cz
+
+Migrating with GitHub Pages was rather straightforward, it's basically just updating the [`CNAME`](public/CNAME).
+
+I've registered the domain at [WEDOS](https://www.wedos.cz/) (Google domains unfortunately don't support the `.cz` TLD) and it costs cca 175 CZK per year.
 
 ### 2022-05-05
 
