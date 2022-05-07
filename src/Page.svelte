@@ -65,7 +65,10 @@
 </div>
 
 <style>
-  .obj:hover {
+  /* Wiggle animation from: https://codepen.io/theDeanH/pen/zBZXLN */
+
+  .obj:hover,
+  .obj:active {
     -webkit-animation-name: wiggle;
     -ms-animation-name: wiggle;
     animation-name: wiggle;
