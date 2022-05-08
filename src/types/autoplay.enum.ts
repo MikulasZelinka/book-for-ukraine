@@ -1,5 +1,5 @@
 export enum Autoplay {
-    Off = "Off",
-    OneLanguage = "One language",
-    AllLanguages = "All languages",
+    Off = "Vypnuto",
+    OneLanguage = "Celá stránka v jednom jazyce",
+    AllLanguages = "Druhý jazyk",
   }

@@ -1,7 +1,14 @@
+<script>
+  import Settings from "./Settings.svelte";
+</script>
+
+<!-- TODO: better layout -->
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="https://ukrajinskaknizka.cz">
-      <img src="resources/images/holubice.png" />
+      <img src="resources/images/holubice.png" alt="Logo holubice" />
+      <h2 class="subtitle">Povídání modro-žluté krajiny</h2>
+      <!-- <h2 class="subtitle">Розповідь синьо-жовтого краю</h2> -->
     </a>
 
     <a
@@ -20,31 +27,26 @@
 
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
-      <a class="navbar-item"> Home </a>
+      <a class="navbar-item" href="https://www.facebook.com/ukrajinskaknizka">
+        <i class="fa-brands fa-facebook" />
+      </a>
 
-      <a class="navbar-item"> Documentation </a>
+      <a class="navbar-item" href="https://www.instagram.com/ukrajinskaknizka/">
+        <i class="fa-brands fa-instagram" />
+      </a>
 
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link"> More </a>
-
-        <div class="navbar-dropdown">
-          <a class="navbar-item"> About </a>
-          <a class="navbar-item"> Jobs </a>
-          <a class="navbar-item"> Contact </a>
-          <hr class="navbar-divider" />
-          <a class="navbar-item"> Report an issue </a>
-        </div>
-      </div>
+      <!-- TODO: move the github repo to this URL -->
+      <a
+        class="navbar-item"
+        href="https://www.github.com/MikulasZelinka/ukrajinskaknizka/"
+      >
+        <i class="fa-brands fa-github" />
+      </a>
     </div>
 
     <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="buttons">
-          <a class="button is-primary">
-            <strong>Sign up</strong>
-          </a>
-          <a class="button is-light"> Log in </a>
-        </div>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <Settings />
       </div>
     </div>
   </div>

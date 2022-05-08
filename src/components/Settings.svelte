@@ -1,6 +1,6 @@
 <script lang="ts">
   //   https://github.com/jwlarocque/svelte-dragdroplist
-  import DragDropList from "svelte-dragdroplist";
+  // import DragDropList from "svelte-dragdroplist";
 
   import { Autoplay } from "../types/autoplay.enum";
 
@@ -27,27 +27,33 @@
   }
 </script>
 
-<div class="columns is-vcentered">
-  <div class="column">
-    <!-- <form> -->
+<!-- <form> -->
 
-    <div class="columns is-vcentered">
+<!-- <div class="columns is-vcentered">
       <div class="column">Language order</div>
 
-      <div class="column">
-        <!-- TODO: 
+      <div class="column"> -->
+<!-- TODO: 
         
         [Violation] Added non-passive event listener to a scroll-blocking 'touchstart' event. Consider marking event handler as 'passive' to make the page more responsive. See https://www.chromestatus.com/feature/5745543795965952
         -->
-        <DragDropList bind:data={_languageOrder} removesItems={false} />
+<!-- <DragDropList bind:data={_languageOrder} removesItems={false} />
       </div>
-    </div>
+    </div> -->
 
-    <!-- </form> -->
-  </div>
-  <div class="column">
-    <!-- <form> -->
-    Autoplay:
+<!-- </form> -->
+
+<!-- <form> -->
+
+<!-- </form> -->
+
+<!-- TODO: submenu overflows from view on hover -->
+
+<a class="navbar-link"> Nastavení </a>
+
+<div class="navbar-dropdown">
+  <span class="navbar-item">
+    Automatické přehrávání:
     <select bind:value={_autoplay}>
       {#each Object.values(Autoplay) as autoplayString}
         <option value={autoplayString} selected>
@@ -55,6 +61,9 @@
         </option>
       {/each}
     </select>
-    <!-- </form> -->
-  </div>
+  </span>
+  <a class="navbar-item"> Tady </a>
+  <a class="navbar-item"> Budou </a>
+  <hr class="navbar-divider" />
+  <a class="navbar-item"> Další možnosti </a>
 </div>

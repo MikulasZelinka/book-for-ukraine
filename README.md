@@ -51,6 +51,11 @@ More broadly, you could use to project to implement a web-based book with playab
 
 ## Webdevlog
 
+### 2022-05-08
+
+General effort to make the website (navigation, menu, footer) look decent and be up-to-date.
+More work is still necessary.
+
 ### 2022-05-07
 
 Major update: I've separated foreground objects from background using a [python script](scripts/export_objects_from_layers.py)
