@@ -16,7 +16,7 @@
   // let langToAudio = {};
   let langIsPlaying = {};
 
-  import { languageOrder } from "./settings";
+  import { languageOrder } from "../settings";
 
   $: textsSorted = Object.entries(translations).sort(
     ([a, aa], [b, bb]) => $languageOrder.indexOf(a) - $languageOrder.indexOf(b)

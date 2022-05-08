@@ -6,9 +6,9 @@
   export let texts;
   export let objects;
 
-  import { autoplay, languageOrder } from "./settings";
+  import { autoplay, languageOrder } from "../settings";
 
-  import { Autoplay } from "./types/autoplay.enum";
+  import { Autoplay } from "../types/autoplay.enum";
 
   let textElements = {};
 

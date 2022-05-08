@@ -2,9 +2,9 @@
   //   https://github.com/jwlarocque/svelte-dragdroplist
   import DragDropList from "svelte-dragdroplist";
 
-  import { Autoplay } from "./types/autoplay.enum";
+  import { Autoplay } from "../types/autoplay.enum";
 
-  import { autoplay, languageOrder } from "./settings";
+  import { autoplay, languageOrder } from "../settings";
 
   console.debug(JSON.stringify($languageOrder));
 
