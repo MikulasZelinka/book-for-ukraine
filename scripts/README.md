@@ -11,14 +11,14 @@ TL;DR (if you `cd` into this directory):
 bash wav_to_mp3.sh
 python export_images_from_layers.py
 python export_texts_from_pdf.py
-python create_pages_from_texts_images.py
+python merge_to_pages.py
 ```
 
 This will (hopefully) populate [`resources`](../public/resources) with all the required final assets.
 
 ## Prerequisites
 
-The [`resources/in`](../public/resources/in) folder should contain:
+The [`resources/in`](../public/resources/in) folder (which is ignored and missing from the repo) should contain:
 
 ### Texts
 
