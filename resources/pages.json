@@ -1,118 +1,957 @@
 [
     {
         "number": 0,
-        "description": "Modrožlutá krajina",
-        "texts": []
+        "stories": []
     },
     {
         "number": 1,
-        "description": "Holubice míru",
-        "texts": []
+        "stories": [
+            {
+                "name": "batole",
+                "position_image": {
+                    "left": "28.4",
+                    "top": "79.6",
+                    "width": "30.6"
+                }
+            },
+            {
+                "name": "holubice",
+                "position_image": {
+                    "left": "44.0",
+                    "top": "21.7",
+                    "width": "32.6"
+                }
+            },
+            {
+                "name": "kluk",
+                "position_image": {
+                    "left": "71.2",
+                    "top": "67.9",
+                    "width": "22.8"
+                }
+            },
+            {
+                "name": "motyl",
+                "position_image": {
+                    "left": "15.2",
+                    "top": "6.2",
+                    "width": "14.3"
+                }
+            }
+        ]
     },
     {
         "number": 2,
-        "description": "Šnek",
-        "texts": [
+        "stories": [
             {
-                "id": "vazka",
-                "translations": {
-                    "cs": "Zdraví tě pan vážka,\nmotýla je bráška",
-                    "ua": "Пан Бабка тебе вітає,\nйого брат метелик злітає."
+                "name": "jesterka",
+                "position_image": {
+                    "left": "20.9",
+                    "top": "85.1",
+                    "width": "25.5"
                 },
-                "top": 10,
-                "left": 40
+                "positions_text": [
+                    {
+                        "height": "4.3",
+                        "left": "62.9",
+                        "top": "80.3",
+                        "width": "20.1"
+                    },
+                    {
+                        "height": "4.3",
+                        "left": "54.5",
+                        "top": "85.9",
+                        "width": "21.2"
+                    }
+                ],
+                "translations": [
+                    {
+                        "lang": "cs",
+                        "text": "Vidíš ještěrku?\nLeze po štěrku."
+                    },
+                    {
+                        "lang": "ua",
+                        "text": "Бачиш ящірку?\nЛізе на гравій."
+                    }
+                ]
             },
             {
-                "id": "kviti",
-                "translations": {
-                    "cs": "Kvítí roste mezi klasy,\nkonec léta už se hlásí.",
-                    "ua": "Квіти ростуть серед колосків,\nкінець літа вже наближається."
+                "name": "kviti",
+                "position_image": {
+                    "left": "76.7",
+                    "top": "50.0",
+                    "width": "13.6"
                 },
-                "top": 44,
-                "left": 55
+                "positions_text": [
+                    {
+                        "height": "4.3",
+                        "left": "47.0",
+                        "top": "47.3",
+                        "width": "28.6"
+                    },
+                    {
+                        "height": "4.3",
+                        "left": "34.0",
+                        "top": "52.9",
+                        "width": "41.0"
+                    }
+                ],
+                "translations": [
+                    {
+                        "lang": "cs",
+                        "text": "Kvítí roste mezi klasy,\nkonec léta už se hlásí."
+                    },
+                    {
+                        "lang": "ua",
+                        "text": "Квіти ростуть серед колосків,\nкінець літа вже наближається."
+                    }
+                ]
             },
             {
-                "id": "snek",
-                "translations": {
-                    "cs": "Snadno dohnat šneka,\nvždyť na tebe čeká!",
-                    "ua": "Легко наздогнати равлика,\nколи він на тебе чекає."
+                "name": "snek",
+                "position_image": {
+                    "left": "16.3",
+                    "top": "62.1",
+                    "width": "11.2"
                 },
-                "top": 70,
-                "left": 5
+                "positions_text": [
+                    {
+                        "height": "4.3",
+                        "left": "29.3",
+                        "top": "64.1",
+                        "width": "28.8"
+                    },
+                    {
+                        "height": "4.3",
+                        "left": "17.4",
+                        "top": "69.8",
+                        "width": "37.0"
+                    }
+                ],
+                "translations": [
+                    {
+                        "lang": "cs",
+                        "text": "Snadno dohnat šneka,\nvždyť na tebe čeká!"
+                    },
+                    {
+                        "lang": "ua",
+                        "text": "Легко наздогнати равлика,\nколи він на тебе чекає."
+                    }
+                ]
             },
             {
-                "id": "jesterka",
-                "translations": {
-                    "cs": "Vidíš ještěrku?\nLeze po štěrku.",
-                    "ua": "Бачиш ящірку?\nЛізе на гравій."
+                "name": "vazka",
+                "position_image": {
+                    "left": "54.3",
+                    "top": "17.8",
+                    "width": "9.2"
                 },
-                "top": 85,
-                "left": 50
+                "positions_text": [
+                    {
+                        "height": "4.3",
+                        "left": "26.2",
+                        "top": "12.6",
+                        "width": "26.1"
+                    },
+                    {
+                        "height": "4.3",
+                        "left": "16.6",
+                        "top": "18.2",
+                        "width": "35.1"
+                    }
+                ],
+                "translations": [
+                    {
+                        "lang": "cs",
+                        "text": "Zdraví tě pan vážka,\nmotýla je bráška."
+                    },
+                    {
+                        "lang": "ua",
+                        "text": "Пан Бабка тебе вітає,\nйого брат метелик злітає."
+                    }
+                ]
             }
         ]
     },
     {
         "number": 3,
-        "description": "Cyklista",
-        "texts": [
+        "stories": [
             {
-                "id": "veverka",
-                "translations": {
-                    "cs": "Veverka má oříšek\na zrzavý kožíšek.",
-                    "ua": "У білочки є горішок\nі руденький кожушок."
+                "name": "cyklista",
+                "position_image": {
+                    "left": "0.5",
+                    "top": "41.0",
+                    "width": "63.0"
                 },
-                "top": 15,
-                "left": 25
+                "positions_text": [
+                    {
+                        "height": "4.3",
+                        "left": "56.6",
+                        "top": "44.6",
+                        "width": "33.4"
+                    },
+                    {
+                        "height": "4.3",
+                        "left": "50.5",
+                        "top": "50.2",
+                        "width": "35.6"
+                    }
+                ],
+                "translations": [
+                    {
+                        "lang": "cs",
+                        "text": "Za lesy, za louky, za pole\nvydal se kamarád na kole."
+                    },
+                    {
+                        "lang": "ua",
+                        "text": "За ліси, за луки, за поля\nдруг поїхав на велосипеді."
+                    }
+                ]
             },
             {
-                "id": "cyklista",
-                "translations": {
-                    "cs": "Za lesy, za louky, za pole\nvydal se kamarád na kole.",
-                    "ua": "За ліси, за луки, за поля\nдруг поїхав на велосипеді."
+                "name": "veverka",
+                "position_image": {
+                    "left": "68.2",
+                    "top": "12.0",
+                    "width": "18.9"
                 },
-                "top": 35,
-                "left": 35
+                "positions_text": [
+                    {
+                        "height": "4.3",
+                        "left": "39.2",
+                        "top": "11.9",
+                        "width": "24.2"
+                    },
+                    {
+                        "height": "4.3",
+                        "left": "31.4",
+                        "top": "17.5",
+                        "width": "30.1"
+                    }
+                ],
+                "translations": [
+                    {
+                        "lang": "cs",
+                        "text": "Veverka má oříšek\na zrzavý kožíšek."
+                    },
+                    {
+                        "lang": "ua",
+                        "text": "У білочки є горішок\nі руденький кожушок."
+                    }
+                ]
             }
         ]
     },
     {
         "number": 4,
-        "description": "TODO",
-        "texts": []
+        "stories": [
+            {
+                "name": "beruska",
+                "position_image": {
+                    "left": "30.9",
+                    "top": "84.1",
+                    "width": "6.9"
+                },
+                "positions_text": [
+                    {
+                        "height": "4.3",
+                        "left": "22.7",
+                        "top": "71.2",
+                        "width": "28.9"
+                    },
+                    {
+                        "height": "4.3",
+                        "left": "13.1",
+                        "top": "76.8",
+                        "width": "33.7"
+                    }
+                ],
+                "translations": [
+                    {
+                        "lang": "cs",
+                        "text": "Beruška je červená,\nkdo ví, co to znamená."
+                    },
+                    {
+                        "lang": "ua",
+                        "text": "Божа корівка є червона,\nі хто знає, що це означає."
+                    }
+                ]
+            },
+            {
+                "name": "duha",
+                "position_image": {
+                    "left": "41.2",
+                    "top": "1.1",
+                    "width": "68.7"
+                },
+                "positions_text": [
+                    {
+                        "height": "4.3",
+                        "left": "27.2",
+                        "top": "20.2",
+                        "width": "31.0"
+                    },
+                    {
+                        "height": "4.3",
+                        "left": "19.2",
+                        "top": "25.8",
+                        "width": "31.5"
+                    }
+                ],
+                "translations": [
+                    {
+                        "lang": "cs",
+                        "text": "Slunce v kapkách deště,\nvidíš duhu ještě?"
+                    },
+                    {
+                        "lang": "ua",
+                        "text": "Сонце в краплях дощу,\nти вже бачиш веселку?"
+                    }
+                ]
+            },
+            {
+                "name": "houba",
+                "position_image": {
+                    "left": "15.8",
+                    "top": "66.4",
+                    "width": "8.3"
+                },
+                "positions_text": [
+                    {
+                        "height": "4.3",
+                        "left": "37.6",
+                        "top": "49.7",
+                        "width": "30.8"
+                    },
+                    {
+                        "height": "4.3",
+                        "left": "28.1",
+                        "top": "55.4",
+                        "width": "35.5"
+                    }
+                ],
+                "translations": [
+                    {
+                        "lang": "cs",
+                        "text": "Vyrostla tu houba,\npod kloboukem hloubá."
+                    },
+                    {
+                        "lang": "ua",
+                        "text": "Тут росте грибочок,\nпід капелюшком бурмоче."
+                    }
+                ]
+            },
+            {
+                "name": "zaba",
+                "position_image": {
+                    "left": "54.6",
+                    "top": "75.5",
+                    "width": "14.2"
+                },
+                "positions_text": [
+                    {
+                        "height": "4.3",
+                        "left": "72.7",
+                        "top": "63.9",
+                        "width": "26.0"
+                    },
+                    {
+                        "height": "4.3",
+                        "left": "63.6",
+                        "top": "69.5",
+                        "width": "27.7"
+                    }
+                ],
+                "translations": [
+                    {
+                        "lang": "cs",
+                        "text": "Tahle žába neskáče,\nobčas je jí do pláče."
+                    },
+                    {
+                        "lang": "ua",
+                        "text": "Ця жаба не стрибає,\nіноді вона ридає."
+                    }
+                ]
+            }
+        ]
     },
     {
         "number": 5,
-        "description": "TODO",
-        "texts": []
+        "stories": [
+            {
+                "name": "kun",
+                "position_image": {
+                    "left": "9.9",
+                    "top": "41.4",
+                    "width": "72.8"
+                },
+                "positions_text": [
+                    {
+                        "height": "4.3",
+                        "left": "66.7",
+                        "top": "47.0",
+                        "width": "24.2"
+                    },
+                    {
+                        "height": "4.3",
+                        "left": "54.2",
+                        "top": "52.6",
+                        "width": "32.3"
+                    }
+                ],
+                "translations": [
+                    {
+                        "lang": "cs",
+                        "text": "Dívka sedí v sedle,\npozoruje jedle."
+                    },
+                    {
+                        "lang": "ua",
+                        "text": "Дівчина сидить у сідлі,\nспостерігає за ялинкою."
+                    }
+                ]
+            }
+        ]
     },
     {
         "number": 6,
-        "description": "TODO",
-        "texts": []
+        "stories": [
+            {
+                "name": "jahody",
+                "position_image": {
+                    "left": "17.6",
+                    "top": "71.4",
+                    "width": "13.8"
+                },
+                "positions_text": [
+                    {
+                        "height": "4.3",
+                        "left": "23.5",
+                        "top": "80.6",
+                        "width": "20.7"
+                    },
+                    {
+                        "height": "4.3",
+                        "left": "13.1",
+                        "top": "86.2",
+                        "width": "24.3"
+                    }
+                ],
+                "translations": [
+                    {
+                        "lang": "cs",
+                        "text": "Jahody voní\nstejně jak vloni."
+                    },
+                    {
+                        "lang": "ua",
+                        "text": "Пахне полуниця\nтак само, як торік."
+                    }
+                ]
+            },
+            {
+                "name": "letadlo",
+                "position_image": {
+                    "left": "71.6",
+                    "top": "10.4",
+                    "width": "21.6"
+                },
+                "positions_text": [
+                    {
+                        "height": "4.3",
+                        "left": "54.7",
+                        "top": "10.3",
+                        "width": "16.1"
+                    },
+                    {
+                        "height": "4.3",
+                        "left": "44.0",
+                        "top": "15.9",
+                        "width": "18.4"
+                    }
+                ],
+                "translations": [
+                    {
+                        "lang": "cs",
+                        "text": "Letadlo letí,\nje plné dětí."
+                    },
+                    {
+                        "lang": "ua",
+                        "text": "Летить літак\nповний дітей."
+                    }
+                ]
+            },
+            {
+                "name": "srnka",
+                "position_image": {
+                    "left": "41.4",
+                    "top": "37.4",
+                    "width": "58.9"
+                },
+                "positions_text": [
+                    {
+                        "height": "4.3",
+                        "left": "77.8",
+                        "top": "68.5",
+                        "width": "19.1"
+                    },
+                    {
+                        "height": "4.3",
+                        "left": "67.8",
+                        "top": "74.2",
+                        "width": "24.9"
+                    }
+                ],
+                "translations": [
+                    {
+                        "lang": "cs",
+                        "text": "Srna a srnec\nzrna sní hrnec."
+                    },
+                    {
+                        "lang": "ua",
+                        "text": "Родина косуль\nзерна їсть горщик."
+                    }
+                ]
+            }
+        ]
     },
     {
         "number": 7,
-        "description": "TODO",
-        "texts": []
+        "stories": [
+            {
+                "name": "jezek",
+                "position_image": {
+                    "left": "36.2",
+                    "top": "77.6",
+                    "width": "24.1"
+                },
+                "positions_text": [
+                    {
+                        "height": "4.3",
+                        "left": "59.9",
+                        "top": "68.7",
+                        "width": "28.8"
+                    },
+                    {
+                        "height": "4.3",
+                        "left": "51.6",
+                        "top": "74.3",
+                        "width": "28.1"
+                    }
+                ],
+                "translations": [
+                    {
+                        "lang": "cs",
+                        "text": "Ježek v trávě dupe,\nklacek pod ním křupe."
+                    },
+                    {
+                        "lang": "ua",
+                        "text": "Їжачок в траві дуп,\nпалиця під ним хруп."
+                    }
+                ]
+            },
+            {
+                "name": "sykorka",
+                "position_image": {
+                    "left": "48.7",
+                    "top": "13.9",
+                    "width": "24.2"
+                },
+                "positions_text": [
+                    {
+                        "height": "4.3",
+                        "left": "61.0",
+                        "top": "24.7",
+                        "width": "26.4"
+                    },
+                    {
+                        "height": "4.3",
+                        "left": "49.9",
+                        "top": "30.3",
+                        "width": "25.4"
+                    }
+                ],
+                "translations": [
+                    {
+                        "lang": "cs",
+                        "text": "Sýkorka si naříká,\nže prý je moc veliká."
+                    },
+                    {
+                        "lang": "ua",
+                        "text": "Синиця жаліється,\nщо вона завелика."
+                    }
+                ]
+            },
+            {
+                "name": "vcela",
+                "position_image": {
+                    "left": "28.4",
+                    "top": "33.7",
+                    "width": "10.0"
+                },
+                "positions_text": [
+                    {
+                        "height": "4.3",
+                        "left": "25.4",
+                        "top": "41.5",
+                        "width": "21.0"
+                    },
+                    {
+                        "height": "4.3",
+                        "left": "6.5",
+                        "top": "47.1",
+                        "width": "35.5"
+                    }
+                ],
+                "translations": [
+                    {
+                        "lang": "cs",
+                        "text": "Včelička bzučí,\nkdyž květy pučí."
+                    },
+                    {
+                        "lang": "ua",
+                        "text": "Бджола бзучить,\nколи квіти розпускаються."
+                    }
+                ]
+            }
+        ]
     },
     {
         "number": 8,
-        "description": "TODO",
-        "texts": []
+        "stories": [
+            {
+                "name": "ctyrlistek",
+                "position_image": {
+                    "left": "68.3",
+                    "top": "79.5",
+                    "width": "9.6"
+                },
+                "positions_text": [
+                    {
+                        "height": "4.3",
+                        "left": "35.0",
+                        "top": "82.1",
+                        "width": "33.2"
+                    },
+                    {
+                        "height": "4.3",
+                        "left": "22.4",
+                        "top": "87.7",
+                        "width": "40.7"
+                    }
+                ],
+                "translations": [
+                    {
+                        "lang": "cs",
+                        "text": "Čtyřlístek ti štěstí nese,\njen jestli ho najdeš v lese."
+                    },
+                    {
+                        "lang": "ua",
+                        "text": "Чотирилисник принесе удачу,\nякщо ти його знайдеш у лісі."
+                    }
+                ]
+            },
+            {
+                "name": "orel",
+                "position_image": {
+                    "left": "41.6",
+                    "top": "5.0",
+                    "width": "42.7"
+                },
+                "positions_text": [
+                    {
+                        "height": "4.3",
+                        "left": "62.7",
+                        "top": "25.1",
+                        "width": "23.8"
+                    },
+                    {
+                        "height": "4.3",
+                        "left": "46.4",
+                        "top": "30.7",
+                        "width": "34.8"
+                    }
+                ],
+                "translations": [
+                    {
+                        "lang": "cs",
+                        "text": "Orel ti vše poví,\nale psst – teď loví."
+                    },
+                    {
+                        "lang": "ua",
+                        "text": "Орел тобі все розповість,\nале тсс – він полює."
+                    }
+                ]
+            },
+            {
+                "name": "pejskari",
+                "position_image": {
+                    "left": "5.6",
+                    "top": "50.2",
+                    "width": "41.1"
+                },
+                "positions_text": [
+                    {
+                        "height": "4.3",
+                        "left": "60.0",
+                        "top": "47.0",
+                        "width": "26.9"
+                    },
+                    {
+                        "height": "4.3",
+                        "left": "49.0",
+                        "top": "52.6",
+                        "width": "31.7"
+                    }
+                ],
+                "translations": [
+                    {
+                        "lang": "cs",
+                        "text": "Pán a paní se psíkem\nprochází se lesíkem."
+                    },
+                    {
+                        "lang": "ua",
+                        "text": "Пан і пані з песиком\nпрогулюються лісиком."
+                    }
+                ]
+            }
+        ]
     },
     {
         "number": 9,
-        "description": "TODO",
-        "texts": []
+        "stories": [
+            {
+                "name": "liska",
+                "position_image": {
+                    "left": "31.3",
+                    "top": "77.8",
+                    "width": "56.5"
+                },
+                "positions_text": [
+                    {
+                        "height": "4.3",
+                        "left": "45.8",
+                        "top": "67.5",
+                        "width": "28.0"
+                    },
+                    {
+                        "height": "4.3",
+                        "left": "29.6",
+                        "top": "73.1",
+                        "width": "35.9"
+                    }
+                ],
+                "translations": [
+                    {
+                        "lang": "cs",
+                        "text": "Kam pospícháš, liško?\nNaplnit své bříško."
+                    },
+                    {
+                        "lang": "ua",
+                        "text": "Куди поспішаєш, лисичко?\nНаповнити свій животик."
+                    }
+                ]
+            },
+            {
+                "name": "traktor",
+                "position_image": {
+                    "left": "6.4",
+                    "top": "42.1",
+                    "width": "30.9"
+                },
+                "positions_text": [
+                    {
+                        "height": "4.3",
+                        "left": "51.8",
+                        "top": "50.0",
+                        "width": "25.5"
+                    },
+                    {
+                        "height": "4.3",
+                        "left": "38.8",
+                        "top": "55.7",
+                        "width": "31.4"
+                    }
+                ],
+                "translations": [
+                    {
+                        "lang": "cs",
+                        "text": "Polem traktor jede,\nbrázdí hlíny hnědé."
+                    },
+                    {
+                        "lang": "ua",
+                        "text": "Трактор по полю їде,\nрозбиває тверду глину."
+                    }
+                ]
+            }
+        ]
     },
     {
         "number": 10,
-        "description": "TODO",
-        "texts": []
+        "stories": [
+            {
+                "name": "balon",
+                "position_image": {
+                    "left": "83.2",
+                    "top": "8.8",
+                    "width": "16.3"
+                },
+                "positions_text": [
+                    {
+                        "height": "4.3",
+                        "left": "58.4",
+                        "top": "9.2",
+                        "width": "24.6"
+                    },
+                    {
+                        "height": "4.3",
+                        "left": "41.2",
+                        "top": "14.8",
+                        "width": "35.0"
+                    }
+                ],
+                "translations": [
+                    {
+                        "lang": "cs",
+                        "text": "Až vítr dovane,\nbalón zas přistane."
+                    },
+                    {
+                        "lang": "ua",
+                        "text": "Коли вітер дмухне,\nкуля знову приземлиться."
+                    }
+                ]
+            },
+            {
+                "name": "mys",
+                "position_image": {
+                    "left": "21.6",
+                    "top": "78.4",
+                    "width": "25.5"
+                },
+                "positions_text": [
+                    {
+                        "height": "4.3",
+                        "left": "61.5",
+                        "top": "79.2",
+                        "width": "15.8"
+                    },
+                    {
+                        "height": "4.3",
+                        "left": "50.3",
+                        "top": "84.8",
+                        "width": "21.7"
+                    }
+                ],
+                "translations": [
+                    {
+                        "lang": "cs",
+                        "text": "Běží myš,\nhledá skrýš."
+                    },
+                    {
+                        "lang": "ua",
+                        "text": "Мишка бігає,\nсхованку шукає."
+                    }
+                ]
+            },
+            {
+                "name": "zajic",
+                "position_image": {
+                    "left": "42.2",
+                    "top": "43.9",
+                    "width": "27.4"
+                },
+                "positions_text": [
+                    {
+                        "height": "4.3",
+                        "left": "66.5",
+                        "top": "59.3",
+                        "width": "26.3"
+                    },
+                    {
+                        "height": "4.3",
+                        "left": "54.9",
+                        "top": "64.9",
+                        "width": "31.6"
+                    }
+                ],
+                "translations": [
+                    {
+                        "lang": "cs",
+                        "text": "Zajíc stříhá ušima,\nnikdo si ho nevšímá."
+                    },
+                    {
+                        "lang": "ua",
+                        "text": "Заєць вухом підслухає,\nніхто його не помічає."
+                    }
+                ]
+            }
+        ]
     },
     {
         "number": 11,
-        "description": "TODO",
-        "texts": []
+        "stories": [
+            {
+                "name": "kocarek",
+                "position_image": {
+                    "left": "23.6",
+                    "top": "45.9",
+                    "width": "58.4"
+                },
+                "positions_text": [
+                    {
+                        "height": "4.3",
+                        "left": "33.2",
+                        "top": "47.8",
+                        "width": "30.0"
+                    },
+                    {
+                        "height": "4.3",
+                        "left": "23.5",
+                        "top": "53.4",
+                        "width": "35.1"
+                    }
+                ],
+                "translations": [
+                    {
+                        "lang": "cs",
+                        "text": "Když maminka zazpívá,\nmiminko se usmívá."
+                    },
+                    {
+                        "lang": "ua",
+                        "text": "Коли мама заспіває,\nнемовлятко посміхається."
+                    }
+                ]
+            },
+            {
+                "name": "sova",
+                "position_image": {
+                    "left": "70.0",
+                    "top": "7.6",
+                    "width": "10.3"
+                },
+                "positions_text": [
+                    {
+                        "height": "4.3",
+                        "left": "36.0",
+                        "top": "10.6",
+                        "width": "30.4"
+                    },
+                    {
+                        "height": "4.3",
+                        "left": "23.3",
+                        "top": "16.2",
+                        "width": "35.0"
+                    }
+                ],
+                "translations": [
+                    {
+                        "lang": "cs",
+                        "text": "Koukni na strom znova,\nsedla si tam sova."
+                    },
+                    {
+                        "lang": "ua",
+                        "text": "Зазирни на дерево знову,\nна гілочці сидить."
+                    }
+                ]
+            }
+        ]
     }
 ]
