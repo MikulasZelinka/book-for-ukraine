@@ -1,3 +1,9 @@
+"""
+Before calling this, manually merge 'jelen_bez_pozadi' into the 'srnka_bez_pozadi' layer.
+This is to make it so that each object has exactly one image for pairing purposes.
+"""
+
+
 import json
 from pathlib import Path
 
@@ -5,15 +11,11 @@ import PIL
 from psd_tools import PSDImage
 from tqdm import tqdm
 
-psd = PSDImage.open(r'E:\code\svitej\public\resources\in\vitej_a_pojd_si_povidat_web_02.psd')
-
 IMAGE_TO_AUDIO_NAME = {
     'kyticky': 'kviti',
     'ptacek': 'sykorka',
     'prarodice': 'pejskari',
 }
-
-layers = {}
 
 
 def get_all_layers(root):
@@ -83,15 +85,6 @@ def export_layers(background_layer, path: Path, target_width=0, target_height=0)
         left, top = layer.offset
         if left > page_width:
             left -= page_width
-        layer_dict[layer.name] = {
-            'page': page,
-            'top': to_percent(top / canvas_height),
-            'left': to_percent(left / page_width),
-            'width': to_percent(layer.width / page_width),
-            # 'left': ,
-            # 'width': ,
-            # 'bbox': list(layer.bbox),
-        }
 
         layer_image = layer.topil()
         if scale_down_factor:
@@ -99,10 +92,18 @@ def export_layers(background_layer, path: Path, target_width=0, target_height=0)
                 round(layer_image.width / scale_down_factor), round(layer_image.height / scale_down_factor)
             ], PIL.Image.ANTIALIAS)
 
+        # Background isn't export as an image object...
         if layer.name != 'pozadi':
+            layer_dict[layer.name] = {
+                'page': page,
+                'top': to_percent(top / canvas_height),
+                'left': to_percent(left / page_width),
+                'width': to_percent(layer.width / page_width),
+            }
+
             layer_image.save(path / 'images' / f'{layer.name}.png')
         else:
-            # Background is the only layer we want to save as a jpg (as it doesn't have transparency)
+            # ...and background is the only layer we want to save as a jpg (as it doesn't have transparency)
             if layer_image.mode == 'RGBA':
                 layer_image = layer_image.convert('RGB')
 
@@ -114,21 +115,24 @@ def export_layers(background_layer, path: Path, target_width=0, target_height=0)
             layer_image.crop((half_width, 0, width, height)).save(path / 'images' / f'{layer.name}_1.jpg',
                                                                   quality=60)
 
-    with open(path / 'objects.json', 'w') as f:
+    with open(path / 'in' / 'images.json', 'w') as f:
         json.dump(layer_dict, f, sort_keys=True, indent=4)
 
 
-get_all_layers(psd)
+if __name__ == '__main__':
+    psd = PSDImage.open(r'E:\code\svitej\public\resources\in\VitejApojdSiPovidatV04.psd')
 
-print(len(layers))
-print(layers)
+    layers = {}
 
-print(sorted(layers.keys()))
+    get_all_layers(psd)
 
-export_layers(
-    layers['pozadi'],
-    path=Path(r'E:\code\svitej\public\resources'),
-    target_width=720 * 2,  # target 720 for a single page
-)
+    print(len(layers))
+    print(layers)
 
+    print(sorted(layers.keys()))
 
+    export_layers(
+        layers['pozadi'],
+        path=Path(r'E:\code\svitej\public\resources'),
+        target_width=720 * 2,  # target 720 for a single page
+    )

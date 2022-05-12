@@ -1,26 +1,30 @@
 <script type="ts">
   import { createEventDispatcher } from "svelte";
+
+  import { languageOrder } from "../settings";
+
+  import type { Position } from "../types/position.type";
+  import type { Translation } from "../types/translation.type";
+
   const dispatch = createEventDispatcher();
 
-  export let page;
-  export let order;
+  export let page: number;
+  export let order: number;
 
-  export let id: string;
+  export let name: string;
 
-  export let translations;
-
-  export let top;
-  export let left;
+  export let translations: Translation[];
+  export let positions: Position[];
 
   let langToAudio = new Map<string, HTMLAudioElement>();
   // let langToAudio = {};
   let langIsPlaying = {};
 
-  import { languageOrder } from "../settings";
+  // $: console.log("tr:", translations);
 
-  $: textsSorted = Object.entries(translations).sort(
-    ([a, aa], [b, bb]) => $languageOrder.indexOf(a) - $languageOrder.indexOf(b)
-  );
+  // $: textsSorted = Object.entries(translations).sort(
+  //   ([a, aa], [b, bb]) => $languageOrder.indexOf(a) - $languageOrder.indexOf(b)
+  // );
 
   // console.log("ts:", JSON.stringify(textsSorted));
 
@@ -56,33 +60,46 @@
   For some reason, this needs to be split from the textsSorted each block,
   otherwise the bindings per-language to langToAudio get messed up.
 -->
-{#each Object.entries(translations) as [language, text]}
+{#each translations as translation}
   <audio
-    bind:this={langToAudio[language]}
-    on:ended={(e) => onAudioEnd(language, order)}
+    bind:this={langToAudio[translation.lang]}
+    on:ended={(e) => onAudioEnd(translation.lang, order)}
   >
     <source
-      src="resources/audio/{language}/{language}_{id}.mp3"
+      src="resources/audio/{translation.lang}/{translation.lang}_{name}.mp3"
       type="audio/mpeg"
     />
   </audio>
 {/each}
 
 <!-- Text for each language -->
-<div style="position: absolute; top: {top}%; left: {left}%;">
-  {#each textsSorted as [language, text]}
-    <p on:click={() => play(language)} class:playing={langIsPlaying[language]}>
-      {text}
+<!-- TODO: respect language sorting again if it's surfaced in settings -->
+<!-- {#each textsSorted as [language, text]} -->
+{#each translations as translation}
+  <div
+    style="position: absolute; top: {positions[
+      $languageOrder.indexOf(translation.lang)
+    ].top}%; left: {positions[$languageOrder.indexOf(translation.lang)].left}%;"
+  >
+    <p
+      on:click={() => play(translation.lang)}
+      class:playing={langIsPlaying[translation.lang]}
+      style="text-align: {translation.lang == 'cs' ? 'right' : 'left'}"
+    >
+      {translation.text}
     </p>
-  {/each}
-</div>
+  </div>
+{/each}
 
 <style>
   p {
+    /* TODO: make smooth weight transitions work even with this font-family spec: */
+    /* font-family: Ubuntu, Arial, Helvetica, sans-serif; */
     color: black;
     white-space: pre-line;
     text-align: left;
     font-weight: 600;
+    /* font-size: 1vw; */
     transition: font-weight 0.2s ease-in-out;
   }
 

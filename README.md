@@ -10,9 +10,16 @@ More broadly, you could use to project to implement a web-based book with playab
 
 ## TODO
 
+### Issues
+
+These are urgent bugs or known issues. Other categories below are missing features.
+
+- [ ] Align texts according to the typeset version.
+- [ ] Properly load and use the correct (Ubuntu) font.
+
 ### Settings
 
-- [x] Reorder languages
+- [ ] Reorder languages (implemented earlier, currently disabled)
   - [ ] If we have more languages: allow disabling some languages
   - [ ] Alternatively, replace by [always selecting two languages](#Languages)
 - [x] Autoplay
@@ -30,12 +37,14 @@ More broadly, you could use to project to implement a web-based book with playab
 
 ### Presentation
 
-- [ ] Better UI in general (navbar, ...)
+- [x] Better UI in general (navbar, ...)
+  - [ ] Now make it even better
 - [ ] Equalise volume across languages (for example, `cs` is currently louder than `ua`)
 - [x] Inform about landscape mode on mobile
   - Solved by displaying single pages on mobile and two facing pages on desktop
 - [ ] Object animations
   - [x] Simple wiggle on hover/click
+  - [ ] Temporarily animate/pop text and image to foreground
 
 ### Languages
 
@@ -46,10 +55,32 @@ More broadly, you could use to project to implement a web-based book with playab
 
 ### Tech debt
 
-- [ ] Proper typescriptification, including introducing types for the data structures loaded from jsons
+- [x] Proper typescriptification, including introducing types for the data structures loaded from jsons
   - This would be very helpful for development as it would give us type hints among many other things
+  - Done at least partially for our custom types
+
+### Loading times
+
+- [ ] Optimise sizes of:
+  - [ ] Images
+  - [ ] Audio
+  - [ ] Other resources (JSON files, ...)
+
+### SEO optimalisation
+
+- [ ] TODO
 
 ## Webdevlog
+
+### 2022-05-12
+
+For the past couple of days, it was just refactoring and then refactoring the refactoring (and then some more).
+
+The result is now the website looks identical, but we automatically parse all input assets (including typeset texts, audio and images)
+to produce the final working website (see [scripts](./scripts)).
+
+Also I've finally introduced at least [some types](./scr/types) and changed the object hierarchy of the main `pages.json`
+to make it easier to work with in Svelte (basically, each collection is now an array, rather than a dictionary).
 
 ### 2022-05-08
 
@@ -58,7 +89,7 @@ More work is still necessary.
 
 ### 2022-05-07
 
-Major update: I've separated foreground objects from background using a [python script](scripts/export_objects_from_layers.py)
+Major update: I've separated foreground objects from background using a [python script](scripts/export_images_from_layers.py)
 to export all data (image data as well as their metadata) from the original PSD file
 and to also [combine the new objects json with the already existing pages json](public/resources/).
 

@@ -6,7 +6,8 @@
 
   async function getPages() {
     // return await fetch("resources/pages.json").then((response) =>
-    return await fetch("resources/pages_with_objects.json").then((response) =>
+    // return await fetch("resources/pages_with_objects.json").then((response) =>
+    return await fetch("resources/pages.json").then((response) =>
       response.json()
     );
   }
@@ -37,7 +38,9 @@
       <p>Loading...</p>
     {:then pages}
       {#each pages as page, i}
-        <Page {...page} />
+        <!-- {console.log(page)} -->
+        <Page {page} />
+        <!-- <Page page={{ pagez }} /> -->
       {/each}
     {:catch error}
       <p style="color: red">{error.message}</p>

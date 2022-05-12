@@ -26,27 +26,30 @@
   </div>
 
   <div id="navbarBasicExample" class="navbar-menu">
-    <div class="navbar-start">
-      <a class="navbar-item" href="https://www.facebook.com/ukrajinskaknizka">
-        <i class="fa-brands fa-facebook" />
-      </a>
-
-      <a class="navbar-item" href="https://www.instagram.com/ukrajinskaknizka/">
-        <i class="fa-brands fa-instagram" />
-      </a>
-
-      <!-- TODO: move the github repo to this URL -->
-      <a
-        class="navbar-item"
-        href="https://www.github.com/MikulasZelinka/ukrajinskaknizka/"
-      >
-        <i class="fa-brands fa-github" />
-      </a>
-    </div>
+    <div class="navbar-start" />
 
     <div class="navbar-end">
       <div class="navbar-item has-dropdown is-hoverable">
         <Settings />
+
+        <a class="navbar-item" href="https://www.facebook.com/ukrajinskaknizka">
+          <i class="fa-brands fa-facebook" />
+        </a>
+
+        <a
+          class="navbar-item"
+          href="https://www.instagram.com/ukrajinskaknizka/"
+        >
+          <i class="fa-brands fa-instagram" />
+        </a>
+
+        <!-- TODO: move the github repo to this URL -->
+        <a
+          class="navbar-item"
+          href="https://www.github.com/MikulasZelinka/ukrajinskaknizka/"
+        >
+          <i class="fa-brands fa-github" />
+        </a>
       </div>
     </div>
   </div>

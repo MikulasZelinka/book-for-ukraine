@@ -1,14 +1,17 @@
 <script type="ts">
-  import Text from "./Text.svelte";
-
-  export let number: number;
-  export let description: string;
-  export let texts;
-  export let objects;
+  import { Autoplay } from "../types/autoplay.enum";
+  import type { Story } from "../types/story.type";
+  import type { Page } from "../types/page.type";
 
   import { autoplay, languageOrder } from "../settings";
 
-  import { Autoplay } from "../types/autoplay.enum";
+  import Text from "./Text.svelte";
+
+  // export let number: number;
+  // export let stories: Story[];
+  export let page: Page;
+  // export let texts;
+  // export let objects;
 
   let textElements = {};
 
@@ -16,7 +19,7 @@
     console.log("handling", event.detail);
     let i = parseInt(event.detail.order);
 
-    if ($autoplay == Autoplay.OneLanguage && texts.length > i + 1) {
+    if ($autoplay == Autoplay.OneLanguage && page.stories.length > i + 1) {
       textElements[i + 1].play(event.detail.language);
     } else if ($autoplay == Autoplay.AllLanguages) {
       let langIndex = $languageOrder.indexOf(event.detail.language);
@@ -28,9 +31,14 @@
   }
 </script>
 
+<!-- {console.log("PAGE WORKS", page)} -->
+
 <div class="column is-half">
   <figure class="image">
-    <img src="resources/images/pozadi_{number % 2}.jpg" alt={description} />
+    <img
+      src="resources/images/pozadi_{page.number % 2}.jpg"
+      alt="Page {page.number}"
+    />
 
     <!-- <img
       src="resources/images/sova.png"
@@ -42,26 +50,51 @@
       style="position: absolute; top:50%; left:10%; width: auto"
     /> -->
 
-    {#each texts as text, i}
-      <Text
-        bind:this={textElements[i]}
-        page={number}
-        order={i}
-        {...text}
-        on:message={handleAudioEnd}
-      />
-    {/each}
+    <!-- {console.log("aa", page.stories)} -->
 
-    {#each objects as object, i}
-      <img
-        class="obj"
-        alt={object.name}
-        src="resources/images/{object.name}.png"
-        style="position: absolute; top:{object.top}%; left:{object.left}%; width: {object.width}%"
-      />
+    {#if page.number == 0}
+      <p style="position: absolute; top: 20%; left: 30%; font-size: x-large;">
+        Sem pak dokážu dát anotaci.
+      </p>
+    {/if}
+
+    {#if page.number == 1}
+      <p style="position: absolute; top: 60%; left: 20%; font-size: x-large;">
+        A sem dokážu dát autora a název knihy.
+      </p>
+    {/if}
+
+    {#each page.stories as story, i}
+      {#if story.translations}
+        <Text
+          bind:this={textElements[i]}
+          page={page.number}
+          order={i}
+          name={story.name}
+          translations={story.translations}
+          positions={story.positions_text}
+          on:message={handleAudioEnd}
+        />
+      {/if}
+
+      <!-- <p>{JSON.stringify(story)}</p> -->
+    {/each}
+    <!-- {...text} -->
+
+    {#each page.stories as story, i}
+      {#if story.position_image}
+        <img
+          class="obj"
+          alt={story.name}
+          src="resources/images/{story.name}.png"
+          style="position: absolute; top:{story.position_image
+            .top}%; left:{story.position_image.left}%; width: {story
+            .position_image.width}%"
+        />
+      {/if}
     {/each}
   </figure>
-  <p>{number}</p>
+  <p>{page.number}</p>
 </div>
 
 <style>
