@@ -38,6 +38,7 @@
     <img
       src="resources/images/pozadi_{page.number % 2}.jpg"
       alt="Page {page.number}"
+      class="background"
     />
 
     <!-- <img
@@ -98,8 +99,14 @@
 </div>
 
 <style>
-  /* Wiggle animation from: https://codepen.io/theDeanH/pen/zBZXLN */
+  .background {
+    z-index: -1;
+  }
 
+  .obj {
+    z-index: 0;
+  }
+  /* Wiggle animation from: https://codepen.io/theDeanH/pen/zBZXLN */
   .obj:hover,
   .obj:active {
     -webkit-animation-name: wiggle;
@@ -118,7 +125,7 @@
 
   @-webkit-keyframes wiggle {
     0% {
-      -webkit-transform: rotate(10deg);
+      -webkit-transform: rotate(0deg);
     }
     25% {
       -webkit-transform: rotate(-10deg);
@@ -136,7 +143,7 @@
 
   @-ms-keyframes wiggle {
     0% {
-      -ms-transform: rotate(1deg);
+      -ms-transform: rotate(0deg);
     }
     25% {
       -ms-transform: rotate(-1deg);
@@ -154,7 +161,7 @@
 
   @keyframes wiggle {
     0% {
-      transform: rotate(10deg);
+      transform: rotate(0deg);
     }
     25% {
       transform: rotate(-10deg);

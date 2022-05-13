@@ -77,10 +77,19 @@
 <!-- {#each textsSorted as [language, text]} -->
 {#each translations as translation}
   <div
-    style="position: absolute; top: {positions[
-      $languageOrder.indexOf(translation.lang)
-    ].top}%; left: {positions[$languageOrder.indexOf(translation.lang)].left}%;"
+    style="position: absolute;
+    border: 0px solid black;
+    top: {positions[$languageOrder.indexOf(translation.lang)]
+      .top}%; left: {positions[$languageOrder.indexOf(translation.lang)]
+      .left}%; width: {positions[$languageOrder.indexOf(translation.lang)]
+      .width}%; 
+     height: {positions[$languageOrder.indexOf(translation.lang)].height}%;
+    "
   >
+    <!-- <svg
+    viewBox="{positions[$languageOrder.indexOf(translation.lang)]
+      .left} {positions[$languageOrder.indexOf(translation.lang)].top} 100 100"
+  > -->
     <p
       on:click={() => play(translation.lang)}
       class:playing={langIsPlaying[translation.lang]}
@@ -88,22 +97,46 @@
     >
       {translation.text}
     </p>
+    <!-- </svg> -->
   </div>
 {/each}
 
 <style>
+  /* @import url("https://fonts.googleapis.com/css2?family=Open+Sans"); */
+
   p {
     /* TODO: make smooth weight transitions work even with this font-family spec: */
     /* font-family: Ubuntu, Arial, Helvetica, sans-serif; */
+    /* font-family: "Open Sans", Arial, Helvetica, sans-serif; */
+    /* font-family: "Arial"; */
+    /* font-family: "Ubuntu"; */
+    /* font-size: 1.5rem; */
     color: black;
     white-space: pre-line;
     text-align: left;
     font-weight: 600;
     /* font-size: 1vw; */
-    transition: font-weight 0.2s ease-in-out;
+    transition: font-weight 0.1s ease-in-out;
+    text-shadow: 1px 1px white, 1px -1px white, -1px 1px white, -1px -1px white;
+    line-height: 1.2;
   }
 
   .playing {
-    font-weight: 900;
+    font-weight: 750;
+  }
+
+  .author {
+    /* Ubuntu-light */
+    /* 300 */
+  }
+
+  .title {
+    /* Ubuntu-Bold */
+    /* 700 */
+  }
+
+  .story {
+    /* Ubuntu-Medium */
+    /* 500 */
   }
 </style>

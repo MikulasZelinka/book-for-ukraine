@@ -14,8 +14,17 @@ More broadly, you could use to project to implement a web-based book with playab
 
 These are urgent bugs or known issues. Other categories below are missing features.
 
-- [ ] Align texts according to the typeset version.
 - [ ] Properly load and use the correct (Ubuntu) font.
+  - [x] Temporarily using `Open Sans` instead as it's variable and can animate font weight
+    (until we have another playing indicator)
+- [ ] z-index issue
+  - Background now sometimes covers objects (rainbow cloud)
+  - Text should be in the foreground (above objects)
+  - Simply setting `z-index` doesn't seem to help :(
+
+### Fixed issues
+
+- [x] Align texts according to the typeset version.
 
 ### Settings
 
@@ -71,6 +80,13 @@ These are urgent bugs or known issues. Other categories below are missing featur
 - [ ] TODO
 
 ## Webdevlog
+
+### 2022-05-13
+
+Fixed problems with computed text boxes not matching the physical (typeset) version.
+The problem was caused by ingesting PSD (images, background) and PDF (texts) that had different backgrounds.
+
+The [text export script](./scripts/export_texts_from_pdf.py) now handles additional cuts (offsets) of the page.
 
 ### 2022-05-12
 
