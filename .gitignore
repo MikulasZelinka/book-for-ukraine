@@ -7,3 +7,5 @@
 .idea/
 
 public/resources/in
+
+__pycache__/

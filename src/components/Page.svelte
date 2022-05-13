@@ -6,6 +6,8 @@
   import { autoplay, languageOrder } from "../settings";
 
   import Text from "./Text.svelte";
+  import Annotation from "./Annotation.svelte";
+  import Title from "./Title.svelte";
 
   // export let number: number;
   // export let stories: Story[];
@@ -54,15 +56,11 @@
     <!-- {console.log("aa", page.stories)} -->
 
     {#if page.number == 0}
-      <p style="position: absolute; top: 20%; left: 30%; font-size: x-large;">
-        Sem pak dokážu dát anotaci.
-      </p>
+      <Annotation />
     {/if}
 
     {#if page.number == 1}
-      <p style="position: absolute; top: 60%; left: 20%; font-size: x-large;">
-        A sem dokážu dát autora a název knihy.
-      </p>
+      <Title />
     {/if}
 
     {#each page.stories as story, i}
