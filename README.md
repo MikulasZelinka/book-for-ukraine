@@ -16,15 +16,16 @@ These are urgent bugs or known issues. Other categories below are missing featur
 
 - [ ] Properly load and use the correct (Ubuntu) font.
   - [x] Temporarily using `Open Sans` instead as it's variable and can animate font weight
-    (until we have another playing indicator)
-- [ ] z-index issue
-  - Background now sometimes covers objects (rainbow cloud)
-  - Text should be in the foreground (above objects)
-  - Simply setting `z-index` doesn't seem to help :(
+        (until we have another playing indicator)
 
 ### Fixed issues
 
 - [x] Align texts according to the typeset version.
+- [x] z-index issue
+  - Nevermind, `z-index` worked, but only non-negative values
+  - ~Background now sometimes covers objects (rainbow cloud)~
+  - Text should be in the foreground (above objects)
+  - ~Simply setting `z-index` doesn't seem to help :(~
 
 ### Settings
 

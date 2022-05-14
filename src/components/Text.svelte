@@ -135,6 +135,7 @@
   }
 
   .story {
+    z-index: 2;
     /* Ubuntu-Medium */
     /* 500 */
   }

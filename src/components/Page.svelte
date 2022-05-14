@@ -101,12 +101,12 @@
 </div>
 
 <style>
-  .background {
+  /* .background {
     z-index: -1;
-  }
+  } */
 
   .obj {
-    z-index: 0;
+    z-index: 1;
   }
   /* Wiggle animation from: https://codepen.io/theDeanH/pen/zBZXLN */
   .obj:hover,
