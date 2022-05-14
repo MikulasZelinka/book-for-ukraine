@@ -1,4 +1,12 @@
-<div class="cs pr-1" style="position: absolute; top: 15%; left: 40%;">
+<script lang="ts">
+  export let columnWidth: number;
+  $: fontSize = columnWidth / 30;
+</script>
+
+<div
+  class="cs pr-3"
+  style="position: absolute; top: 15%; left: 40%; font-size: {fontSize}px"
+>
   <p>
     „Ya ne ponimayu,“ řekla mi copatá holčička rusky. Seděla odstrčená na kraji
     jednoho dejvického pískoviště. Byla polovina března 2022. „Ty rozumiyesh,“
@@ -7,7 +15,10 @@
   </p>
 </div>
 
-<div class="ua" style="position: absolute; top: 48%; left: 30%;">
+<div
+  class="ua pr-3"
+  style="position: absolute; top: 48%; left: 25%; font-size: {fontSize}px"
+>
   <p>
     «Я не понимаю», — сказала мені російською дівчинка з косичками. Вона
     самотньо сиділа на краю пісочниці на Дейвіце. Це була середина березня 2022
@@ -18,7 +29,6 @@
 
 <style>
   div {
-    font-size: large;
     font-style: italic;
     color: black;
   }
@@ -28,6 +38,6 @@
   }
 
   .ua {
-    text-align: left;
+    text-align: right;
   }
 </style>

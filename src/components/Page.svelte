@@ -58,11 +58,11 @@
     <!-- {console.log("aa", page.stories)} -->
 
     {#if page.number == 0}
-      <Annotation />
+      <Annotation {columnWidth} />
     {/if}
 
     {#if page.number == 1}
-      <Title />
+      <Title {columnWidth} />
     {/if}
 
     {#each page.stories as story, i}

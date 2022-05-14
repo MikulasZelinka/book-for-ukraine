@@ -18,6 +18,8 @@
 
   export let columnWidth: number;
 
+  $: fontSize = columnWidth / 41;
+
   let langToAudio = new Map<string, HTMLAudioElement>();
   // let langToAudio = {};
   let langIsPlaying = {};
@@ -94,7 +96,7 @@
       class:playing={langIsPlaying[translation.lang]}
       style="text-align: {translation.lang == 'cs'
         ? 'right'
-        : 'left'}; font-size: {columnWidth / 41}px;
+        : 'left'}; font-size: {fontSize}px;
       "
     >
       {translation.text}
