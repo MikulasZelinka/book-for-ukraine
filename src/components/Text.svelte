@@ -16,6 +16,8 @@
   export let translations: Translation[];
   export let positions: Position[];
 
+  export let columnWidth: number;
+
   let langToAudio = new Map<string, HTMLAudioElement>();
   // let langToAudio = {};
   let langIsPlaying = {};
@@ -77,27 +79,26 @@
 <!-- {#each textsSorted as [language, text]} -->
 {#each translations as translation}
   <div
+    class="story"
     style="position: absolute;
-    border: 0px solid black;
     top: {positions[$languageOrder.indexOf(translation.lang)]
       .top}%; left: {positions[$languageOrder.indexOf(translation.lang)]
       .left}%; width: {positions[$languageOrder.indexOf(translation.lang)]
       .width}%; 
      height: {positions[$languageOrder.indexOf(translation.lang)].height}%;
+     border: 0px solid red;
     "
   >
-    <!-- <svg
-    viewBox="{positions[$languageOrder.indexOf(translation.lang)]
-      .left} {positions[$languageOrder.indexOf(translation.lang)].top} 100 100"
-  > -->
     <p
       on:click={() => play(translation.lang)}
       class:playing={langIsPlaying[translation.lang]}
-      style="text-align: {translation.lang == 'cs' ? 'right' : 'left'}"
+      style="text-align: {translation.lang == 'cs'
+        ? 'right'
+        : 'left'}; font-size: {columnWidth / 41}px;
+      "
     >
       {translation.text}
     </p>
-    <!-- </svg> -->
   </div>
 {/each}
 
@@ -110,12 +111,10 @@
     /* font-family: "Open Sans", Arial, Helvetica, sans-serif; */
     /* font-family: "Arial"; */
     /* font-family: "Ubuntu"; */
-    /* font-size: 1.5rem; */
     color: black;
     white-space: pre-line;
     text-align: left;
     font-weight: 600;
-    /* font-size: 1vw; */
     transition: font-weight 0.1s ease-in-out;
     text-shadow: 1px 1px white, 1px -1px white, -1px 1px white, -1px -1px white;
     line-height: 1.2;

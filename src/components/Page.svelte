@@ -15,6 +15,8 @@
   // export let texts;
   // export let objects;
 
+  let columnWidth: number;
+
   let textElements = {};
 
   function handleAudioEnd(event) {
@@ -35,7 +37,7 @@
 
 <!-- {console.log("PAGE WORKS", page)} -->
 
-<div class="column is-half">
+<div class="column is-half" bind:clientWidth={columnWidth}>
   <figure class="image">
     <img
       src="resources/images/pozadi_{page.number % 2}.jpg"
@@ -67,6 +69,7 @@
       {#if story.translations}
         <Text
           bind:this={textElements[i]}
+          {columnWidth}
           page={page.number}
           order={i}
           name={story.name}
@@ -94,6 +97,7 @@
     {/each}
   </figure>
   <p>{page.number}</p>
+  <!-- <p>{columnWidth}</p> -->
 </div>
 
 <style>
