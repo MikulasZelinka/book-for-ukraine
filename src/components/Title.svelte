@@ -6,7 +6,7 @@
 
 <h2
   class="title cs"
-  style="position: absolute; top: 50%; left: 10%; width: 80%; font-size: {fontSize}rem;"
+  style="position: absolute; top: 34%; left: 8%; width: 80%; font-size: {fontSize}rem;"
 >
   Povídání
   <br />
@@ -14,7 +14,7 @@
 </h2>
 <h2
   class="title ua"
-  style="position: absolute; top: 62%; left: 5%; font-size: {fontSize}rem;"
+  style="position: absolute; top: 50%; left: 10%; width: 80%; font-size: {fontSize}rem;"
 >
   Розповідь
   <br />
@@ -29,10 +29,10 @@
   }
 
   .cs {
-    text-align: right;
+    text-align: left;
   }
 
   .ua {
-    text-align: left;
+    text-align: right;
   }
 </style>
