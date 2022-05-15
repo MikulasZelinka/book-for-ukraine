@@ -13,7 +13,7 @@
     </p>
 
     <p>
-      Děkuji všem spolupracovníkům a nakladatelství Pointa za pomoc uvést
+      Děkuji všem spolupracovníkům za pomoc uvést
       projekt do života bez nároku na honorář.
     </p>
 
