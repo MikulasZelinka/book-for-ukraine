@@ -55,6 +55,8 @@ These are urgent bugs or known issues. Other categories below are missing featur
 - [ ] Object animations
   - [x] Simple wiggle on hover/click
   - [ ] Temporarily animate/pop text and image to foreground
+- [x] Cursor pointer on clickable text/images
+- [ ] Also play the text in a selected language on image click in addition to text click
 
 ### Languages
 

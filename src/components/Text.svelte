@@ -120,6 +120,7 @@
     transition: font-weight 0.1s ease-in-out;
     text-shadow: 1px 1px white, 1px -1px white, -1px 1px white, -1px -1px white;
     line-height: 1.2;
+    cursor: pointer;
   }
 
   .playing {

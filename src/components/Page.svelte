@@ -107,6 +107,7 @@
 
   .obj {
     z-index: 1;
+    cursor: pointer;
   }
   /* Wiggle animation from: https://codepen.io/theDeanH/pen/zBZXLN */
   .obj:hover,
