@@ -1,6 +1,5 @@
 <script type="ts">
   import { Autoplay } from "../types/autoplay.enum";
-  import type { Story } from "../types/story.type";
   import type { Page } from "../types/page.type";
 
   import { autoplay, languageOrder } from "../settings";
@@ -9,15 +8,17 @@
   import Annotation from "./Annotation.svelte";
   import Title from "./Title.svelte";
 
-  // export let number: number;
-  // export let stories: Story[];
   export let page: Page;
-  // export let texts;
-  // export let objects;
 
-  let columnWidth: number;
+  let columnWidth: number = 0;
+  let innerWidth: number = 0;
 
   let textElements = {};
+
+  // 'duha' spans two pages and we have to dynamically:
+  // - show the overflow if we see two facing pages
+  // - hide the overflow if we see a single page (otherwise duha would well... overflow the page)
+  $: overflow = columnWidth / innerWidth < 0.9 ? "visible" : "hidden";
 
   function handleAudioEnd(event) {
     console.log("handling", event.detail);
@@ -35,27 +36,19 @@
   }
 </script>
 
-<!-- {console.log("PAGE WORKS", page)} -->
+<svelte:window bind:innerWidth />
 
-<div class="column is-half" bind:clientWidth={columnWidth}>
+<div
+  class="column is-half"
+  bind:clientWidth={columnWidth}
+  style="overflow: {overflow}"
+>
   <figure class="image">
     <img
       src="resources/images/pozadi_{page.number % 2}.jpg"
       alt="Page {page.number}"
       class="background"
     />
-
-    <!-- <img
-      src="resources/images/sova.png"
-      style="position: absolute; top:20%; left:40%; width:20%"
-    />
-
-    <img
-      src="resources/images/jesterka.png"
-      style="position: absolute; top:50%; left:10%; width: auto"
-    /> -->
-
-    <!-- {console.log("aa", page.stories)} -->
 
     {#if page.number == 0}
       <Annotation {columnWidth} />
@@ -78,14 +71,12 @@
           on:message={handleAudioEnd}
         />
       {/if}
-
-      <!-- <p>{JSON.stringify(story)}</p> -->
     {/each}
-    <!-- {...text} -->
 
     {#each page.stories as story, i}
       {#if story.position_image}
         <img
+          id={story.name}
           class="obj"
           alt={story.name}
           src="resources/images/{story.name}.png"
@@ -96,15 +87,10 @@
       {/if}
     {/each}
   </figure>
-  <p>{page.number}</p>
-  <!-- <p>{columnWidth}</p> -->
+  <!-- <p>{page.number}</p> -->
 </div>
 
 <style>
-  /* .background {
-    z-index: -1;
-  } */
-
   .obj {
     z-index: 1;
     cursor: pointer;

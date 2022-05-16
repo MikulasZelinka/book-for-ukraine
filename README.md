@@ -27,6 +27,7 @@ These are urgent bugs or known issues. Other categories below are missing featur
   - ~Background now sometimes covers objects (rainbow cloud)~
   - Text should be in the foreground (above objects)
   - ~Simply setting `z-index` doesn't seem to help :(~
+- [x] Overflow (`duha`) when viewing two pages, but don't overflow in the single page view
 
 ### Settings
 
@@ -50,7 +51,7 @@ These are urgent bugs or known issues. Other categories below are missing featur
 
 - [x] Better UI in general (navbar, ...)
   - [ ] Now make it even better
-- [ ] Equalise volume across languages (for example, `cs` is currently louder than `ua`)
+- [x] Equalise volume across languages (for example, `cs` is currently louder than `ua`)
 - [x] Inform about landscape mode on mobile
   - Solved by displaying single pages on mobile and two facing pages on desktop
 - [ ] Object animations
