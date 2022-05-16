@@ -3,11 +3,16 @@
 </script>
 
 <!-- TODO: better layout -->
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<nav
+  class="navbar is-fixed-top"
+  role="navigation"
+  aria-label="main navigation"
+  id="navbar"
+>
   <div class="navbar-brand">
     <a class="navbar-item" href="https://ukrajinskaknizka.cz">
       <img src="resources/images/holubice.png" alt="Logo holubice" />
-      <h1 class="title is-4 pl-5">Povídání modro-žluté krajiny</h1>
+      <h1 class="title is-5 pl-5">Povídání modro-žluté krajiny</h1>
       <!-- <h2 class="subtitle">Розповідь синьо-жовтого краю</h2> -->
     </a>
 
@@ -29,27 +34,31 @@
     <div class="navbar-start" />
 
     <div class="navbar-end">
+      <a class="navbar-item">O knížce</a>
+      <a class="navbar-item">Tvůrci</a>
+      <a class="navbar-item">Kontakt</a>
+
+      <a class="navbar-item" href="https://www.facebook.com/ukrajinskaknizka">
+        <i class="fa-brands fa-facebook" />
+        <span class="is-hidden-desktop">Facebook: ukrajinskaknizka</span>
+      </a>
+
+      <a class="navbar-item" href="https://www.instagram.com/ukrajinskaknizka/">
+        <i class="fa-brands fa-instagram" />
+        <span class="is-hidden-desktop">Instagram: ukrajinskaknizka</span>
+      </a>
+
+      <!-- TODO: move the github repo to this URL -->
+      <a
+        class="navbar-item"
+        href="https://github.com/MikulasZelinka/book-for-ukraine"
+      >
+        <i class="fa-brands fa-github" />
+        <span class="is-hidden-desktop">GitHub: book-for-ukraine</span>
+      </a>
+
       <div class="navbar-item has-dropdown is-hoverable">
         <Settings />
-
-        <a class="navbar-item" href="https://www.facebook.com/ukrajinskaknizka">
-          <i class="fa-brands fa-facebook" />
-        </a>
-
-        <a
-          class="navbar-item"
-          href="https://www.instagram.com/ukrajinskaknizka/"
-        >
-          <i class="fa-brands fa-instagram" />
-        </a>
-
-        <!-- TODO: move the github repo to this URL -->
-        <a
-          class="navbar-item"
-          href="https://www.github.com/MikulasZelinka/ukrajinskaknizka/"
-        >
-          <i class="fa-brands fa-github" />
-        </a>
       </div>
     </div>
   </div>

@@ -49,21 +49,32 @@
 
 <!-- TODO: submenu overflows from view on hover -->
 
-<a class="navbar-link"> Nastavení </a>
+<span class="navbar-link"> Nastavení </span>
 
-<div class="navbar-dropdown">
-  <span class="navbar-item">
-    Automatické přehrávání:
-    <select bind:value={_autoplay}>
-      {#each Object.values(Autoplay) as autoplayString}
-        <option value={autoplayString} selected>
-          {autoplayString}
-        </option>
-      {/each}
-    </select>
-  </span>
-  <a class="navbar-item"> Tady </a>
-  <a class="navbar-item"> Budou </a>
+<div class="navbar-dropdown is-right">
+  <div class="navbar-item field is-horizontal">
+    <div class="field-label is-normal">
+      <label class="label">Automatické přehrávání</label>
+    </div>
+    <div class="field-body">
+      <div class="field is-narrow">
+        <div class="control has-icons-left">
+          <div class="select">
+            <select bind:value={_autoplay}>
+              {#each Object.values(Autoplay) as autoplayString}
+                <option value={autoplayString} selected>
+                  {autoplayString}
+                </option>
+              {/each}
+            </select>
+          </div>
+          <div class="icon is-small is-left">
+            <i class="fa-solid fa-play" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <hr class="navbar-divider" />
-  <a class="navbar-item"> Další možnosti </a>
 </div>

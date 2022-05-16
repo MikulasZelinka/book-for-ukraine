@@ -33,6 +33,19 @@
   </div>
 </main>
 
+<section class="section is-medium">
+  <h1 class="title">O projektu</h1>
+  <div class="columns" style="overflow:hidden;">
+    <div class="column">
+      <h2 class="subtitle">Knížka</h2>
+      <p>Cílem je vystiknout a zdarma poskytnout knížku ukrajinským dětem.</p>
+    </div>
+    <div class="column">
+      <h2 class="subtitle">Autoři</h2>
+      <p>Na projektu se dobrovolně a bez nároku na odměnu podílí:</p>
+    </div>
+  </div>
+</section>
 <Footer />
 
 <style>
