@@ -14,6 +14,7 @@ More broadly, you could use to project to implement a web-based book with playab
 
 These are urgent bugs or known issues. Other categories below are missing features.
 
+- [ ] Content is all messed up for a second while the page is loading
 - [ ] Properly load and use the correct (Ubuntu) font.
   - [x] Temporarily using `Open Sans` instead as it's variable and can animate font weight
         (until we have another playing indicator)
