@@ -39,7 +39,7 @@
 <svelte:window bind:innerWidth />
 
 <div
-  class="column is-half"
+  class="column is-half mb-1"
   bind:clientWidth={columnWidth}
   style="overflow: {overflow}"
 >
