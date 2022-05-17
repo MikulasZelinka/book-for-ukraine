@@ -34,15 +34,53 @@
 </main>
 
 <section class="section is-medium">
-  <h1 class="title">O projektu</h1>
-  <div class="columns" style="overflow:hidden;">
-    <div class="column">
-      <h2 class="subtitle">Knížka</h2>
-      <p>Cílem je vystiknout a zdarma poskytnout knížku ukrajinským dětem.</p>
-    </div>
-    <div class="column">
-      <h2 class="subtitle">Autoři</h2>
-      <p>Na projektu se dobrovolně a bez nároku na odměnu podílí:</p>
+  <div class="content">
+    <div class="columns is-desktop" style="overflow:hidden;">
+      <div class="column">
+        <h2 class="title" id="o-projektu">O projektu</h2>
+        <p>
+          Cílem je pomoci integrovat ukrajinské děti, vykouzlit na jejich
+          tvářích úsměvy a hravou formou je seznámit s češtinou. Projekt však
+          poskytuje prostor pro oboustrannou kulturní výměnu.
+        </p>
+
+        <p>
+          Webová verze brzy nabídne i další jazyky. K webu vzniká obrázková
+          knížka s bilingvním pexesem k procvičení slovíček.
+        </p>
+
+        <p>
+          Podpoříte nás? Sledujte nás na sociálních sítích, chystáme
+          crowdfundingovou kampaň.
+        </p>
+      </div>
+      <div class="column">
+        <h2 class="title" id="tvurci">Tvůrci</h2>
+        <ul>
+          <li>
+            Web: <a href="https://github.com/MikulasZelinka">Mikuláš Zelinka</a
+            >, mikulas<span style="display:none">name</span>@zelinka.dev
+          </li>
+          <li>
+            Obrázky a texty: Tereza Axmannová, tereza.axmann<span
+              style="display:none">name</span
+            >@gmail.com
+          </li>
+          <li>Ukrajinský překlad: Anastasia Litvincová</li>
+          <li>Grafické zpracování obrázků: Tereza Drnovcová</li>
+          <li>
+            Sazba: Martin Koukl, martin.design.grafika<span style="display:none"
+              >name</span
+            >@gmail.com
+          </li>
+          <li>Redakce a korektura: Eva Trčková</li>
+        </ul>
+
+        <p>
+          Děkuji všem spolupracovníkům za pomoc uvést projekt do života bez
+          nároku na honorář.
+        </p>
+      </div>
     </div>
   </div>
 </section>

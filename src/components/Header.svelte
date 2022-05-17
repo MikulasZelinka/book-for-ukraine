@@ -29,9 +29,8 @@
     <div class="navbar-start" />
 
     <div class="navbar-end">
-      <a class="navbar-item">O knížce</a>
-      <a class="navbar-item">Tvůrci</a>
-      <a class="navbar-item">Kontakt</a>
+      <a class="navbar-item" href="#o-projektu">O projektu</a>
+      <a class="navbar-item" href="#tvurci">Tvůrci</a>
 
       <a class="navbar-item" href="https://www.facebook.com/ukrajinskaknizka">
         <i class="fa-brands fa-facebook" />

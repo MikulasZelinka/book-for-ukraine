@@ -1,22 +1,9 @@
-<footer class="footer">
-  <!-- TODO: better layout -->
-
-  <!-- prettier-ignore -->
+<footer class="footer pb-6">
   <div class="content has-text-centered">
     <p>
-      Obrázky a texty: Tereza Axmannová,
-      grafické zpracování obrázků: Tereza Drnovcová,
-      sazba: Martin Koukl,
-      překlad Anastasia Litvincová,
-      redakce a korektura: Eva Trčková,
-      web: <a href="https://github.com/MikulasZelinka">Mikuláš Zelinka</a>.
+      Built with <a href="https://svelte.dev/">Svelte</a>,
+      <a href="https://bulma.io/">Bulma</a>
+      and lots of 🍫.
     </p>
-
-    <p>
-      Děkuji všem spolupracovníkům za pomoc uvést
-      projekt do života bez nároku na honorář.
-    </p>
-
-
   </div>
 </footer>
