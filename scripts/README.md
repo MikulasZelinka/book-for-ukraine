@@ -22,7 +22,7 @@ The [`resources/in`](../public/resources/in) folder (which is ignored and missin
 
 ### Texts
 
-- `Překlady básniček – Povídání modro-žluté krajiny - Sheet1.csv`
+- `Překlady básniček – Povídání modro-žluté krajiny - Básničky.csv`
   - All translated texts
   - Source: exported from the [main spreadsheet](https://docs.google.com/spreadsheets/d/1Gb0XqligJd2rXgUbyGpjv3FkJ4oXwpma8pFi9hiwHqY/edit#gid=0) as CSV
 
@@ -32,13 +32,12 @@ The [`resources/in`](../public/resources/in) folder (which is ignored and missin
   - Typeset text positions, exported from InDesign to PDF
   - Source: typesetter shares the file manually
 
-
 ### Audio
 
-- `audio/{lang}/{lang}_{name.WAV}`
+- `audio/{lang}/{lang}_{name.wav}`
   - for all supported languages in `lang`
     - for all book entities `name`
-  - Source: [Nahrávky in Google Drive](https://drive.google.com/drive/u/0/folders/1ZX27BcAXhQlOexnOGqqE3us0DAQCJGka)
+  - Source: [Nahrávky in Google Drive](https://drive.google.com/drive/folders/14TxNzd7-P6GbwDFFwFzvY_YrEAHoccw9?zx=ipgu1ee6heo)
 
 ### Images
 
