@@ -7,7 +7,7 @@ Available (in 🇨🇿 and 🇺🇦) to browse for free: https://ukrajinskaknizk
 
 More languages are soon to come.
 
-Please, do get in touch ([create an issue!](issues/new))
+Please, do get in touch ([create an issue!](https://github.com/MikulasZelinka/book-for-ukraine/issues/new))
 if you'd like to collaborate on this project in any way, e.g.:
 
 - help translate or record in(to) your native language
@@ -22,7 +22,7 @@ Ideally, this project would be decoupled from the assets and serve as a general-
 
 ## TODO
 
-We'll slowly move these into proper [Issues](issues) once collaboration starts.
+We'll slowly move these into proper [Issues](https://github.com/MikulasZelinka/book-for-ukraine/issues) once collaboration starts.
 
 ### Issues
 
