@@ -3,12 +3,7 @@
 </script>
 
 <!-- TODO: better layout -->
-<nav
-  class="navbar is-fixed-top"
-  role="navigation"
-  aria-label="main navigation"
-  id="navbar"
->
+<nav class="navbar is-fixed-top" aria-label="main navigation" id="navbar">
   <div class="navbar-brand">
     <a class="navbar-item" href="https://ukrajinskaknizka.cz">
       <img src="resources/images/holubice.png" alt="Logo holubice" />
@@ -16,7 +11,7 @@
       <!-- <h2 class="subtitle">Розповідь синьо-жовтого краю</h2> -->
     </a>
 
-    <a
+    <span
       role="button"
       class="navbar-burger"
       aria-label="menu"
@@ -27,7 +22,7 @@
       <span aria-hidden="true" />
       <span aria-hidden="true" />
       <span aria-hidden="true" />
-    </a>
+    </span>
   </div>
 
   <div id="navbarBasicExample" class="navbar-menu">

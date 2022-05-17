@@ -27,28 +27,6 @@
   }
 </script>
 
-<!-- <form> -->
-
-<!-- <div class="columns is-vcentered">
-      <div class="column">Language order</div>
-
-      <div class="column"> -->
-<!-- TODO: 
-        
-        [Violation] Added non-passive event listener to a scroll-blocking 'touchstart' event. Consider marking event handler as 'passive' to make the page more responsive. See https://www.chromestatus.com/feature/5745543795965952
-        -->
-<!-- <DragDropList bind:data={_languageOrder} removesItems={false} />
-      </div>
-    </div> -->
-
-<!-- </form> -->
-
-<!-- <form> -->
-
-<!-- </form> -->
-
-<!-- TODO: submenu overflows from view on hover -->
-
 <span class="navbar-link"> Nastavení </span>
 
 <div class="navbar-dropdown is-right">
