@@ -1,4 +1,4 @@
-# Book for Ukraine
+# [Book for Ukraine](https://ukrajinskaknizka.cz)
 
 An open-source implementation of the Czech-Ukrainian book for children,
 [**Povídání modro-žluté krajiny**](https://ukrajinskaknizka.cz).
@@ -7,20 +7,22 @@ Available (in 🇨🇿 and 🇺🇦) to browse for free: https://ukrajinskaknizk
 
 More languages are soon to come.
 
-Please, do get in touch ([create an issue!](https://github.com/MikulasZelinka/book-for-ukraine/issues/new))
-if you'd like to collaborate on this project (either by code)
-in any way, e.g.:
+Please, do get in touch ([create an issue!](issues/new))
+if you'd like to collaborate on this project in any way, e.g.:
 
 - help translate or record in(to) your native language
 - implement any of the [fixes or features mentioned below](#TODO)
 
 In short, all forms of contribution are welcome :)
+Most importantly, please do share the website with anyone
+who might find it useful or enjoyable.
 
 And more generally, feel free to adapt this project to implement any other web-based book with playable text recordings.
+Ideally, this project would be decoupled from the assets and serve as a general-purpose web-audio-book toolkit but there hasn't been enough time for that yet.
 
 ## TODO
 
-We'll slowly move these into proper Issues once collaboration starts.
+We'll slowly move these into proper [Issues](issues) once collaboration starts.
 
 ### Issues
 
