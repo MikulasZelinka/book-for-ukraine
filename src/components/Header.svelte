@@ -7,7 +7,7 @@
   <div class="navbar-brand">
     <a class="navbar-item" href="https://ukrajinskaknizka.cz">
       <img src="resources/images/holubice.png" alt="Logo holubice" />
-      <h1 class="title is-5 pl-5">Povídání modro-žluté krajiny</h1>
+      <h1 class="title is-5 pl-3 ">Povídání modro-žluté krajiny</h1>
       <!-- <h2 class="subtitle">Розповідь синьо-жовтого краю</h2> -->
     </a>
 
