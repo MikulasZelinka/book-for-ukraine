@@ -38,8 +38,10 @@
 
 <svelte:window bind:innerWidth />
 
+<!-- We want the two-facing-pages view (two columns, open book) from 1024px and above -->
+<!-- and the one-page view below that -->
 <div
-  class="column is-half mb-1"
+  class="column is-6-desktop is-12-tablet mb-1"
   bind:clientWidth={columnWidth}
   style="overflow: {overflow}"
 >
