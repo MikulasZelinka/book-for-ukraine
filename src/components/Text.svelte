@@ -68,6 +68,7 @@
   <audio
     bind:this={langToAudio[translation.lang]}
     on:ended={(e) => onAudioEnd(translation.lang, order)}
+    preload="none"
   >
     <source
       src="resources/audio/{translation.lang}/{translation.lang}_{name}.mp3"
@@ -105,26 +106,22 @@
 {/each}
 
 <style>
-  /* @import url("https://fonts.googleapis.com/css2?family=Open+Sans"); */
-
   p {
-    /* TODO: make smooth weight transitions work even with this font-family spec: */
-    /* font-family: Ubuntu, Arial, Helvetica, sans-serif; */
-    /* font-family: "Open Sans", Arial, Helvetica, sans-serif; */
-    /* font-family: "Arial"; */
-    /* font-family: "Ubuntu"; */
     color: black;
     white-space: pre-line;
     text-align: left;
-    font-weight: 600;
-    transition: font-weight 0.1s ease-in-out;
+    /* Ubuntu doesn't have variable font weight, we animate scale instead */
+    /* font-weight: 500; */
+    font-weight: 700;
+    transition: all 0.4s ease-in-out;
     text-shadow: 1px 1px white, 1px -1px white, -1px 1px white, -1px -1px white;
     line-height: 1.2;
     cursor: pointer;
   }
 
   .playing {
-    font-weight: 750;
+    /* font-weight: 700; */
+    transform: scale(1.1);
   }
 
   .author {

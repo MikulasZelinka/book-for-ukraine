@@ -8,6 +8,10 @@
 	<title>Povídání modro-žluté krajiny | Розповідь синьо-жовтого краю | Obrázková kniha pro děti a rodiče s
 		česko-ukrajinskými básničkami</title>
 
+	<!-- SEO -->
+	<meta name="description" content="Knížka pro Ukrajinu. česko-ukrajinská knížka pro děti i dospělé,
+		kromě obrázků obsahuje i krátké audio básničky, které je možné si přehrát v obou jazycích.">
+
 
 	<!-- Favicon generated using resoures/images/logo.png at https://realfavicongenerator.net/  -->
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -26,14 +30,10 @@
 		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-	<!-- Font -->
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet" />
-	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700" rel="stylesheet">
-
 	<!-- CSS: Global project-specific -->
 	<link rel='stylesheet' href='/global.css'>
 
-	<!-- To see 1) visits, 2) outbound clicks -->
+	<!-- Minimal Google analytics import, to see 1) visits, 2) outbound clicks -->
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SH76F2JQDD"></script>
 	<script>
@@ -49,17 +49,22 @@
 	<script defer src='/build/bundle.js'></script>
 
 	<script>
+		// Scrollbar hiding from:
 		// https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp
+		// I guess it should be refactor elsewhere/to a component and use Svelte?
+		// ... but they, this worked first try ¯\_(ツ)_/¯
 		var prevScrollpos = window.pageYOffset;
 		window.onscroll = function () {
 			var currentScrollPos = window.pageYOffset;
 			if (prevScrollpos > currentScrollPos) {
 				document.getElementById("navbar").style.top = "0";
 			} else {
+				// 52 px is the actual height, for some reason ¯\_(ツ)_/¯
 				document.getElementById("navbar").style.top = "-52px";
 			}
 			prevScrollpos = currentScrollPos;
-		} 
+		}
+		// ... and one more shrug, just for fun! ¯\_(ツ)_/¯
 	</script>
 </head>
 
