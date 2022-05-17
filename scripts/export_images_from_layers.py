@@ -102,6 +102,7 @@ def export_layers(background_layer, path: Path, target_width=0, target_height=0)
             }
 
             layer_image.save(path / 'images' / f'{layer.name}.png')
+            layer_image.save(path / 'images' / f'{layer.name}.webp', quality=80, method=6)
         else:
             # ...and background is the only layer we want to save as a jpg (as it doesn't have transparency)
             if layer_image.mode == 'RGBA':

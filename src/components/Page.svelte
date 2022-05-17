@@ -75,15 +75,23 @@
 
     {#each page.stories as story, i}
       {#if story.position_image}
-        <img
-          id={story.name}
-          class="obj"
-          alt={story.name}
-          src="resources/images/{story.name}.png"
-          style="position: absolute; top:{story.position_image
-            .top}%; left:{story.position_image.left}%; width: {story
-            .position_image.width}%"
-        />
+        <picture>
+          <source
+            type="image/webp"
+            srcset="resources/images/{story.name}.webp"
+          />
+          <source type="image/png" srcset="resources/images/{story.name}.png" />
+          <img
+            src="resources/images/{story.name}.png"
+            id={story.name}
+            class="obj"
+            alt={story.name}
+            style="position: absolute; top:{story.position_image
+              .top}%; left:{story.position_image.left}%; width: {story
+              .position_image.width}%"
+            loading="lazy"
+          />
+        </picture>
       {/if}
     {/each}
   </figure>
