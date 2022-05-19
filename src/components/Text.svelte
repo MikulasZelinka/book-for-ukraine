@@ -34,7 +34,7 @@
 
   function onAudioEnd(language, order) {
     langIsPlaying[language] = false;
-    console.log("ended:", page, language, order);
+    // console.log("ended:", page, language, order);
     dispatch("message", {
       language: language,
       order: order,
@@ -42,8 +42,8 @@
   }
 
   export function play(language) {
-    console.debug("playing lang", language);
-    console.debug("audio map", langToAudio);
+    // console.debug("playing lang", language);
+    // console.debug("audio map", langToAudio);
 
     langIsPlaying[language] = true;
     langToAudio[language].play();

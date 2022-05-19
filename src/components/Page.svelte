@@ -21,7 +21,7 @@
   $: overflow = columnWidth / innerWidth < 0.9 ? "visible" : "hidden";
 
   function handleAudioEnd(event) {
-    console.log("handling", event.detail);
+    // console.log("handling", event.detail);
     let i = parseInt(event.detail.order);
 
     if ($autoplay == Autoplay.OneLanguage && page.stories.length > i + 1) {
