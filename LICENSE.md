@@ -5,15 +5,16 @@ from the media content (image, audio and text assets).
 
 ## Media content
 
-The image, audio and text content for the book and the website (mostly in the [resources directory](./public/resources/) are all © by their respective authors, all rights reserved.
+The image, audio and text content for the book and its website version
+(mostly in the [resources directory](./public/resources/))
+are all © by their respective authors, all rights reserved.
 
 ## Source code
 
-The underlying source code (mostly in the
-[src directory](./src/)
-and the
-[scripts directory](./scripts/))
-used to generate, serve and display the resulting website is licensed under the MIT license:
+The underlying source code
+(mostly in the [src directory](./src/) and the [scripts directory](./scripts/))
+used to generate, serve and display the resulting website
+is licensed under the MIT license:
 
 MIT License
 
