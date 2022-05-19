@@ -7,8 +7,9 @@
     "autoplay": "Autoplay",
     "aboutSection": {
         "goal": "We aim to help integrate Ukrainian children by introducing them to the Czech language in a bright and playful way and by putting smiles on their faces. ",
-        "future": "More languages are coming soon to the web version. We're also hard at work on a picture book and a bilingual match-a-pair card game to practice vocabulary.",
-        "support": "Please consider supporting and following us on social media, where we'll be launching a crowdfunding campaign."
+        "future": "More languages are coming soon to the web version. We're also hard at work on a picture book and a bilingual match-a-pair card game for vocabulary practice.",
+        "support": "Please consider supporting and following us on social media, where we'll be launching a crowdfunding campaign.",
+        "development": "If you're interested in the upcoming features for this website, have any problems, suggestions or would like to collaborate, please check out the project's"
     },
     "authorsSection": {
         "web": "Website",

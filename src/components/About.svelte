@@ -7,6 +7,7 @@
     <div class="columns is-desktop" style="overflow:hidden;">
       <div class="column">
         <h2 class="title" id="o-projektu">{$_("about")}</h2>
+
         <p>
           {$_("aboutSection.goal")}
         </p>
@@ -17,6 +18,13 @@
 
         <p>
           {$_("aboutSection.support")}
+        </p>
+
+        <p>
+          {$_("aboutSection.development")}
+          <a href="https://github.com/MikulasZelinka/book-for-ukraine"
+            ><i class="fa-brands fa-github" /> GitHub</a
+          >.
         </p>
       </div>
       <div class="column">
