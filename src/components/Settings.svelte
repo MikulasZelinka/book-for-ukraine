@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { _ } from "svelte-i18n";
+
   //   https://github.com/jwlarocque/svelte-dragdroplist
   // import DragDropList from "svelte-dragdroplist";
 
@@ -27,12 +29,12 @@
   }
 </script>
 
-<span class="navbar-link"> Nastavení </span>
+<span class="navbar-link">{$_("settings")}</span>
 
 <div class="navbar-dropdown is-right">
   <div class="navbar-item field is-horizontal">
     <div class="field-label is-normal">
-      <label class="label">Automatické přehrávání</label>
+      <label class="label">{$_("autoplay")}</label>
     </div>
     <div class="field-body">
       <div class="field is-narrow">

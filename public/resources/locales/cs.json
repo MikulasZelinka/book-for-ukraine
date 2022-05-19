@@ -1,0 +1,29 @@
+{
+    "loading": "Načítání",
+    "title": "Povídání modro-žluté krajiny",
+    "about": "O projektu",
+    "authors": "Tvůrci",
+    "settings": "Nastavení",
+    "autoplay": "Automatické přehrávání",
+    "language": "Jazyk",
+    "aboutSection": {
+        "goal": "Cílem je pomoci integrovat ukrajinské děti, vykouzlit na jejich tvářích úsměvy a hravou formou je seznámit s češtinou.",
+        "future": "Webová verze brzy nabídne i další jazyky. K webu vzniká obrázková knížka s bilingvním pexesem k procvičení slovíček.",
+        "support": "Podpoříte nás? Sledujte nás na sociálních sítích, chystáme crowdfundingovou kampaň."
+    },
+    "authorsSection": {
+        "web": "Web",
+        "content": "Obrázky a texty",
+        "translation_uk": "Ukrajinský překlad",
+        "translation_en": "Překlad webu",
+        "graphicDesign": "Grafické zpracování obrázků",
+        "typesetting": "Sazba",
+        "editing": "Redakce a korektura",
+        "acknowledgement": "Děkuji všem, kteří pomohli uvést projekt do života a vzdali se honoráře ve prospěch jeho smyslu. Tereza Axmannová"
+    },
+    "footerSection": {
+        "start": "Použité frameworky:",
+        "middle": ". ",
+        "end": "Použité energetické zdroje: spousta 🍫."
+    }
+}

@@ -1,5 +1,8 @@
 <script>
   import Settings from "./Settings.svelte";
+
+  import { _ } from "svelte-i18n";
+  import LocaleSelector from "./LocaleSelector.svelte";
 </script>
 
 <!-- TODO: better layout -->
@@ -7,7 +10,7 @@
   <div class="navbar-brand">
     <a class="navbar-item" href="https://ukrajinskaknizka.cz">
       <img src="resources/images/holubice.png" alt="Logo holubice" />
-      <h1 class="title is-5 pl-3 ">Povídání modro-žluté krajiny</h1>
+      <h1 class="title is-5 pl-3 ">{$_("title")}</h1>
       <!-- <h2 class="subtitle">Розповідь синьо-жовтого краю</h2> -->
     </a>
 
@@ -29,8 +32,12 @@
     <div class="navbar-start" />
 
     <div class="navbar-end">
-      <a class="navbar-item" href="#o-projektu">O projektu</a>
-      <a class="navbar-item" href="#tvurci">Tvůrci</a>
+      <div class="navbar-item">
+        <LocaleSelector />
+      </div>
+
+      <a class="navbar-item" href="#o-projektu">{$_("about")}</a>
+      <a class="navbar-item" href="#tvurci">{$_("authors")}</a>
 
       <a class="navbar-item" href="https://www.facebook.com/ukrajinskaknizka">
         <i class="fa-brands fa-facebook" />
@@ -51,9 +58,9 @@
         <span class="is-hidden-desktop">GitHub: book-for-ukraine</span>
       </a>
 
-      <div class="navbar-item has-dropdown is-hoverable">
+      <!-- <div class="navbar-item has-dropdown is-hoverable">
         <Settings />
-      </div>
+      </div> -->
     </div>
   </div>
 </nav>

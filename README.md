@@ -53,7 +53,7 @@ These are known issues or bugs. Other categories below are missing features.
 - [ ] Playback speed
 - [ ] Playback volume
 - [ ] Wait time between paragraphs/pages
-- [ ] Persist/cache settings
+- [ ] Persist/cache settings (states in general, including things like locale)
 - [ ] Allow alphabet conversions
 
 ### Reading flow
@@ -84,7 +84,8 @@ These are known issues or bugs. Other categories below are missing features.
 
 ### Languages
 
-- [ ] Generalise the website into multiple localisations (info/settings/... – not the actual book texts)
+- [x] Generalise the website into multiple localisations (info/settings/... – not the actual book texts)
+  - [ ] Try to [load user's locale by default](https://github.com/kaisermann/svelte-i18n/blob/main/docs/Getting%20Started.md#4-initializing)
 - [ ] Instead of arbitrary ordering, always select just two languages (and thus get their order implicitly)
 - [ ] Auto translation
 - [ ] Auto TTS
@@ -107,6 +108,13 @@ These are known issues or bugs. Other categories below are missing features.
 - [x] `<meta name="..." content="...">`
 
 ## Webdevlog
+
+### 2022-05-19
+
+Another major rework, this time I've added localisation support and translated the website to English.
+
+I think the website is now ready to be pre-released (i.e., released as a preview for testing purposes) –
+I've really wanted to add at least English support in order to not put everyone off immediately.
 
 ### 2022-05-16
 
