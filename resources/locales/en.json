@@ -1,0 +1,28 @@
+{
+    "loading": "Loading",
+    "title": "Little book for Ukraine",
+    "about": "About",
+    "authors": "Authors",
+    "settings": "Settings",
+    "autoplay": "Autoplay",
+    "aboutSection": {
+        "goal": "We aim to help integrate Ukrainian children by introducing them to the Czech language in a bright and playful way and by putting smiles on their faces. ",
+        "future": "More languages are coming soon to the web version. We're also hard at work on a picture book and a bilingual match-a-pair card game to practice vocabulary.",
+        "support": "Please consider supporting and following us on social media, where we'll be launching a crowdfunding campaign."
+    },
+    "authorsSection": {
+        "web": "Website",
+        "content": "Drawings and poems",
+        "translation_uk": "Translation to Ukranian",
+        "translation_en": "Website translation",
+        "graphicDesign": "Graphic design",
+        "typesetting": "Typesetting",
+        "editing": "Editing and proofreading",
+        "acknowledgement": "I'd like to thank everyone who has helped make this project happen and for working on it for free to support its cause. Tereza Axmannová"
+    },
+    "footerSection": {
+        "start": "Made with",
+        "middle": " ",
+        "end": "and lots of 🍫."
+    }
+}
