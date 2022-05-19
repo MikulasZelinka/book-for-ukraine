@@ -26,6 +26,6 @@
   },
   "dependencies": {
     "sirv-cli": "^2.0.0",
-    "svelte-dragdroplist": "^1.1.1"
+    "svelte-i18n": "^3.4.0"
   }
 }
