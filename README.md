@@ -3,15 +3,16 @@
 An open-source implementation of the Czech-Ukrainian book for children,
 [**Povídání modro-žluté krajiny**](https://ukrajinskaknizka.cz).
 
-Available (in 🇨🇿 and 🇺🇦) to browse for free: https://ukrajinskaknizka.cz
+The book isn't available yet (work in progress!),
+but the web version is available (in 🇨🇿 and 🇺🇦) to browse for free: https://ukrajinskaknizka.cz
 
-More languages are soon to come.
+More [languages](#languages) are soon to come.
 
 Please, do get in touch ([create an issue!](https://github.com/MikulasZelinka/book-for-ukraine/issues/new))
 if you'd like to collaborate on this project in any way, e.g.:
 
-- help translate or record in(to) your native language
-- implement any of the [fixes or features mentioned below](#TODO)
+- help translate or record in(to) your native language,
+- implement any of the [fixes or features mentioned below](#TODO) or in [Issues](https://github.com/MikulasZelinka/book-for-ukraine/issues).
 
 In short, all forms of contribution are welcome :)
 Most importantly, please do share the website with anyone
@@ -38,43 +39,19 @@ Currently, the following languages are supported:
 - 🇨🇿 Čeština
 - 🇬🇧 English
 - 🇺🇦 Українська
-  - Currently, only a machine-translated version is available ([help!](https://github.com/MikulasZelinka/book-for-ukraine/issues/2))
+  - Currently, only two machine-translated versions are available ([help!](https://github.com/MikulasZelinka/book-for-ukraine/issues/2))
 
 ## TODO
 
 We're slowly moving these into proper [Issues](https://github.com/MikulasZelinka/book-for-ukraine/issues).
 
-### Issues
-
-These are known issues or bugs. Other categories below are missing features.
-
-- [ ] Content is all messed up for a second while the page is loading
-
-### Fixed issues
-
-- [x] Align texts according to the typeset version.
-- [x] z-index issue
-  - Nevermind, `z-index` worked, but only non-negative values
-  - ~Background now sometimes covers objects (rainbow cloud)~
-  - Text should be in the foreground (above objects)
-  - ~Simply setting `z-index` doesn't seem to help :(~
-- [x] Overflow (`duha`) when viewing two pages, but don't overflow in the single page view
-- [x] Add a license (dual, MIT for code, copyright for assets)
-- [x] Properly load and use the correct (Ubuntu) font.
-  - [x] ~Temporarily using `Open Sans` instead as it's variable and can animate font weight (until we have another playing indicator)~
-
 ### Settings
 
-- [ ] Reorder languages (implemented earlier, currently disabled)
-  - [ ] If we have more languages: allow disabling some languages
-  - [ ] Alternatively, replace by [always selecting two languages](#Languages)
-- [x] Autoplay
-  - [ ] More options: one/many languages, one/many pages
 - [ ] Playback speed
 - [ ] Playback volume
-- [ ] Wait time between paragraphs/pages
+- [ ] Wait time between paragraphs/pages when autoplaying (see [Reading flow](#reading-flow))
 - [ ] Persist/cache settings (states in general, including things like locale)
-- [ ] Allow alphabet conversions
+- [ ] Allow alphabet conversions (transliteration)
 
 ### Reading flow
 
@@ -108,14 +85,9 @@ These are known issues or bugs. Other categories below are missing features.
 - [x] Generalise the website into multiple localisations (info/settings/... – not the actual book texts)
   - [ ] Try to [load user's locale by default](https://github.com/kaisermann/svelte-i18n/blob/main/docs/Getting%20Started.md#4-initializing)
 - [ ] Instead of arbitrary ordering, always select just two languages (and thus get their order implicitly)
-- [ ] Auto translation
-- [ ] Auto TTS
-
-### Tech debt
-
-- [x] Proper typescriptification, including introducing types for the data structures loaded from jsons
-  - This would be very helpful for development as it would give us type hints among many other things
-  - Done at least partially for our custom types
+- [x] The following are probably out of scope (user can just use their device to translate/play text in(to) whatever language they please):
+  - [ ] ~Auto translation into unsupported languages~
+  - [ ] ~Auto TTS of languages without audio recordings~
 
 ### Loading times
 
@@ -128,7 +100,31 @@ These are known issues or bugs. Other categories below are missing features.
 
 - [x] `<meta name="..." content="...">`
 
+### Tech debt
+
+- [x] Proper typescriptification, including introducing types for the data structures loaded from jsons
+  - This would be very helpful for development as it would give us type hints among many other things
+  - Done at least partially for our custom types, no idea if it's `proper` in any way :)
+
+### Fixed issues
+
+- [x] Align texts according to the typeset version.
+- [x] z-index issue
+  - Nevermind, `z-index` worked, but only non-negative values
+  - ~Background now sometimes covers objects (rainbow cloud)~
+  - Text should be in the foreground (above objects)
+  - ~Simply setting `z-index` doesn't seem to help :(~
+- [x] Overflow (`duha`) when viewing two pages, but don't overflow in the single page view
+- [x] Add a license (dual, MIT for code, copyright for assets)
+- [x] Properly load and use the correct (Ubuntu) font.
+  - [x] ~Temporarily using `Open Sans` instead as it's variable and can animate font weight (until we have another playing indicator)~
+
 ## Webdevlog
+
+### 2022-05-20
+
+I've added at least machine translations to Ukraine for the website.
+Let's finally share the website to get some help and feedback :)
 
 ### 2022-05-19
 
