@@ -4,6 +4,9 @@ export enum Language {
   cs = "cs",
   en = "en",
   // uk = "uk",
+
+  uk_ct = "uk_ct",
+  uk_gt = "uk_gt",
 }
 
 //
@@ -14,6 +17,8 @@ export enum Language {
 let languageNames = new Map<Language, string>([
   [Language.cs, "Česky"],
   [Language.en, "English"],
+  [Language.uk_ct, "Українська (Charles Translator)"],
+  [Language.uk_gt, "Українська (Google Translate)"],
   // [Language.uk, "Українська"],
 ]);
 

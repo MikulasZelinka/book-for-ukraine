@@ -20,9 +20,29 @@ who might find it useful or enjoyable.
 And more generally, feel free to adapt this project to implement any other web-based book with playable text recordings.
 Ideally, this project would be decoupled from the assets and serve as a general-purpose web-audio-book toolkit but there hasn't been enough time for that yet.
 
+## Languages
+
+We treat the **website languages** separately from the **book languages** for multiple reasons.
+
+The book texts require fine-grained translations and human-defined typesetting.
+
+Currently, the following languages are supported:
+
+### Book languages
+
+- 🇨🇿 Čeština
+- 🇺🇦 Українська
+
+### Website languages
+
+- 🇨🇿 Čeština
+- 🇬🇧 English
+- 🇺🇦 Українська
+  - Currently, only a machine-translated version is available ([help!](https://github.com/MikulasZelinka/book-for-ukraine/issues/2))
+
 ## TODO
 
-We'll slowly move these into proper [Issues](https://github.com/MikulasZelinka/book-for-ukraine/issues) once collaboration starts.
+We're slowly moving these into proper [Issues](https://github.com/MikulasZelinka/book-for-ukraine/issues).
 
 ### Issues
 
@@ -61,6 +81,7 @@ These are known issues or bugs. Other categories below are missing features.
 - [ ] Pagination, page jumping
 - [x] Autoplay
   - [x] Play the following recordings in one page that follow the selected text implicitly
+    - Implemented but currently disabled because it's not very user-friendly, waiting for improvements there
   - [ ] One page in one or both languages (play in a circle, not just till the implicitly last one)
   - [ ] Across pages, with smooth jumps
 - [ ] Scroll/zoom to the current image/text when autoplaying
