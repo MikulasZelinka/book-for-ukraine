@@ -27,7 +27,7 @@ def add_objects_to_pages(
 
     for text_name, text_dict in texts.items():
         pages[text_dict['page']]['stories'][text_name]['translations'] = [
-            {'lang': lang, 'text': text}
+            {'lang': lang, 'texts': text}
             for lang, text in text_dict['translations'].items()
         ]
         pages[text_dict['page']]['stories'][text_name]['positions_text'] = text_dict['positions']

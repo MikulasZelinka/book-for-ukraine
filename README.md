@@ -51,7 +51,9 @@ We're slowly moving these into proper [Issues](https://github.com/MikulasZelinka
 - [ ] Playback volume
 - [ ] Wait time between paragraphs/pages when autoplaying (see [Reading flow](#reading-flow))
 - [ ] Persist/cache settings (states in general, including things like locale)
-- [ ] Allow alphabet conversions (transliteration)
+  - I guess this would require annoying cookie prompts, though? :(
+- [x] Allow alphabet conversions (transliteration)
+  - Implemented for the book texts (poems) which should be enough
 
 ### Reading flow
 
@@ -120,6 +122,14 @@ We're slowly moving these into proper [Issues](https://github.com/MikulasZelinka
   - [x] ~Temporarily using `Open Sans` instead as it's variable and can animate font weight (until we have another playing indicator)~
 
 ## Webdevlog
+
+### 2022-05-22
+
+I've shared the website in a couple of (semi-)public places and forums,
+including a [reddit post about the book as a Svelte project](https://www.reddit.com/r/sveltejs/comments/uvbdbx/bilingual_book_for_ukranian_children_as_an/).
+
+Still, there hasn't been much traffic yet (58 website visits (according to 🐐) and 4 GitHub ⭐ so far) and
+noone has yet offered to help with the Ukranian website translation.
 
 ### 2022-05-20
 

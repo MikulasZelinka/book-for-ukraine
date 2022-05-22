@@ -2,6 +2,7 @@
 https://stackoverflow.com/questions/22898145/how-to-export-text-and-text-coordinates-from-a-pdf-filepdf
 """
 import json
+from collections import defaultdict
 from pathlib import Path
 from pprint import pprint
 from typing import Iterable, Any
@@ -12,11 +13,13 @@ from PIL.ImageDraw import ImageDraw
 from pdfminer.high_level import extract_pages
 from pdfminer.layout import LTTextBoxHorizontal, LTPage, LTFigure
 
+from cs_uk_transliteration import cs_to_uk, uk_to_cs
 from export_images_from_layers import to_percent
 
 
 def load_translations(
-        path=Path(r'E:\code\svitej\public\resources\in\Překlady básniček – Povídání modro-žluté krajiny - Básničky.csv')
+        path=Path(
+            r'E:\code\svitej\public\resources\in\Překlady textů a webu – Povídání modro-žluté krajiny - Básničky.csv')
 ):
     """
     Data source:
@@ -104,10 +107,17 @@ def export_texts_from_pdf(o: Any, text_to_id_lang, texts, images, depth=0):
                 lang = text_to_id_lang[text]['lang']
 
                 if name not in texts:
-                    texts[name] = {'positions': [], 'translations': {}}
+                    texts[name] = {'positions': [], 'translations': defaultdict(dict)}
 
                 texts[name]['page'] = page_current
-                texts[name]['translations'][lang] = text
+
+                script = 'cyrillic' if lang == 'uk' else 'latin'
+
+                texts[name]['translations'][lang][script] = text
+                if script == 'cyrillic':
+                    texts[name]['translations'][lang]['latin'] = uk_to_cs(text)
+                else:
+                    texts[name]['translations'][lang]['cyrillic'] = cs_to_uk(text)
 
                 top = (page_image.y1 + (to_readd_pct['top'] * page_image.height) - i.y1) / image_height
                 left = (i.x0 - (page_image.x0 + (to_readd_pct['left'] * page_image.width / 2)) - (

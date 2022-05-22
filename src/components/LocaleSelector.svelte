@@ -15,11 +15,14 @@
       on:change={() => setupI18n({ withLocale: Language[$locale] })}
     >
       {#each Object.keys(Language) as lang}
-        <option value={Language[lang]}>
-          <!-- doesn't work inside option, unfortunately -->
-          <!-- <span class="fi fi-{languageCountries.get(Language[lang])}" /> -->
-          {languageNames.get(Language[lang])}
-        </option>
+        <!-- Currently, uk is machine-translated and we want to filter it out while keeping uk_ct and uk_gt -->
+        {#if languageNames.get(Language[lang])}
+          <option value={Language[lang]}>
+            <!-- doesn't work inside option, unfortunately -->
+            <!-- <span class="fi fi-{languageCountries.get(Language[lang])}" /> -->
+            {languageNames.get(Language[lang])}
+          </option>
+        {/if}
       {/each}
     </select>
   </div>

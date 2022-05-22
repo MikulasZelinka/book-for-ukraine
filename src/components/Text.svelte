@@ -1,13 +1,16 @@
 <script type="ts">
   import { createEventDispatcher } from "svelte";
 
-  import { languageOrder } from "../settings";
+  import { currentScript, languageOrder } from "../settings";
+  import { languageScripts } from "../types/language.enum";
 
   import type { Position } from "../types/position.type";
+  import { Script } from "../types/script.enum";
   import type { Translation } from "../types/translation.type";
 
   const dispatch = createEventDispatcher();
 
+  // TODO: unused, remove here and from the generation script
   export let page: number;
   export let order: number;
 
@@ -81,16 +84,27 @@
 <!-- TODO: respect language sorting again if it's surfaced in settings -->
 <!-- {#each textsSorted as [language, text]} -->
 {#each translations as translation}
-  <div
+  <!-- <div
     class="story"
     style="position: absolute;
     top: {positions[$languageOrder.indexOf(translation.lang)]
       .top}%; left: {positions[$languageOrder.indexOf(translation.lang)]
-      .left}%; width: {positions[$languageOrder.indexOf(translation.lang)]
+      .left}%;width: {positions[$languageOrder.indexOf(translation.lang)]
       .width}%; 
      height: {positions[$languageOrder.indexOf(translation.lang)].height}%;
      border: 0px solid red;
     "
+  > -->
+
+  <!-- Can ignore width % to not overflow in different scripts -->
+  <div
+    class="story"
+    style="position: absolute; top: {positions[
+      $languageOrder.indexOf(translation.lang)
+    ].top}%; left: {positions[$languageOrder.indexOf(translation.lang)].left}%;
+   height: {positions[$languageOrder.indexOf(translation.lang)].height}%;
+   border: 0px solid red;
+  "
   >
     <p
       on:click={() => play(translation.lang)}
@@ -100,7 +114,11 @@
         : 'left'}; font-size: {fontSize}px;
       "
     >
-      {translation.text}
+      {translation.texts[
+        $currentScript === Script.default
+          ? languageScripts.get(translation.lang)
+          : $currentScript
+      ]}
     </p>
   </div>
 {/each}

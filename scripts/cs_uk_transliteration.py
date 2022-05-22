@@ -154,16 +154,7 @@ def test_uppercase_keys():
             raise ValueError(f'{k} is not upper: {k.upper()}')
 
 
-test_uppercase_keys()
-
 CS_TO_UK = {k.lower(): v.lower() for k, v in CS_TO_UK_UPPER.items()} | CS_TO_UK_UPPER
-
-print(Counter(map(len, CS_TO_UK.keys())))
-print(Counter(map(len, UK_TO_CS.keys())))
-
-# Check that len(weird_unicode_string) works as expected
-print({k: v for k, v in UK_TO_CS.items() if len(k) > 1})
-print({k: v for k, v in CS_TO_UK.items() if len(k) > 1})
 
 
 def replacement_dict_to_regex(d: dict[str, str]) -> re.Pattern:
@@ -188,34 +179,43 @@ def uk_to_cs(text):
     return UK_TO_CS_REGEX.sub(lambda match: UK_TO_CS[match.group(0)], text)
 
 
-# Czech pangram:
-cs_test = "Příliš žluťoučký kůň v Chuchli úpěl ďábelské ódy."
-print(cs_test)
+if __name__ == '__main__':
+    test_uppercase_keys()
 
-cs_test_into_uk = cs_to_uk(cs_test)
-print(cs_test_into_uk)
-# Пржіліш жлутьоучки кунь в Хухлі упєл дьабелске оди.
+    print(Counter(map(len, CS_TO_UK.keys())))
+    print(Counter(map(len, UK_TO_CS.keys())))
 
-cs_test_into_uk_back_into_cs = uk_to_cs(cs_test_into_uk)
-print(cs_test_into_uk_back_into_cs)
+    # Check that len(weird_unicode_string) works as expected
+    print({k: v for k, v in UK_TO_CS.items() if len(k) > 1})
+    print({k: v for k, v in CS_TO_UK.items() if len(k) > 1})
 
-# We can't assert for equality here, as cs → uk → cs is missing (at least):
-# - čárky (a vs á, e vs é, etc.), kroužek (u vs ů)
-# - ě (pěl → pjel)
-# assert cs_test == cs_test_into_uk_back_into_cs
+    # Czech pangram:
+    cs_test = "Příliš žluťoučký kůň v Chuchli úpěl ďábelské ódy."
+    print(cs_test)
 
+    cs_test_into_uk = cs_to_uk(cs_test)
+    print(cs_test_into_uk)
+    # Пржіліш жлутьоучки кунь в Хухлі упєл дьабелске оди.
 
-# Ukranian pangram:
-# https://www.quora.com/What-is-a-sentence-in-Ukrainian-that-uses-every-letter-of-the-alphabet
-uk_test = "Єхидна, ґава, їжак ще й шиплячі плазуни бігцем форсують Янцзи."
-print(uk_test)
+    cs_test_into_uk_back_into_cs = uk_to_cs(cs_test_into_uk)
+    print(cs_test_into_uk_back_into_cs)
 
-uk_test_into_cs = uk_to_cs(uk_test)
-print(uk_test_into_cs)
-# "Jechydna, gava, jižak šče j šypljači plazuny bihcem forsujuť Janczy."
+    # We can't assert for equality here, as cs → uk → cs is missing (at least):
+    # - čárky (a vs á, e vs é, etc.), kroužek (u vs ů)
+    # - ě (pěl → pjel)
+    # assert cs_test == cs_test_into_uk_back_into_cs
 
-uk_test_into_cs_back_into_uk = cs_to_uk(uk_test_into_cs)
-print(uk_test_into_cs_back_into_uk)
-# "Єхидна, ґава, їжак ще й шиплячі плазуни бігцем форсують Янцзи."
+    # Ukranian pangram:
+    # https://www.quora.com/What-is-a-sentence-in-Ukrainian-that-uses-every-letter-of-the-alphabet
+    uk_test = "Єхидна, ґава, їжак ще й шиплячі плазуни бігцем форсують Янцзи."
+    print(uk_test)
 
-assert uk_test == uk_test_into_cs_back_into_uk
+    uk_test_into_cs = uk_to_cs(uk_test)
+    print(uk_test_into_cs)
+    # "Jechydna, gava, jižak šče j šypljači plazuny bihcem forsujuť Janczy."
+
+    uk_test_into_cs_back_into_uk = cs_to_uk(uk_test_into_cs)
+    print(uk_test_into_cs_back_into_uk)
+    # "Єхидна, ґава, їжак ще й шиплячі плазуни бігцем форсують Янцзи."
+
+    assert uk_test == uk_test_into_cs_back_into_uk

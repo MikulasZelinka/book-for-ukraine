@@ -1,9 +1,11 @@
+import { Script } from "./script.enum";
+
 export enum Language {
   // https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
   // https://meta.wikimedia.org/wiki/Template:List_of_language_names_ordered_by_code
   cs = "cs",
   en = "en",
-  // uk = "uk",
+  uk = "uk",
 
   uk_ct = "uk_ct",
   uk_gt = "uk_gt",
@@ -30,4 +32,9 @@ let languageCountries = new Map<Language, string>([
   // [Language.uk, "ua"],
 ]);
 
-export { languageNames, languageCountries };
+let languageScripts = new Map<Language, Script>([
+  [Language.cs, Script.latin],
+  [Language.uk, Script.cyrillic],
+]);
+
+export { languageNames, languageCountries, languageScripts };

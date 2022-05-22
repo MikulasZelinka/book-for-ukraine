@@ -26,5 +26,10 @@
         "start": "Použité frameworky:",
         "middle": ". ",
         "end": "Použité energetické zdroje: spousta 🍫."
+    },
+    "scripts": {
+        "default": "Výchozí písmo",
+        "latin": "Latinka",
+        "cyrillic": "Cyrilice"
     }
 }

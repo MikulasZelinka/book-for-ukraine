@@ -3,6 +3,7 @@
 
   import { _ } from "svelte-i18n";
   import LocaleSelector from "./LocaleSelector.svelte";
+  import ScriptSelector from "./ScriptSelector.svelte";
 </script>
 
 <!-- TODO: better layout -->
@@ -34,6 +35,9 @@
     <div class="navbar-end">
       <div class="navbar-item">
         <LocaleSelector />
+      </div>
+      <div class="navbar-item">
+        <ScriptSelector />
       </div>
 
       <a class="navbar-item" href="#o-projektu">{$_("about")}</a>
