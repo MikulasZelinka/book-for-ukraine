@@ -25,5 +25,10 @@
         "start": "Made with",
         "middle": " ",
         "end": "and lots of 🍫."
+    },
+    "scripts": {
+        "default": "Default script",
+        "latin": "Latin",
+        "cyrillic": "Cyrillic"
     }
 }

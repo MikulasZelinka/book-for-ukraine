@@ -67,11 +67,17 @@
                 "translations": [
                     {
                         "lang": "cs",
-                        "text": "Vidíš ještěrku?\nLeze po štěrku."
+                        "texts": {
+                            "cyrillic": "Відіш єштєрку?\nЛезе по штєрку.",
+                            "latin": "Vidíš ještěrku?\nLeze po štěrku."
+                        }
                     },
                     {
-                        "lang": "ua",
-                        "text": "Бачиш ящірку?\nЛізе на гравій."
+                        "lang": "uk",
+                        "texts": {
+                            "cyrillic": "Бачиш ящірку?\nЛізе на гравій.",
+                            "latin": "Bačyš jaščirku?\nLize na hravij."
+                        }
                     }
                 ]
             },
@@ -99,11 +105,17 @@
                 "translations": [
                     {
                         "lang": "cs",
-                        "text": "Kvítí roste mezi klasy,\nkonec léta už se hlásí."
+                        "texts": {
+                            "cyrillic": "Квіті росте мезі класи,\nконец лета уж се гласі.",
+                            "latin": "Kvítí roste mezi klasy,\nkonec léta už se hlásí."
+                        }
                     },
                     {
-                        "lang": "ua",
-                        "text": "Квіти ростуть серед колосків,\nкінець літа вже наближається."
+                        "lang": "uk",
+                        "texts": {
+                            "cyrillic": "Квіти ростуть серед колосків,\nкінець літа вже наближається.",
+                            "latin": "Kvity rostuť sered koloskiv,\nkinec' lita vže nablyžajeťsja."
+                        }
                     }
                 ]
             },
@@ -131,11 +143,17 @@
                 "translations": [
                     {
                         "lang": "cs",
-                        "text": "Snadno dohnat šneka,\nvždyť na tebe čeká!"
+                        "texts": {
+                            "cyrillic": "Снадно догнат шнека,\nвждить на тебе чека!",
+                            "latin": "Snadno dohnat šneka,\nvždyť na tebe čeká!"
+                        }
                     },
                     {
-                        "lang": "ua",
-                        "text": "Легко наздогнати равлика,\nколи він на тебе чекає."
+                        "lang": "uk",
+                        "texts": {
+                            "cyrillic": "Легко наздогнати равлика,\nколи він на тебе чекає.",
+                            "latin": "Lehko nazdohnaty ravlyka,\nkoly vin na tebe čekaje."
+                        }
                     }
                 ]
             },
@@ -163,11 +181,17 @@
                 "translations": [
                     {
                         "lang": "cs",
-                        "text": "Zdraví tě pan vážka,\nmotýla je bráška."
+                        "texts": {
+                            "cyrillic": "Здраві тє пан важка,\nмотила є брашка.",
+                            "latin": "Zdraví tě pan vážka,\nmotýla je bráška."
+                        }
                     },
                     {
-                        "lang": "ua",
-                        "text": "Пан Бабка тебе вітає,\nйого брат метелик злітає."
+                        "lang": "uk",
+                        "texts": {
+                            "cyrillic": "Пан Бабка тебе вітає,\nйого брат метелик злітає.",
+                            "latin": "Pan Babka tebe vitaje,\njoho brat metelyk zlitaje."
+                        }
                     }
                 ]
             }
@@ -200,11 +224,17 @@
                 "translations": [
                     {
                         "lang": "cs",
-                        "text": "Za lesy, za louky, za pole\nvydal se kamarád na kole."
+                        "texts": {
+                            "cyrillic": "За леси, за лоуки, за поле\nвидал се камарад на коле.",
+                            "latin": "Za lesy, za louky, za pole\nvydal se kamarád na kole."
+                        }
                     },
                     {
-                        "lang": "ua",
-                        "text": "За ліси, за луки, за поля\nдруг поїхав на велосипеді."
+                        "lang": "uk",
+                        "texts": {
+                            "cyrillic": "За ліси, за луки, за поля\nдруг поїхав на велосипеді.",
+                            "latin": "Za lisy, za luky, za polja\ndruh pojichav na velosypedi."
+                        }
                     }
                 ]
             },
@@ -232,11 +262,17 @@
                 "translations": [
                     {
                         "lang": "cs",
-                        "text": "Veverka má oříšek\na zrzavý kožíšek."
+                        "texts": {
+                            "cyrillic": "Веверка ма оржішек\nа зрзави кожішек.",
+                            "latin": "Veverka má oříšek\na zrzavý kožíšek."
+                        }
                     },
                     {
-                        "lang": "ua",
-                        "text": "У білочки є горішок\nі руденький кожушок."
+                        "lang": "uk",
+                        "texts": {
+                            "cyrillic": "У білочки є горішок\nі руденький кожушок.",
+                            "latin": "U biločky je horišok\ni rudeňkyj kožušok."
+                        }
                     }
                 ]
             }
@@ -269,11 +305,17 @@
                 "translations": [
                     {
                         "lang": "cs",
-                        "text": "Beruška je červená,\nkdo ví, co to znamená."
+                        "texts": {
+                            "cyrillic": "Берушка є червена,\nкдо ві, цо то знамена.",
+                            "latin": "Beruška je červená,\nkdo ví, co to znamená."
+                        }
                     },
                     {
-                        "lang": "ua",
-                        "text": "Божа корівка є червона,\nі хто знає, що це означає."
+                        "lang": "uk",
+                        "texts": {
+                            "cyrillic": "Божа корівка є червона,\nі хто знає, що це означає.",
+                            "latin": "Boža korivka je červona,\ni chto znaje, ščo ce označaje."
+                        }
                     }
                 ]
             },
@@ -301,11 +343,17 @@
                 "translations": [
                     {
                         "lang": "cs",
-                        "text": "Slunce v kapkách deště,\nvidíš duhu ještě?"
+                        "texts": {
+                            "cyrillic": "Слунце в капках дештє,\nвідіш дугу єштє?",
+                            "latin": "Slunce v kapkách deště,\nvidíš duhu ještě?"
+                        }
                     },
                     {
-                        "lang": "ua",
-                        "text": "Сонце в краплях дощу,\nти вже бачиш веселку?"
+                        "lang": "uk",
+                        "texts": {
+                            "cyrillic": "Сонце в краплях дощу,\nти вже бачиш веселку?",
+                            "latin": "Sonce v krapljach došču,\nty vže bačyš veselku?"
+                        }
                     }
                 ]
             },
@@ -333,11 +381,17 @@
                 "translations": [
                     {
                         "lang": "cs",
-                        "text": "Vyrostla tu houba,\npod kloboukem hloubá."
+                        "texts": {
+                            "cyrillic": "Виростла ту гоуба,\nпод клобоукем глоуба.",
+                            "latin": "Vyrostla tu houba,\npod kloboukem hloubá."
+                        }
                     },
                     {
-                        "lang": "ua",
-                        "text": "Тут росте грибочок,\nпід капелюшком бурмоче."
+                        "lang": "uk",
+                        "texts": {
+                            "cyrillic": "Тут росте грибочок,\nпід капелюшком бурмоче.",
+                            "latin": "Tut roste hrybočok,\npid kapeljuškom burmoče."
+                        }
                     }
                 ]
             },
@@ -365,11 +419,17 @@
                 "translations": [
                     {
                         "lang": "cs",
-                        "text": "Tahle žába neskáče,\nobčas je jí do pláče."
+                        "texts": {
+                            "cyrillic": "Тагле жаба нескаче,\nобчас є йі до плаче.",
+                            "latin": "Tahle žába neskáče,\nobčas je jí do pláče."
+                        }
                     },
                     {
-                        "lang": "ua",
-                        "text": "Ця жаба не стрибає,\nіноді вона ридає."
+                        "lang": "uk",
+                        "texts": {
+                            "cyrillic": "Ця жаба не стрибає,\nіноді вона ридає.",
+                            "latin": "Cja žaba ne strybaje,\ninodi vona rydaje."
+                        }
                     }
                 ]
             }
@@ -402,11 +462,17 @@
                 "translations": [
                     {
                         "lang": "cs",
-                        "text": "Dívka sedí v sedle,\npozoruje jedle."
+                        "texts": {
+                            "cyrillic": "Дівка седі в седле,\nпозорує єдле.",
+                            "latin": "Dívka sedí v sedle,\npozoruje jedle."
+                        }
                     },
                     {
-                        "lang": "ua",
-                        "text": "Дівчина сидить у сідлі,\nспостерігає за ялинкою."
+                        "lang": "uk",
+                        "texts": {
+                            "cyrillic": "Дівчина сидить у сідлі,\nспостерігає за ялинкою.",
+                            "latin": "Divčyna sydyť u sidli,\nsposterihaje za jalynkoju."
+                        }
                     }
                 ]
             }
@@ -439,11 +505,17 @@
                 "translations": [
                     {
                         "lang": "cs",
-                        "text": "Jahody voní\nstejně jak vloni."
+                        "texts": {
+                            "cyrillic": "Ягоди воні\nстейнє як влоні.",
+                            "latin": "Jahody voní\nstejně jak vloni."
+                        }
                     },
                     {
-                        "lang": "ua",
-                        "text": "Пахне полуниця\nтак само, як торік."
+                        "lang": "uk",
+                        "texts": {
+                            "cyrillic": "Пахне полуниця\nтак само, як торік.",
+                            "latin": "Pachne polunycja\ntak samo, jak torik."
+                        }
                     }
                 ]
             },
@@ -471,11 +543,17 @@
                 "translations": [
                     {
                         "lang": "cs",
-                        "text": "Letadlo letí,\nje plné dětí."
+                        "texts": {
+                            "cyrillic": "Летадло леті,\nє плне дєті.",
+                            "latin": "Letadlo letí,\nje plné dětí."
+                        }
                     },
                     {
-                        "lang": "ua",
-                        "text": "Летить літак\nповний дітей."
+                        "lang": "uk",
+                        "texts": {
+                            "cyrillic": "Летить літак\nповний дітей.",
+                            "latin": "Letyť litak\npovnyj ditej."
+                        }
                     }
                 ]
             },
@@ -503,11 +581,17 @@
                 "translations": [
                     {
                         "lang": "cs",
-                        "text": "Srna a srnec\nzrna sní hrnec."
+                        "texts": {
+                            "cyrillic": "Срна а срнец\nзрна сні грнец.",
+                            "latin": "Srna a srnec\nzrna sní hrnec."
+                        }
                     },
                     {
-                        "lang": "ua",
-                        "text": "Родина косуль\nзерна їсть горщик."
+                        "lang": "uk",
+                        "texts": {
+                            "cyrillic": "Родина косуль\nзерна їсть горщик.",
+                            "latin": "Rodyna kosuľ\nzerna jisť horščyk."
+                        }
                     }
                 ]
             }
@@ -540,11 +624,17 @@
                 "translations": [
                     {
                         "lang": "cs",
-                        "text": "Ježek v trávě dupe,\nklacek pod ním křupe."
+                        "texts": {
+                            "cyrillic": "Єжек в травє дупе,\nклацек под нім кржупе.",
+                            "latin": "Ježek v trávě dupe,\nklacek pod ním křupe."
+                        }
                     },
                     {
-                        "lang": "ua",
-                        "text": "Їжачок в траві дуп,\nпалиця під ним хруп."
+                        "lang": "uk",
+                        "texts": {
+                            "cyrillic": "Їжачок в траві дуп,\nпалиця під ним хруп.",
+                            "latin": "Jižačok v travi dup,\npalycja pid nym chrup."
+                        }
                     }
                 ]
             },
@@ -572,11 +662,17 @@
                 "translations": [
                     {
                         "lang": "cs",
-                        "text": "Sýkorka si naříká,\nže prý je moc veliká."
+                        "texts": {
+                            "cyrillic": "Сикорка сі наржіка,\nже при є моц веліка.",
+                            "latin": "Sýkorka si naříká,\nže prý je moc veliká."
+                        }
                     },
                     {
-                        "lang": "ua",
-                        "text": "Синиця жаліється,\nщо вона завелика."
+                        "lang": "uk",
+                        "texts": {
+                            "cyrillic": "Синиця жаліється,\nщо вона завелика.",
+                            "latin": "Synycja žalijeťsja,\nščo vona zavelyka."
+                        }
                     }
                 ]
             },
@@ -604,11 +700,17 @@
                 "translations": [
                     {
                         "lang": "cs",
-                        "text": "Včelička bzučí,\nkdyž květy pučí."
+                        "texts": {
+                            "cyrillic": "Вчелічка бзучі,\nкдиж квєти пучі.",
+                            "latin": "Včelička bzučí,\nkdyž květy pučí."
+                        }
                     },
                     {
-                        "lang": "ua",
-                        "text": "Бджола бзучить,\nколи квіти розпускаються."
+                        "lang": "uk",
+                        "texts": {
+                            "cyrillic": "Бджола бзучить,\nколи квіти розпускаються.",
+                            "latin": "Bdžola bzučyť,\nkoly kvity rozpuskajuťsja."
+                        }
                     }
                 ]
             }
@@ -641,11 +743,17 @@
                 "translations": [
                     {
                         "lang": "cs",
-                        "text": "Čtyřlístek ti štěstí nese,\njen jestli ho najdeš v lese."
+                        "texts": {
+                            "cyrillic": "Чтиржлістек ті штєсті несе,\nєн єстлі го найдеш в лесе.",
+                            "latin": "Čtyřlístek ti štěstí nese,\njen jestli ho najdeš v lese."
+                        }
                     },
                     {
-                        "lang": "ua",
-                        "text": "Чотирилисник принесе удачу,\nякщо ти його знайдеш у лісі."
+                        "lang": "uk",
+                        "texts": {
+                            "cyrillic": "Чотирилисник принесе удачу,\nякщо ти його знайдеш у лісі.",
+                            "latin": "Čotyrylysnyk prynese udaču,\njakščo ty joho znajdeš u lisi."
+                        }
                     }
                 ]
             },
@@ -673,11 +781,17 @@
                 "translations": [
                     {
                         "lang": "cs",
-                        "text": "Orel ti vše poví,\nale psst – teď loví."
+                        "texts": {
+                            "cyrillic": "Орел ті вше пові,\nале псст – тедь лові.",
+                            "latin": "Orel ti vše poví,\nale psst – teď loví."
+                        }
                     },
                     {
-                        "lang": "ua",
-                        "text": "Орел тобі все розповість,\nале тсс – він полює."
+                        "lang": "uk",
+                        "texts": {
+                            "cyrillic": "Орел тобі все розповість,\nале тсс – він полює.",
+                            "latin": "Orel tobi vse rozpovisť,\nale tss – vin poljuje."
+                        }
                     }
                 ]
             },
@@ -705,11 +819,17 @@
                 "translations": [
                     {
                         "lang": "cs",
-                        "text": "Pán a paní se psíkem\nprochází se lesíkem."
+                        "texts": {
+                            "cyrillic": "Пан а пані се псікем\nпрохазі се лесікем.",
+                            "latin": "Pán a paní se psíkem\nprochází se lesíkem."
+                        }
                     },
                     {
-                        "lang": "ua",
-                        "text": "Пан і пані з песиком\nпрогулюються лісиком."
+                        "lang": "uk",
+                        "texts": {
+                            "cyrillic": "Пан і пані з песиком\nпрогулюються лісиком.",
+                            "latin": "Pan i pani z pesykom\nprohuljujuťsja lisykom."
+                        }
                     }
                 ]
             }
@@ -742,11 +862,17 @@
                 "translations": [
                     {
                         "lang": "cs",
-                        "text": "Kam pospícháš, liško?\nNaplnit své bříško."
+                        "texts": {
+                            "cyrillic": "Кам поспіхаш, лішко?\nНаплніт све бржішко.",
+                            "latin": "Kam pospícháš, liško?\nNaplnit své bříško."
+                        }
                     },
                     {
-                        "lang": "ua",
-                        "text": "Куди поспішаєш, лисичко?\nНаповнити свій животик."
+                        "lang": "uk",
+                        "texts": {
+                            "cyrillic": "Куди поспішаєш, лисичко?\nНаповнити свій животик.",
+                            "latin": "Kudy pospišaješ, lysyčko?\nNapovnyty svij žyvotyk."
+                        }
                     }
                 ]
             },
@@ -774,11 +900,17 @@
                 "translations": [
                     {
                         "lang": "cs",
-                        "text": "Polem traktor jede,\nbrázdí hlíny hnědé."
+                        "texts": {
+                            "cyrillic": "Полем трактор єде,\nбразді гліни гнєде.",
+                            "latin": "Polem traktor jede,\nbrázdí hlíny hnědé."
+                        }
                     },
                     {
-                        "lang": "ua",
-                        "text": "Трактор по полю їде,\nрозбиває тверду глину."
+                        "lang": "uk",
+                        "texts": {
+                            "cyrillic": "Трактор по полю їде,\nрозбиває тверду глину.",
+                            "latin": "Traktor po polju jide,\nrozbyvaje tverdu hlynu."
+                        }
                     }
                 ]
             }
@@ -811,11 +943,17 @@
                 "translations": [
                     {
                         "lang": "cs",
-                        "text": "Až vítr dovane,\nbalón zas přistane."
+                        "texts": {
+                            "cyrillic": "Аж вітр доване,\nбалон зас пржістане.",
+                            "latin": "Až vítr dovane,\nbalón zas přistane."
+                        }
                     },
                     {
-                        "lang": "ua",
-                        "text": "Коли вітер дмухне,\nкуля знову приземлиться."
+                        "lang": "uk",
+                        "texts": {
+                            "cyrillic": "Коли вітер дмухне,\nкуля знову приземлиться.",
+                            "latin": "Koly viter dmuchne,\nkulja znovu pryzemlyťsja."
+                        }
                     }
                 ]
             },
@@ -843,11 +981,17 @@
                 "translations": [
                     {
                         "lang": "cs",
-                        "text": "Běží myš,\nhledá skrýš."
+                        "texts": {
+                            "cyrillic": "Бєжі миш,\nгледа скриш.",
+                            "latin": "Běží myš,\nhledá skrýš."
+                        }
                     },
                     {
-                        "lang": "ua",
-                        "text": "Мишка бігає,\nсхованку шукає."
+                        "lang": "uk",
+                        "texts": {
+                            "cyrillic": "Мишка бігає,\nсхованку шукає.",
+                            "latin": "Myška bihaje,\nschovanku šukaje."
+                        }
                     }
                 ]
             },
@@ -875,11 +1019,17 @@
                 "translations": [
                     {
                         "lang": "cs",
-                        "text": "Zajíc stříhá ušima,\nnikdo si ho nevšímá."
+                        "texts": {
+                            "cyrillic": "Зайіц стржіга ушіма,\nнікдо сі го невшіма.",
+                            "latin": "Zajíc stříhá ušima,\nnikdo si ho nevšímá."
+                        }
                     },
                     {
-                        "lang": "ua",
-                        "text": "Заєць вухом підслухає,\nніхто його не помічає."
+                        "lang": "uk",
+                        "texts": {
+                            "cyrillic": "Заєць вухом підслухає,\nніхто його не помічає.",
+                            "latin": "Zajec' vuchom pidsluchaje,\nnichto joho ne pomičaje."
+                        }
                     }
                 ]
             }
@@ -912,11 +1062,17 @@
                 "translations": [
                     {
                         "lang": "cs",
-                        "text": "Když maminka zazpívá,\nmiminko se usmívá."
+                        "texts": {
+                            "cyrillic": "Кдиж мамінка зазпіва,\nмімінко се усміва.",
+                            "latin": "Když maminka zazpívá,\nmiminko se usmívá."
+                        }
                     },
                     {
-                        "lang": "ua",
-                        "text": "Коли мама заспіває,\nнемовлятко посміхається."
+                        "lang": "uk",
+                        "texts": {
+                            "cyrillic": "Коли мама заспіває,\nнемовлятко посміхається.",
+                            "latin": "Koly mama zaspivaje,\nnemovljatko posmichajeťsja."
+                        }
                     }
                 ]
             },
@@ -944,11 +1100,17 @@
                 "translations": [
                     {
                         "lang": "cs",
-                        "text": "Koukni na strom znova,\nsedla si tam sova."
+                        "texts": {
+                            "cyrillic": "Коукні на стром знова,\nседла сі там сова.",
+                            "latin": "Koukni na strom znova,\nsedla si tam sova."
+                        }
                     },
                     {
-                        "lang": "ua",
-                        "text": "Зазирни на дерево знову,\nна гілочці сидить."
+                        "lang": "uk",
+                        "texts": {
+                            "cyrillic": "Зазирни на дерево знову,\nна гілочці сидить.",
+                            "latin": "Zazyrny na derevo znovu,\nna hiločci sydyť."
+                        }
                     }
                 ]
             }
