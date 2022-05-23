@@ -39,7 +39,6 @@ Currently, the following languages are supported:
 - 🇨🇿 Čeština
 - 🇬🇧 English
 - 🇺🇦 Українська
-  - Currently, only two machine-translated versions are available ([help!](https://github.com/MikulasZelinka/book-for-ukraine/issues/2))
 
 ## TODO
 
@@ -122,6 +121,10 @@ We're slowly moving these into proper [Issues](https://github.com/MikulasZelinka
   - [x] ~Temporarily using `Open Sans` instead as it's variable and can animate font weight (until we have another playing indicator)~
 
 ## Webdevlog
+
+### 2022-05-23
+
+Thanks to the kind colleagues in Medallia's Prague branch, we now have a proper 🇺🇦 translation of the website :)
 
 ### 2022-05-22
 
