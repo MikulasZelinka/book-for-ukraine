@@ -7,5 +7,6 @@
 .idea/
 
 public/resources/in
+public/resources/version.json
 
 __pycache__/

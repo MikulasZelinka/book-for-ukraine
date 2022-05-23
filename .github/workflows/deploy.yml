@@ -2,22 +2,33 @@ name: Build and deploy
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
+      - name: 1. 🛎️ Checkout
         uses: actions/checkout@v3
 
-      - name: Install and Build 🔧
+      - name: 2. ⌚ Set timezone to Prague time
+        uses: szenius/set-timezone@v1.0
+        with:
+          timezoneLinux: "Europe/Prague"
+          # Currently only running the action on Linux
+          # timezoneMacos: "Europe/Prague"
+          # timezoneWindows: "Central Europe Standard Time"
+
+      - name: 3. ℹ️ Add version info (commit sha, timestamp)
+        run: ./scripts/write_version_info.sh
+
+      - name: 4. 🔧 Install and Build
         run: |
           npm install
           npm ci
           npm run build
-          
-      - name: Deploy to GitHub Pages 🚀
+
+      - name: 5. 🚀 Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.3.0
 
         with:
