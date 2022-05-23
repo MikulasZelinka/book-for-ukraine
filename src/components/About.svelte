@@ -40,7 +40,10 @@
               style="display:none">name</span
             >@gmail.com
           </li>
-          <li>{$_("authorsSection.translation_uk")}: Anastasia Litvincová</li>
+          <li>
+            {$_("authorsSection.translation_uk")}: Anastasia Litvincová, Andrey
+            Konovka
+          </li>
           <li>{$_("authorsSection.translation_en")}: Mikuláš Zelinka</li>
           <li>{$_("authorsSection.graphicDesign")}: Tereza Drnovcová</li>
           <li>
