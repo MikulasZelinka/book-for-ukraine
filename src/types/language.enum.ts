@@ -6,12 +6,8 @@ export enum Language {
   cs = "cs",
   en = "en",
   uk = "uk",
-
-  uk_ct = "uk_ct",
-  uk_gt = "uk_gt",
 }
 
-//
 // cs = "Česky",
 // en = "English",
 // uk = "Українська",
@@ -19,9 +15,7 @@ export enum Language {
 let languageNames = new Map<Language, string>([
   [Language.cs, "Česky"],
   [Language.en, "English"],
-  [Language.uk_ct, "Українська (Charles Translator)"],
-  [Language.uk_gt, "Українська (Google Translate)"],
-  // [Language.uk, "Українська"],
+  [Language.uk, "Українська"],
 ]);
 
 // lang code to country code to link flags from:
@@ -29,7 +23,7 @@ let languageNames = new Map<Language, string>([
 let languageCountries = new Map<Language, string>([
   [Language.cs, "cz"],
   [Language.en, "gb"],
-  // [Language.uk, "ua"],
+  [Language.uk, "ua"],
 ]);
 
 let languageScripts = new Map<Language, Script>([
