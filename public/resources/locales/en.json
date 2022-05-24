@@ -13,9 +13,8 @@
     },
     "authorsSection": {
         "web": "Website",
-        "content": "Drawings and poems",
-        "translation_uk": "Translation to Ukranian",
-        "translation_en": "English website translation",
+        "content": "Drawings, poems and sound mastering",
+        "translation": "Translation",
         "graphicDesign": "Graphic design",
         "typesetting": "Typesetting",
         "editing": "Editing and proofreading",
@@ -30,5 +29,9 @@
         "default": "Default script",
         "latin": "Latin",
         "cyrillic": "Cyrillic"
+    },
+    "languages": {
+        "en": "English",
+        "uk": "Ukranian"
     }
 }

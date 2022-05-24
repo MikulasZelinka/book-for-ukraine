@@ -5,7 +5,6 @@
     "authors": "Tvůrci",
     "settings": "Nastavení",
     "autoplay": "Automatické přehrávání",
-    "language": "Jazyk",
     "aboutSection": {
         "goal": "Cílem je pomoci integrovat ukrajinské děti, vykouzlit na jejich tvářích úsměvy a hravou formou je seznámit s češtinou.",
         "future": "Webová verze brzy nabídne i další jazyky. K webu vzniká obrázková knížka s bilingvním pexesem k procvičení slovíček.",
@@ -14,9 +13,8 @@
     },
     "authorsSection": {
         "web": "Web",
-        "content": "Obrázky a texty",
-        "translation_uk": "Ukrajinský překlad",
-        "translation_en": "Překlad webu do angličtiny",
+        "content": "Obrázky, texty a zvuk",
+        "translation": "Překlad",
         "graphicDesign": "Grafické zpracování obrázků",
         "typesetting": "Sazba",
         "editing": "Redakce a korektura",
@@ -31,5 +29,9 @@
         "default": "Výchozí písmo",
         "latin": "Latinka",
         "cyrillic": "Cyrilice"
+    },
+    "languages": {
+        "en": "Angličtina",
+        "uk": "Ukrajinština"
     }
 }
