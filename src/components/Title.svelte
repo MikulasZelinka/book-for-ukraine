@@ -10,7 +10,7 @@
 >
   Povídání
   <br />
-  modro-žluté krajiny
+  žluto-modré krajiny
 </h2>
 <h2
   class="title ua"

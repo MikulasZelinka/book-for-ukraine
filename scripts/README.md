@@ -22,7 +22,7 @@ The [`resources/in`](../public/resources/in) folder (which is ignored and missin
 
 ### Texts
 
-- `Překlady básniček – Povídání modro-žluté krajiny - Básničky.csv`
+- `Překlady básniček – Povídání žluto-modré krajiny - Básničky.csv`
   - All translated texts
   - Source: exported from the [main spreadsheet](https://docs.google.com/spreadsheets/d/1Gb0XqligJd2rXgUbyGpjv3FkJ4oXwpma8pFi9hiwHqY/edit#gid=0) as CSV
 

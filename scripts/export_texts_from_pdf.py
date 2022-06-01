@@ -19,7 +19,7 @@ from export_images_from_layers import to_percent
 
 def load_translations(
         path=Path(
-            r'E:\code\svitej\public\resources\in\Překlady textů a webu – Povídání modro-žluté krajiny - Básničky.csv')
+            r'E:\code\svitej\public\resources\in\Překlady textů a webu – Povídání žluto-modré krajiny - Básničky.csv')
 ):
     """
     Data source:

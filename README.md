@@ -1,7 +1,7 @@
 # [Book for Ukraine](https://ukrajinskaknizka.cz)
 
 An open-source implementation of the Czech-Ukrainian book for children,
-[**Povídání modro-žluté krajiny**](https://ukrajinskaknizka.cz).
+[**Povídání žluto-modré krajiny**](https://ukrajinskaknizka.cz).
 
 The book isn't available yet (work in progress!),
 but the web version is available (in 🇨🇿 and 🇺🇦) to browse for free: https://ukrajinskaknizka.cz
