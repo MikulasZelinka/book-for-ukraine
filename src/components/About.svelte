@@ -34,6 +34,9 @@
           martin.design.grafika<span style="display:none">name</span>@gmail.com
         </p>
         <p>{$_("authorsSection.editing")}: Eva Trčková</p>
+
+        <p>{$_("authorsSection.language")}: Petra Součková</p>
+        <p>{$_("authorsSection.supervision")}: Viktor Vilhelm</p>
         <h4>{$_("authorsSection.translation")}</h4>
         <ul>
           <li>
