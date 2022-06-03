@@ -34,6 +34,10 @@
       }
     }
   }
+
+  // TODO: temporarily hide reworked stories
+  const whitelist = new Set<string>(['cyklista', 'houba', 'kocarek', 'liska', 'pejskari', 'snek', 'srnka', 'sykorka', 'vazka', 'zaba']);
+
 </script>
 
 <svelte:window bind:innerWidth />
@@ -61,7 +65,7 @@
     {/if}
 
     {#each page.stories as story, i}
-      {#if story.translations}
+      {#if story.translations && whitelist.has(story.name)}
         <Text
           bind:this={textElements[i]}
           {columnWidth}

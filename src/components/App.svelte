@@ -5,6 +5,7 @@
   import About from "./About.svelte";
 
   import { _, setupI18n, isLocaleLoaded } from "../i18n";
+  import Banner from "./Banner.svelte";
 
   $: if (!$isLocaleLoaded) {
     // default is set directly in i18n.ts
@@ -23,6 +24,8 @@
 
 {#if $isLocaleLoaded}
   <Header />
+
+  <Banner />
 
   <main>
     <div class="columns is-gapless is-multiline">
