@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-IN=/mnt/e/code/svitej/public/resources/in/audio
-OUT=/mnt/e/code/svitej/public/resources/audio
+IN=/mnt/e/code/svitej/static/in/audio
+OUT=/mnt/e/code/svitej/static/audio
 
 mkdir -p "$OUT"/cs
 mkdir -p "$OUT"/uk

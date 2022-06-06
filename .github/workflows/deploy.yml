@@ -14,7 +14,7 @@ jobs:
       - name: 2. ⌚ Set timezone to Prague time
         uses: szenius/set-timezone@v1.0
         with:
-          timezoneLinux: "Europe/Prague"
+          timezoneLinux: 'Europe/Prague'
           # Currently only running the action on Linux
           # timezoneMacos: "Europe/Prague"
           # timezoneWindows: "Central Europe Standard Time"
@@ -25,12 +25,10 @@ jobs:
       - name: 4. 🔧 Install and Build
         run: |
           npm install
-          npm ci
           npm run build
-
       - name: 5. 🚀 Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.3.0
 
         with:
           branch: gh-pages
-          folder: public
+          folder: build

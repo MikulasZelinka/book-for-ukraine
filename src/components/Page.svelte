@@ -1,182 +1,178 @@
 <script type="ts">
-  import { Autoplay } from "../types/autoplay.enum";
-  import type { Page } from "../types/page.type";
+	import { Autoplay } from '../types/autoplay.enum';
+	import type { Page } from '../types/page.type';
 
-  import { autoplay, languageOrder } from "../settings";
+	import { autoplay, languageOrder } from '../settings';
 
-  import Text from "./Text.svelte";
-  import Annotation from "./Annotation.svelte";
-  import Title from "./Title.svelte";
+	import Text from './Text.svelte';
+	import Annotation from './Annotation.svelte';
+	import Title from './Title.svelte';
 
-  export let page: Page;
+	export let page: Page;
 
-  let columnWidth: number = 0;
-  let innerWidth: number = 0;
+	let columnWidth: number = 0;
+	let innerWidth: number = 0;
 
-  let textElements = {};
+	let textElements = {};
 
-  // 'duha' spans two pages and we have to dynamically:
-  // - show the overflow if we see two facing pages
-  // - hide the overflow if we see a single page (otherwise duha would well... overflow the page)
-  $: overflow = columnWidth / innerWidth < 0.9 ? "visible" : "hidden";
+	// 'duha' spans two pages and we have to dynamically:
+	// - show the overflow if we see two facing pages
+	// - hide the overflow if we see a single page (otherwise duha would well... overflow the page)
+	$: overflow = columnWidth / innerWidth < 0.9 ? 'visible' : 'hidden';
 
-  function handleAudioEnd(event) {
-    // console.log("handling", event.detail);
-    let i = parseInt(event.detail.order);
+	function handleAudioEnd(event) {
+		// console.log("handling", event.detail);
+		let i = parseInt(event.detail.order);
 
-    if ($autoplay == Autoplay.OneLanguage && page.stories.length > i + 1) {
-      textElements[i + 1].play(event.detail.language);
-    } else if ($autoplay == Autoplay.AllLanguages) {
-      let langIndex = $languageOrder.indexOf(event.detail.language);
+		if ($autoplay == Autoplay.OneLanguage && page.stories.length > i + 1) {
+			textElements[i + 1].play(event.detail.language);
+		} else if ($autoplay == Autoplay.AllLanguages) {
+			let langIndex = $languageOrder.indexOf(event.detail.language);
 
-      if (langIndex >= 0 && langIndex + 1 < $languageOrder.length) {
-        textElements[i].play($languageOrder[langIndex + 1]);
-      }
-    }
-  }
+			if (langIndex >= 0 && langIndex + 1 < $languageOrder.length) {
+				textElements[i].play($languageOrder[langIndex + 1]);
+			}
+		}
+	}
 
-  // TODO: temporarily hide reworked stories
-  const whitelist = new Set<string>(['cyklista', 'houba', 'kocarek', 'liska', 'pejskari', 'snek', 'srnka', 'sykorka', 'vazka', 'zaba']);
-
+	// TODO: temporarily hide reworked stories
+	const whitelist = new Set<string>([
+		'cyklista',
+		'houba',
+		'kocarek',
+		'liska',
+		'pejskari',
+		'snek',
+		'srnka',
+		'sykorka',
+		'vazka',
+		'zaba',
+	]);
 </script>
 
 <svelte:window bind:innerWidth />
 
 <!-- We want the two-facing-pages view (two columns, open book) from 1024px and above -->
 <!-- and the one-page view below that -->
-<div
-  class="column is-6-desktop is-12-tablet mb-1"
-  bind:clientWidth={columnWidth}
-  style="overflow: {overflow}"
->
-  <figure class="image">
-    <img
-      src="resources/images/pozadi_{page.number % 2}.jpg"
-      alt="Page {page.number}"
-      class="background"
-    />
+<div class="column is-6-desktop is-12-tablet mb-1" bind:clientWidth={columnWidth} style="overflow: {overflow}">
+	<figure class="image">
+		<img src="images/pozadi_{page.number % 2}.jpg" alt="Page {page.number}" class="background" />
 
-    {#if page.number == 0}
-      <Annotation {columnWidth} />
-    {/if}
+		{#if page.number == 0}
+			<Annotation {columnWidth} />
+		{/if}
 
-    {#if page.number == 1}
-      <Title {columnWidth} />
-    {/if}
+		{#if page.number == 1}
+			<Title {columnWidth} />
+		{/if}
 
-    {#each page.stories as story, i}
-      {#if story.translations && whitelist.has(story.name)}
-        <Text
-          bind:this={textElements[i]}
-          {columnWidth}
-          page={page.number}
-          order={i}
-          name={story.name}
-          translations={story.translations}
-          positions={story.positions_text}
-          on:message={handleAudioEnd}
-        />
-      {/if}
-    {/each}
+		{#each page.stories as story, i}
+			{#if story.translations && whitelist.has(story.name)}
+				<Text
+					bind:this={textElements[i]}
+					{columnWidth}
+					page={page.number}
+					order={i}
+					name={story.name}
+					translations={story.translations}
+					positions={story.positions_text}
+					on:message={handleAudioEnd} />
+			{/if}
+		{/each}
 
-    {#each page.stories as story, i}
-      {#if story.position_image}
-        <picture>
-          <source
-            type="image/webp"
-            srcset="resources/images/{story.name}.webp"
-          />
-          <source type="image/png" srcset="resources/images/{story.name}.png" />
-          <img
-            src="resources/images/{story.name}.png"
-            id={story.name}
-            class="obj"
-            alt={story.name}
-            style="position: absolute; top:{story.position_image
-              .top}%; left:{story.position_image.left}%; width: {story
-              .position_image.width}%"
-            loading="lazy"
-          />
-        </picture>
-      {/if}
-    {/each}
-  </figure>
-  <!-- <p>{page.number}</p> -->
+		{#each page.stories as story, i}
+			{#if story.position_image}
+				<picture>
+					<source type="image/webp" srcset="images/{story.name}.webp" />
+					<source type="image/png" srcset="images/{story.name}.png" />
+					<img
+						src="images/{story.name}.png"
+						id={story.name}
+						class="obj"
+						alt={story.name}
+						style="position: absolute; top:{story.position_image.top}%; left:{story.position_image.left}%; width: {story
+							.position_image.width}%"
+						loading="lazy" />
+				</picture>
+			{/if}
+		{/each}
+	</figure>
+	<!-- <p>{page.number}</p> -->
 </div>
 
 <style>
-  .obj {
-    z-index: 1;
-    cursor: pointer;
-  }
-  /* Wiggle animation from: https://codepen.io/theDeanH/pen/zBZXLN */
-  .obj:hover,
-  .obj:active {
-    -webkit-animation-name: wiggle;
-    -ms-animation-name: wiggle;
-    animation-name: wiggle;
-    -ms-animation-duration: 1000ms;
-    -webkit-animation-duration: 1000ms;
-    animation-duration: 1000ms;
-    -webkit-animation-iteration-count: 1;
-    -ms-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-    -webkit-animation-timing-function: ease-in-out;
-    -ms-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
-  }
+	.obj {
+		z-index: 1;
+		cursor: pointer;
+	}
+	/* Wiggle animation from: https://codepen.io/theDeanH/pen/zBZXLN */
+	.obj:hover,
+	.obj:active {
+		-webkit-animation-name: wiggle;
+		-ms-animation-name: wiggle;
+		animation-name: wiggle;
+		-ms-animation-duration: 1000ms;
+		-webkit-animation-duration: 1000ms;
+		animation-duration: 1000ms;
+		-webkit-animation-iteration-count: 1;
+		-ms-animation-iteration-count: 1;
+		animation-iteration-count: 1;
+		-webkit-animation-timing-function: ease-in-out;
+		-ms-animation-timing-function: ease-in-out;
+		animation-timing-function: ease-in-out;
+	}
 
-  @-webkit-keyframes wiggle {
-    0% {
-      -webkit-transform: rotate(0deg);
-    }
-    25% {
-      -webkit-transform: rotate(-10deg);
-    }
-    50% {
-      -webkit-transform: rotate(20deg);
-    }
-    75% {
-      -webkit-transform: rotate(-5deg);
-    }
-    100% {
-      -webkit-transform: rotate(0deg);
-    }
-  }
+	@-webkit-keyframes wiggle {
+		0% {
+			-webkit-transform: rotate(0deg);
+		}
+		25% {
+			-webkit-transform: rotate(-10deg);
+		}
+		50% {
+			-webkit-transform: rotate(20deg);
+		}
+		75% {
+			-webkit-transform: rotate(-5deg);
+		}
+		100% {
+			-webkit-transform: rotate(0deg);
+		}
+	}
 
-  @-ms-keyframes wiggle {
-    0% {
-      -ms-transform: rotate(0deg);
-    }
-    25% {
-      -ms-transform: rotate(-1deg);
-    }
-    50% {
-      -ms-transform: rotate(1.5deg);
-    }
-    75% {
-      -ms-transform: rotate(-5deg);
-    }
-    100% {
-      -ms-transform: rotate(0deg);
-    }
-  }
+	@-ms-keyframes wiggle {
+		0% {
+			-ms-transform: rotate(0deg);
+		}
+		25% {
+			-ms-transform: rotate(-1deg);
+		}
+		50% {
+			-ms-transform: rotate(1.5deg);
+		}
+		75% {
+			-ms-transform: rotate(-5deg);
+		}
+		100% {
+			-ms-transform: rotate(0deg);
+		}
+	}
 
-  @keyframes wiggle {
-    0% {
-      transform: rotate(0deg);
-    }
-    25% {
-      transform: rotate(-10deg);
-    }
-    50% {
-      transform: rotate(20deg);
-    }
-    75% {
-      transform: rotate(-5deg);
-    }
-    100% {
-      transform: rotate(0deg);
-    }
-  }
+	@keyframes wiggle {
+		0% {
+			transform: rotate(0deg);
+		}
+		25% {
+			transform: rotate(-10deg);
+		}
+		50% {
+			transform: rotate(20deg);
+		}
+		75% {
+			transform: rotate(-5deg);
+		}
+		100% {
+			transform: rotate(0deg);
+		}
+	}
 </style>

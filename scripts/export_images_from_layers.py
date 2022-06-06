@@ -121,7 +121,7 @@ def export_layers(background_layer, path: Path, target_width=0, target_height=0)
 
 
 if __name__ == '__main__':
-    psd = PSDImage.open(r'E:\code\svitej\public\resources\in\VitejApojdSiPovidatV04.psd')
+    psd = PSDImage.open(r'E:\code\svitej\static\resources\in\VitejApojdSiPovidatV04.psd')
 
     layers = {}
 
@@ -134,6 +134,6 @@ if __name__ == '__main__':
 
     export_layers(
         layers['pozadi'],
-        path=Path(r'E:\code\svitej\public\resources'),
+        path=Path(r'E:\code\svitej\static\resources'),
         target_width=720 * 2,  # target 720 for a single page
     )

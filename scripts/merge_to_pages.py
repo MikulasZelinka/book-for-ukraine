@@ -4,7 +4,7 @@ from pathlib import Path
 
 
 def add_objects_to_pages(
-        base_path=Path(r'E:\code\svitej\public\resources'),
+        base_path=Path(r'E:\code\svitej\static\resources'),
 ):
     with open(base_path / 'in' / 'images.json') as f:
         images = json.load(f)

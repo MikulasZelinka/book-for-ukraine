@@ -19,7 +19,7 @@ from export_images_from_layers import to_percent
 
 def load_translations(
         path=Path(
-            r'E:\code\svitej\public\resources\in\Překlady textů a webu – Povídání modro-žluté krajiny - Básničky.csv')
+            r'E:\code\svitej\static\resources\in\Překlady textů a webu – Povídání modro-žluté krajiny - Básničky.csv')
 ):
     """
     Data source:
@@ -155,7 +155,7 @@ def export_texts_from_pdf(o: Any, text_to_id_lang, texts, images, depth=0):
 
 
 if __name__ == '__main__':
-    path = Path(r'E:\code\svitej\public\resources\in\VitejApojdSiPovidatV04.pdf')
+    path = Path(r'E:\code\svitej\static\resources\in\VitejApojdSiPovidatV04.pdf')
     pages = extract_pages(path)
 
     text_to_id_lang = load_translations()
@@ -166,8 +166,8 @@ if __name__ == '__main__':
     pprint(texts)
     print(len(texts))
 
-    with open(Path(r'E:\code\svitej\public\resources') / 'in' / 'texts.json', 'w', encoding='utf8') as f:
+    with open(Path(r'E:\code\svitej\static\resources') / 'in' / 'texts.json', 'w', encoding='utf8') as f:
         json.dump(texts, f, ensure_ascii=False, sort_keys=True, indent=4)
 
     for page, image in images.items():
-        image.save(Path(r'E:\code\svitej\public\resources') / 'in' / f'page_{page:02d}.png')
+        image.save(Path(r'E:\code\svitej\static\resources') / 'in' / f'page_{page:02d}.png')

@@ -6,4 +6,4 @@
 
 DATETIME=$(date '+%Y-%m-%d %H:%M:%S')
 
-echo "{\"commit\": \"$GITHUB_SHA\", \"datetime\": \"$DATETIME\"}" | tee ./public/resources/version.json
+echo "{\"commit\": \"$GITHUB_SHA\", \"datetime\": \"$DATETIME\"}" | tee ./static/version.json

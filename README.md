@@ -128,7 +128,7 @@ Thanks to the kind colleagues in Medallia's Prague branch, we now have a proper 
 
 ### 2022-05-22
 
-I've shared the website in a couple of (semi-)public places and forums,
+I've shared the website in a couple of (semi-)static places and forums,
 including a [reddit post about the book as a Svelte project](https://www.reddit.com/r/sveltejs/comments/uvbdbx/bilingual_book_for_ukranian_children_as_an/).
 
 Still, there hasn't been much traffic yet (58 website visits (according to 🐐) and 4 GitHub ⭐ so far) and
@@ -201,7 +201,7 @@ More work is still necessary.
 
 Major update: I've separated foreground objects from background using a [python script](scripts/export_images_from_layers.py)
 to export all data (image data as well as their metadata) from the original PSD file
-and to also [combine the new objects json with the already existing pages json](public/resources/).
+and to also [combine the new objects json with the already existing pages json](static/).
 
 It's ~quick and~ (well, I wish it was quick, really) dirty but it makes the job done.
 
@@ -210,7 +210,7 @@ The main advantage is we can now freely animate/click/... them independently.
 
 We now also have a proper domain: https://ukrajinskaknizka.cz
 
-Migrating with GitHub Pages was rather straightforward, it's basically just updating the [`CNAME`](public/CNAME).
+Migrating with GitHub Pages was rather straightforward, it's basically just updating the [`CNAME`](static/CNAME).
 
 I've registered the domain at [WEDOS](https://www.wedos.cz/) (Google domains unfortunately don't support the `.cz` TLD) and it costs cca 175 CZK per year.
 

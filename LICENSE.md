@@ -6,7 +6,7 @@ from the media content (image, audio and text assets).
 ## Media content
 
 The image, audio and text content for the book and its website version
-(mostly in the [resources directory](./public/resources/))
+(mostly in the [resources directory](./static/))
 are all © by their respective authors, all rights reserved.
 
 ## Source code
