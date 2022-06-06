@@ -10,7 +10,7 @@
 >
   Povídání
   <br />
-  žluto-modré krajiny
+  modro-žluté krajiny
 </h2>
 <h2
   class="title ua"
@@ -18,7 +18,7 @@
 >
   Розповідь
   <br />
-  жовто-блакитного краю
+  синьо-жовтого краю
 </h2>
 
 <style>
