@@ -1,4 +1,4 @@
-import { Writable, writable } from "svelte/store";
+import { type Writable, writable } from "svelte/store";
 import { Autoplay } from "./types/autoplay.enum";
 import { Script } from "./types/script.enum";
 

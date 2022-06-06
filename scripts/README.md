@@ -14,11 +14,11 @@ python export_texts_from_pdf.py
 python merge_to_pages.py
 ```
 
-This will (hopefully) populate [`resources`](../public/resources) with all the required final assets.
+This will (hopefully) populate [`resources`](../static/resources) with all the required final assets.
 
 ## Prerequisites
 
-The [`resources/in`](../public/resources/in) folder (which is ignored and missing from the repo) should contain:
+The [`in`](../static/in) folder (which is ignored and missing from the repo) should contain:
 
 ### Texts
 

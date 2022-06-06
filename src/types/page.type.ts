@@ -1,6 +1,6 @@
-import type { Story } from "./story.type";
+import type { Story } from './story.type';
 
 export type Page = {
-  number: number;
-  stories?: Story[];
+	number: number;
+	stories: Story[];
 };

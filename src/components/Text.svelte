@@ -1,61 +1,63 @@
 <script type="ts">
-  import { createEventDispatcher } from "svelte";
+	import { createEventDispatcher } from 'svelte';
 
-  import { currentScript, languageOrder } from "../settings";
-  import { languageScripts } from "../types/language.enum";
+	import { currentScript, languageOrder } from '../settings';
+	import { Language, languageScripts } from '../types/language.enum';
 
-  import type { Position } from "../types/position.type";
-  import { Script } from "../types/script.enum";
-  import type { Translation } from "../types/translation.type";
+	import type { Position } from '../types/position.type';
+	import { Script } from '../types/script.enum';
+	import type { Translation } from '../types/translation.type';
 
-  const dispatch = createEventDispatcher();
+	const dispatch = createEventDispatcher();
 
-  // TODO: unused, remove here and from the generation script
-  export let page: number;
-  export let order: number;
+	// TODO: unused, remove here and from the generation script
+	export let page: number;
+	page;
 
-  export let name: string;
+	export let order: number;
 
-  export let translations: Translation[];
-  export let positions: Position[];
+	export let name: string;
 
-  export let columnWidth: number;
+	export let translations: Translation[];
+	export let positions: Position[];
 
-  $: fontSize = columnWidth / 41;
+	export let columnWidth: number;
 
-  let langToAudio = new Map<string, HTMLAudioElement>();
-  // let langToAudio = {};
-  let langIsPlaying = {};
+	$: fontSize = columnWidth / 41;
 
-  // $: console.log("tr:", translations);
+	let langToAudio = new Map<string, HTMLAudioElement>();
+	// let langToAudio = {};
+	let langIsPlaying = {};
 
-  // $: textsSorted = Object.entries(translations).sort(
-  //   ([a, aa], [b, bb]) => $languageOrder.indexOf(a) - $languageOrder.indexOf(b)
-  // );
+	// $: console.log("tr:", translations);
 
-  // console.log("ts:", JSON.stringify(textsSorted));
+	// $: textsSorted = Object.entries(translations).sort(
+	//   ([a, aa], [b, bb]) => $languageOrder.indexOf(a) - $languageOrder.indexOf(b)
+	// );
 
-  function onAudioEnd(language, order) {
-    langIsPlaying[language] = false;
-    // console.log("ended:", page, language, order);
-    dispatch("message", {
-      language: language,
-      order: order,
-    });
-  }
+	// console.log("ts:", JSON.stringify(textsSorted));
 
-  export function play(language) {
-    // console.debug("playing lang", language);
-    // console.debug("audio map", langToAudio);
+	function onAudioEnd(language: Language, order: number) {
+		langIsPlaying[language] = false;
+		// console.log("ended:", page, language, order);
+		dispatch('message', {
+			language: language,
+			order: order,
+		});
+	}
 
-    langIsPlaying[language] = true;
-    langToAudio[language].play();
-  }
+	export function play(language) {
+		// console.debug("playing lang", language);
+		// console.debug("audio map", langToAudio);
 
-  // $: {
-  //   console.debug("Audio: ", langToAudio);
-  //   console.debug("Texts sorted: ", textsSorted);
-  // }
+		langIsPlaying[language] = true;
+		langToAudio[language].play();
+	}
+
+	// $: {
+	//   console.debug("Audio: ", langToAudio);
+	//   console.debug("Texts sorted: ", textsSorted);
+	// }
 </script>
 
 <!-- {console.log(languageOrder)} -->
@@ -68,23 +70,16 @@
   otherwise the bindings per-language to langToAudio get messed up.
 -->
 {#each translations as translation}
-  <audio
-    bind:this={langToAudio[translation.lang]}
-    on:ended={(e) => onAudioEnd(translation.lang, order)}
-    preload="none"
-  >
-    <source
-      src="resources/audio/{translation.lang}/{translation.lang}_{name}.mp3"
-      type="audio/mpeg"
-    />
-  </audio>
+	<audio bind:this={langToAudio[translation.lang]} on:ended={(e) => onAudioEnd(translation.lang, order)} preload="none">
+		<source src="audio/{translation.lang}/{translation.lang}_{name}.mp3" type="audio/mpeg" />
+	</audio>
 {/each}
 
 <!-- Text for each language -->
 <!-- TODO: respect language sorting again if it's surfaced in settings -->
 <!-- {#each textsSorted as [language, text]} -->
 {#each translations as translation}
-  <!-- <div
+	<!-- <div
     class="story"
     style="position: absolute;
     top: {positions[$languageOrder.indexOf(translation.lang)]
@@ -96,65 +91,57 @@
     "
   > -->
 
-  <!-- Can ignore width % to not overflow in different scripts -->
-  <div
-    class="story"
-    style="position: absolute; top: {positions[
-      $languageOrder.indexOf(translation.lang)
-    ].top}%; left: {positions[$languageOrder.indexOf(translation.lang)].left}%;
+	<!-- Can ignore width % to not overflow in different scripts -->
+	<div
+		class="story"
+		style="position: absolute; top: {positions[$languageOrder.indexOf(translation.lang)].top}%; left: {positions[
+			$languageOrder.indexOf(translation.lang)
+		].left}%;
    height: {positions[$languageOrder.indexOf(translation.lang)].height}%;
    border: 0px solid red;
-  "
-  >
-    <p
-      on:click={() => play(translation.lang)}
-      class:playing={langIsPlaying[translation.lang]}
-      style="text-align: {translation.lang == 'cs'
-        ? 'right'
-        : 'left'}; font-size: {fontSize}px;
-      "
-    >
-      {translation.texts[
-        $currentScript === Script.default
-          ? languageScripts.get(translation.lang)
-          : $currentScript
-      ]}
-    </p>
-  </div>
+  ">
+		<p
+			on:click={() => play(translation.lang)}
+			class:playing={langIsPlaying[translation.lang]}
+			style="text-align: {translation.lang == 'cs' ? 'right' : 'left'}; font-size: {fontSize}px;
+      ">
+			{translation.texts[$currentScript === Script.default ? languageScripts.get(translation.lang) : $currentScript]}
+		</p>
+	</div>
 {/each}
 
 <style>
-  p {
-    color: black;
-    white-space: pre-line;
-    text-align: left;
-    /* Ubuntu doesn't have variable font weight, we animate scale instead */
-    /* font-weight: 500; */
-    font-weight: 700;
-    transition: all 0.4s ease-in-out;
-    text-shadow: 1px 1px white, 1px -1px white, -1px 1px white, -1px -1px white;
-    line-height: 1.2;
-    cursor: pointer;
-  }
+	p {
+		color: black;
+		white-space: pre-line;
+		text-align: left;
+		/* Ubuntu doesn't have variable font weight, we animate scale instead */
+		/* font-weight: 500; */
+		font-weight: 700;
+		transition: all 0.4s ease-in-out;
+		text-shadow: 1px 1px white, 1px -1px white, -1px 1px white, -1px -1px white;
+		line-height: 1.2;
+		cursor: pointer;
+	}
 
-  .playing {
-    /* font-weight: 700; */
-    transform: scale(1.1);
-  }
+	.playing {
+		/* font-weight: 700; */
+		transform: scale(1.1);
+	}
 
-  .author {
-    /* Ubuntu-light */
-    /* 300 */
-  }
+	/* .author {
+		Ubuntu-light
+		300
+	}
 
-  .title {
-    /* Ubuntu-Bold */
-    /* 700 */
-  }
+	.title {
+		Ubuntu-Bold
+		700
+	} */
 
-  .story {
-    z-index: 2;
-    /* Ubuntu-Medium */
-    /* 500 */
-  }
+	.story {
+		z-index: 2;
+		/* Ubuntu-Medium */
+		/* 500 */
+	}
 </style>
