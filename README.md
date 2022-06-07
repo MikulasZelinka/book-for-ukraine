@@ -122,6 +122,10 @@ We're slowly moving these into proper [Issues](https://github.com/MikulasZelinka
 
 ## Webdevlog
 
+### 2022-06-07
+
+Moving the entire webapp to [SvelteKit](https://kit.svelte.dev/).
+
 ### 2022-05-23
 
 Thanks to the kind colleagues in Medallia's Prague branch, we now have a proper 🇺🇦 translation of the website :)
