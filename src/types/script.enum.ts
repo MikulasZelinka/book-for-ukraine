@@ -1,5 +1,5 @@
 export enum Script {
-  default = "default",
-  latin = "latin",
-  cyrillic = "cyrillic",
+	default = 'default',
+	latin = 'latin',
+	cyrillic = 'cyrillic',
 }
