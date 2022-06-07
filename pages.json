@@ -1,1119 +1,1119 @@
 [
-    {
-        "number": 0,
-        "stories": []
-    },
-    {
-        "number": 1,
-        "stories": [
-            {
-                "name": "batole",
-                "position_image": {
-                    "left": "28.4",
-                    "top": "79.6",
-                    "width": "30.6"
-                }
-            },
-            {
-                "name": "holubice",
-                "position_image": {
-                    "left": "44.0",
-                    "top": "21.7",
-                    "width": "32.6"
-                }
-            },
-            {
-                "name": "kluk",
-                "position_image": {
-                    "left": "71.2",
-                    "top": "67.9",
-                    "width": "22.8"
-                }
-            },
-            {
-                "name": "motyl",
-                "position_image": {
-                    "left": "15.2",
-                    "top": "6.2",
-                    "width": "14.3"
-                }
-            }
-        ]
-    },
-    {
-        "number": 2,
-        "stories": [
-            {
-                "name": "jesterka",
-                "position_image": {
-                    "left": "20.9",
-                    "top": "85.1",
-                    "width": "25.5"
-                },
-                "positions_text": [
-                    {
-                        "height": "4.2",
-                        "left": "62.9",
-                        "top": "80.9",
-                        "width": "20.1"
-                    },
-                    {
-                        "height": "4.2",
-                        "left": "54.5",
-                        "top": "86.4",
-                        "width": "21.2"
-                    }
-                ],
-                "translations": [
-                    {
-                        "lang": "cs",
-                        "texts": {
-                            "cyrillic": "Відіш єштєрку?\nЛезе по штєрку.",
-                            "latin": "Vidíš ještěrku?\nLeze po štěrku."
-                        }
-                    },
-                    {
-                        "lang": "uk",
-                        "texts": {
-                            "cyrillic": "Бачиш ящірку?\nЛізе на гравій.",
-                            "latin": "Bačyš jaščirku?\nLize na hravij."
-                        }
-                    }
-                ]
-            },
-            {
-                "name": "kviti",
-                "position_image": {
-                    "left": "76.7",
-                    "top": "50.0",
-                    "width": "13.6"
-                },
-                "positions_text": [
-                    {
-                        "height": "4.2",
-                        "left": "47.0",
-                        "top": "48.9",
-                        "width": "28.6"
-                    },
-                    {
-                        "height": "4.2",
-                        "left": "34.0",
-                        "top": "54.3",
-                        "width": "41.0"
-                    }
-                ],
-                "translations": [
-                    {
-                        "lang": "cs",
-                        "texts": {
-                            "cyrillic": "Квіті росте мезі класи,\nконец лета уж се гласі.",
-                            "latin": "Kvítí roste mezi klasy,\nkonec léta už se hlásí."
-                        }
-                    },
-                    {
-                        "lang": "uk",
-                        "texts": {
-                            "cyrillic": "Квіти ростуть серед колосків,\nкінець літа вже наближається.",
-                            "latin": "Kvity rostuť sered koloskiv,\nkinec' lita vže nablyžajeťsja."
-                        }
-                    }
-                ]
-            },
-            {
-                "name": "snek",
-                "position_image": {
-                    "left": "16.3",
-                    "top": "62.1",
-                    "width": "11.2"
-                },
-                "positions_text": [
-                    {
-                        "height": "4.2",
-                        "left": "29.3",
-                        "top": "65.2",
-                        "width": "28.8"
-                    },
-                    {
-                        "height": "4.2",
-                        "left": "17.4",
-                        "top": "70.7",
-                        "width": "37.0"
-                    }
-                ],
-                "translations": [
-                    {
-                        "lang": "cs",
-                        "texts": {
-                            "cyrillic": "Снадно догнат шнека,\nвждить на тебе чека!",
-                            "latin": "Snadno dohnat šneka,\nvždyť na tebe čeká!"
-                        }
-                    },
-                    {
-                        "lang": "uk",
-                        "texts": {
-                            "cyrillic": "Легко наздогнати равлика,\nколи він на тебе чекає.",
-                            "latin": "Lehko nazdohnaty ravlyka,\nkoly vin na tebe čekaje."
-                        }
-                    }
-                ]
-            },
-            {
-                "name": "vazka",
-                "position_image": {
-                    "left": "54.3",
-                    "top": "17.8",
-                    "width": "9.2"
-                },
-                "positions_text": [
-                    {
-                        "height": "4.2",
-                        "left": "26.2",
-                        "top": "15.3",
-                        "width": "26.1"
-                    },
-                    {
-                        "height": "4.2",
-                        "left": "16.6",
-                        "top": "20.7",
-                        "width": "35.1"
-                    }
-                ],
-                "translations": [
-                    {
-                        "lang": "cs",
-                        "texts": {
-                            "cyrillic": "Здраві тє пан важка,\nмотила є брашка.",
-                            "latin": "Zdraví tě pan vážka,\nmotýla je bráška."
-                        }
-                    },
-                    {
-                        "lang": "uk",
-                        "texts": {
-                            "cyrillic": "Пан Бабка тебе вітає,\nйого брат метелик злітає.",
-                            "latin": "Pan Babka tebe vitaje,\njoho brat metelyk zlitaje."
-                        }
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "number": 3,
-        "stories": [
-            {
-                "name": "cyklista",
-                "position_image": {
-                    "left": "0.5",
-                    "top": "41.0",
-                    "width": "63.0"
-                },
-                "positions_text": [
-                    {
-                        "height": "4.2",
-                        "left": "56.6",
-                        "top": "46.3",
-                        "width": "33.4"
-                    },
-                    {
-                        "height": "4.2",
-                        "left": "50.5",
-                        "top": "51.7",
-                        "width": "35.6"
-                    }
-                ],
-                "translations": [
-                    {
-                        "lang": "cs",
-                        "texts": {
-                            "cyrillic": "За леси, за лоуки, за поле\nвидал се камарад на коле.",
-                            "latin": "Za lesy, za louky, za pole\nvydal se kamarád na kole."
-                        }
-                    },
-                    {
-                        "lang": "uk",
-                        "texts": {
-                            "cyrillic": "За ліси, за луки, за поля\nдруг поїхав на велосипеді.",
-                            "latin": "Za lisy, za luky, za polja\ndruh pojichav na velosypedi."
-                        }
-                    }
-                ]
-            },
-            {
-                "name": "veverka",
-                "position_image": {
-                    "left": "68.2",
-                    "top": "12.0",
-                    "width": "18.9"
-                },
-                "positions_text": [
-                    {
-                        "height": "4.2",
-                        "left": "39.2",
-                        "top": "14.6",
-                        "width": "24.2"
-                    },
-                    {
-                        "height": "4.2",
-                        "left": "31.4",
-                        "top": "20.0",
-                        "width": "30.1"
-                    }
-                ],
-                "translations": [
-                    {
-                        "lang": "cs",
-                        "texts": {
-                            "cyrillic": "Веверка ма оржішек\nа зрзави кожішек.",
-                            "latin": "Veverka má oříšek\na zrzavý kožíšek."
-                        }
-                    },
-                    {
-                        "lang": "uk",
-                        "texts": {
-                            "cyrillic": "У білочки є горішок\nі руденький кожушок.",
-                            "latin": "U biločky je horišok\ni rudeňkyj kožušok."
-                        }
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "number": 4,
-        "stories": [
-            {
-                "name": "beruska",
-                "position_image": {
-                    "left": "30.9",
-                    "top": "84.1",
-                    "width": "6.9"
-                },
-                "positions_text": [
-                    {
-                        "height": "4.2",
-                        "left": "22.7",
-                        "top": "72.0",
-                        "width": "28.9"
-                    },
-                    {
-                        "height": "4.2",
-                        "left": "13.1",
-                        "top": "77.5",
-                        "width": "33.7"
-                    }
-                ],
-                "translations": [
-                    {
-                        "lang": "cs",
-                        "texts": {
-                            "cyrillic": "Берушка є червена,\nкдо ві, цо то знамена.",
-                            "latin": "Beruška je červená,\nkdo ví, co to znamená."
-                        }
-                    },
-                    {
-                        "lang": "uk",
-                        "texts": {
-                            "cyrillic": "Божа корівка є червона,\nі хто знає, що це означає.",
-                            "latin": "Boža korivka je červona,\ni chto znaje, ščo ce označaje."
-                        }
-                    }
-                ]
-            },
-            {
-                "name": "duha",
-                "position_image": {
-                    "left": "41.2",
-                    "top": "1.1",
-                    "width": "68.7"
-                },
-                "positions_text": [
-                    {
-                        "height": "4.2",
-                        "left": "27.2",
-                        "top": "22.6",
-                        "width": "31.0"
-                    },
-                    {
-                        "height": "4.2",
-                        "left": "19.2",
-                        "top": "28.0",
-                        "width": "31.5"
-                    }
-                ],
-                "translations": [
-                    {
-                        "lang": "cs",
-                        "texts": {
-                            "cyrillic": "Слунце в капках дештє,\nвідіш дугу єштє?",
-                            "latin": "Slunce v kapkách deště,\nvidíš duhu ještě?"
-                        }
-                    },
-                    {
-                        "lang": "uk",
-                        "texts": {
-                            "cyrillic": "Сонце в краплях дощу,\nти вже бачиш веселку?",
-                            "latin": "Sonce v krapljach došču,\nty vže bačyš veselku?"
-                        }
-                    }
-                ]
-            },
-            {
-                "name": "houba",
-                "position_image": {
-                    "left": "15.8",
-                    "top": "66.4",
-                    "width": "8.3"
-                },
-                "positions_text": [
-                    {
-                        "height": "4.2",
-                        "left": "37.6",
-                        "top": "51.3",
-                        "width": "30.8"
-                    },
-                    {
-                        "height": "4.2",
-                        "left": "28.1",
-                        "top": "56.7",
-                        "width": "35.5"
-                    }
-                ],
-                "translations": [
-                    {
-                        "lang": "cs",
-                        "texts": {
-                            "cyrillic": "Виростла ту гоуба,\nпод клобоукем глоуба.",
-                            "latin": "Vyrostla tu houba,\npod kloboukem hloubá."
-                        }
-                    },
-                    {
-                        "lang": "uk",
-                        "texts": {
-                            "cyrillic": "Тут росте грибочок,\nпід капелюшком бурмоче.",
-                            "latin": "Tut roste hrybočok,\npid kapeljuškom burmoče."
-                        }
-                    }
-                ]
-            },
-            {
-                "name": "zaba",
-                "position_image": {
-                    "left": "54.6",
-                    "top": "75.5",
-                    "width": "14.2"
-                },
-                "positions_text": [
-                    {
-                        "height": "4.2",
-                        "left": "72.7",
-                        "top": "65.0",
-                        "width": "26.0"
-                    },
-                    {
-                        "height": "4.2",
-                        "left": "63.6",
-                        "top": "70.5",
-                        "width": "27.7"
-                    }
-                ],
-                "translations": [
-                    {
-                        "lang": "cs",
-                        "texts": {
-                            "cyrillic": "Тагле жаба нескаче,\nобчас є йі до плаче.",
-                            "latin": "Tahle žába neskáče,\nobčas je jí do pláče."
-                        }
-                    },
-                    {
-                        "lang": "uk",
-                        "texts": {
-                            "cyrillic": "Ця жаба не стрибає,\nіноді вона ридає.",
-                            "latin": "Cja žaba ne strybaje,\ninodi vona rydaje."
-                        }
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "number": 5,
-        "stories": [
-            {
-                "name": "kun",
-                "position_image": {
-                    "left": "9.9",
-                    "top": "41.4",
-                    "width": "72.8"
-                },
-                "positions_text": [
-                    {
-                        "height": "4.2",
-                        "left": "66.7",
-                        "top": "48.6",
-                        "width": "24.2"
-                    },
-                    {
-                        "height": "4.2",
-                        "left": "54.2",
-                        "top": "54.0",
-                        "width": "32.3"
-                    }
-                ],
-                "translations": [
-                    {
-                        "lang": "cs",
-                        "texts": {
-                            "cyrillic": "Дівка седі в седле,\nпозорує єдле.",
-                            "latin": "Dívka sedí v sedle,\npozoruje jedle."
-                        }
-                    },
-                    {
-                        "lang": "uk",
-                        "texts": {
-                            "cyrillic": "Дівчина сидить у сідлі,\nспостерігає за ялинкою.",
-                            "latin": "Divčyna sydyť u sidli,\nsposterihaje za jalynkoju."
-                        }
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "number": 6,
-        "stories": [
-            {
-                "name": "jahody",
-                "position_image": {
-                    "left": "17.6",
-                    "top": "71.4",
-                    "width": "13.8"
-                },
-                "positions_text": [
-                    {
-                        "height": "4.2",
-                        "left": "23.5",
-                        "top": "81.2",
-                        "width": "20.7"
-                    },
-                    {
-                        "height": "4.2",
-                        "left": "13.1",
-                        "top": "86.7",
-                        "width": "24.3"
-                    }
-                ],
-                "translations": [
-                    {
-                        "lang": "cs",
-                        "texts": {
-                            "cyrillic": "Ягоди воні\nстейнє як влоні.",
-                            "latin": "Jahody voní\nstejně jak vloni."
-                        }
-                    },
-                    {
-                        "lang": "uk",
-                        "texts": {
-                            "cyrillic": "Пахне полуниця\nтак само, як торік.",
-                            "latin": "Pachne polunycja\ntak samo, jak torik."
-                        }
-                    }
-                ]
-            },
-            {
-                "name": "letadlo",
-                "position_image": {
-                    "left": "71.6",
-                    "top": "10.4",
-                    "width": "21.6"
-                },
-                "positions_text": [
-                    {
-                        "height": "4.2",
-                        "left": "54.7",
-                        "top": "13.0",
-                        "width": "16.1"
-                    },
-                    {
-                        "height": "4.2",
-                        "left": "44.0",
-                        "top": "18.5",
-                        "width": "18.4"
-                    }
-                ],
-                "translations": [
-                    {
-                        "lang": "cs",
-                        "texts": {
-                            "cyrillic": "Летадло леті,\nє плне дєті.",
-                            "latin": "Letadlo letí,\nje plné dětí."
-                        }
-                    },
-                    {
-                        "lang": "uk",
-                        "texts": {
-                            "cyrillic": "Летить літак\nповний дітей.",
-                            "latin": "Letyť litak\npovnyj ditej."
-                        }
-                    }
-                ]
-            },
-            {
-                "name": "srnka",
-                "position_image": {
-                    "left": "41.4",
-                    "top": "37.4",
-                    "width": "58.9"
-                },
-                "positions_text": [
-                    {
-                        "height": "4.2",
-                        "left": "77.8",
-                        "top": "69.5",
-                        "width": "19.1"
-                    },
-                    {
-                        "height": "4.2",
-                        "left": "67.8",
-                        "top": "74.9",
-                        "width": "24.9"
-                    }
-                ],
-                "translations": [
-                    {
-                        "lang": "cs",
-                        "texts": {
-                            "cyrillic": "Срна а срнец\nзрна сні грнец.",
-                            "latin": "Srna a srnec\nzrna sní hrnec."
-                        }
-                    },
-                    {
-                        "lang": "uk",
-                        "texts": {
-                            "cyrillic": "Родина косуль\nзерна їсть горщик.",
-                            "latin": "Rodyna kosuľ\nzerna jisť horščyk."
-                        }
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "number": 7,
-        "stories": [
-            {
-                "name": "jezek",
-                "position_image": {
-                    "left": "36.2",
-                    "top": "77.6",
-                    "width": "24.1"
-                },
-                "positions_text": [
-                    {
-                        "height": "4.2",
-                        "left": "59.9",
-                        "top": "69.6",
-                        "width": "28.8"
-                    },
-                    {
-                        "height": "4.2",
-                        "left": "51.6",
-                        "top": "75.1",
-                        "width": "28.1"
-                    }
-                ],
-                "translations": [
-                    {
-                        "lang": "cs",
-                        "texts": {
-                            "cyrillic": "Єжек в травє дупе,\nклацек под нім кржупе.",
-                            "latin": "Ježek v trávě dupe,\nklacek pod ním křupe."
-                        }
-                    },
-                    {
-                        "lang": "uk",
-                        "texts": {
-                            "cyrillic": "Їжачок в траві дуп,\nпалиця під ним хруп.",
-                            "latin": "Jižačok v travi dup,\npalycja pid nym chrup."
-                        }
-                    }
-                ]
-            },
-            {
-                "name": "sykorka",
-                "position_image": {
-                    "left": "48.7",
-                    "top": "13.9",
-                    "width": "24.2"
-                },
-                "positions_text": [
-                    {
-                        "height": "4.2",
-                        "left": "61.0",
-                        "top": "27.0",
-                        "width": "26.4"
-                    },
-                    {
-                        "height": "4.2",
-                        "left": "49.9",
-                        "top": "32.4",
-                        "width": "25.4"
-                    }
-                ],
-                "translations": [
-                    {
-                        "lang": "cs",
-                        "texts": {
-                            "cyrillic": "Сикорка сі наржіка,\nже при є моц веліка.",
-                            "latin": "Sýkorka si naříká,\nže prý je moc veliká."
-                        }
-                    },
-                    {
-                        "lang": "uk",
-                        "texts": {
-                            "cyrillic": "Синиця жаліється,\nщо вона завелика.",
-                            "latin": "Synycja žalijeťsja,\nščo vona zavelyka."
-                        }
-                    }
-                ]
-            },
-            {
-                "name": "vcela",
-                "position_image": {
-                    "left": "28.4",
-                    "top": "33.7",
-                    "width": "10.0"
-                },
-                "positions_text": [
-                    {
-                        "height": "4.2",
-                        "left": "25.4",
-                        "top": "43.3",
-                        "width": "21.0"
-                    },
-                    {
-                        "height": "4.2",
-                        "left": "6.5",
-                        "top": "48.7",
-                        "width": "35.5"
-                    }
-                ],
-                "translations": [
-                    {
-                        "lang": "cs",
-                        "texts": {
-                            "cyrillic": "Вчелічка бзучі,\nкдиж квєти пучі.",
-                            "latin": "Včelička bzučí,\nkdyž květy pučí."
-                        }
-                    },
-                    {
-                        "lang": "uk",
-                        "texts": {
-                            "cyrillic": "Бджола бзучить,\nколи квіти розпускаються.",
-                            "latin": "Bdžola bzučyť,\nkoly kvity rozpuskajuťsja."
-                        }
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "number": 8,
-        "stories": [
-            {
-                "name": "ctyrlistek",
-                "position_image": {
-                    "left": "68.3",
-                    "top": "79.5",
-                    "width": "9.6"
-                },
-                "positions_text": [
-                    {
-                        "height": "4.2",
-                        "left": "35.0",
-                        "top": "82.6",
-                        "width": "33.2"
-                    },
-                    {
-                        "height": "4.2",
-                        "left": "22.4",
-                        "top": "88.1",
-                        "width": "40.7"
-                    }
-                ],
-                "translations": [
-                    {
-                        "lang": "cs",
-                        "texts": {
-                            "cyrillic": "Чтиржлістек ті штєсті несе,\nєн єстлі го найдеш в лесе.",
-                            "latin": "Čtyřlístek ti štěstí nese,\njen jestli ho najdeš v lese."
-                        }
-                    },
-                    {
-                        "lang": "uk",
-                        "texts": {
-                            "cyrillic": "Чотирилисник принесе удачу,\nякщо ти його знайдеш у лісі.",
-                            "latin": "Čotyrylysnyk prynese udaču,\njakščo ty joho znajdeš u lisi."
-                        }
-                    }
-                ]
-            },
-            {
-                "name": "orel",
-                "position_image": {
-                    "left": "41.6",
-                    "top": "5.0",
-                    "width": "42.7"
-                },
-                "positions_text": [
-                    {
-                        "height": "4.2",
-                        "left": "62.7",
-                        "top": "27.4",
-                        "width": "23.8"
-                    },
-                    {
-                        "height": "4.2",
-                        "left": "46.4",
-                        "top": "32.8",
-                        "width": "34.8"
-                    }
-                ],
-                "translations": [
-                    {
-                        "lang": "cs",
-                        "texts": {
-                            "cyrillic": "Орел ті вше пові,\nале псст – тедь лові.",
-                            "latin": "Orel ti vše poví,\nale psst – teď loví."
-                        }
-                    },
-                    {
-                        "lang": "uk",
-                        "texts": {
-                            "cyrillic": "Орел тобі все розповість,\nале тсс – він полює.",
-                            "latin": "Orel tobi vse rozpovisť,\nale tss – vin poljuje."
-                        }
-                    }
-                ]
-            },
-            {
-                "name": "pejskari",
-                "position_image": {
-                    "left": "5.6",
-                    "top": "50.2",
-                    "width": "41.1"
-                },
-                "positions_text": [
-                    {
-                        "height": "4.2",
-                        "left": "60.0",
-                        "top": "48.6",
-                        "width": "26.9"
-                    },
-                    {
-                        "height": "4.2",
-                        "left": "49.0",
-                        "top": "54.0",
-                        "width": "31.7"
-                    }
-                ],
-                "translations": [
-                    {
-                        "lang": "cs",
-                        "texts": {
-                            "cyrillic": "Пан а пані се псікем\nпрохазі се лесікем.",
-                            "latin": "Pán a paní se psíkem\nprochází se lesíkem."
-                        }
-                    },
-                    {
-                        "lang": "uk",
-                        "texts": {
-                            "cyrillic": "Пан і пані з песиком\nпрогулюються лісиком.",
-                            "latin": "Pan i pani z pesykom\nprohuljujuťsja lisykom."
-                        }
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "number": 9,
-        "stories": [
-            {
-                "name": "liska",
-                "position_image": {
-                    "left": "31.3",
-                    "top": "77.8",
-                    "width": "56.5"
-                },
-                "positions_text": [
-                    {
-                        "height": "4.2",
-                        "left": "45.8",
-                        "top": "68.4",
-                        "width": "28.0"
-                    },
-                    {
-                        "height": "4.2",
-                        "left": "29.6",
-                        "top": "73.9",
-                        "width": "35.9"
-                    }
-                ],
-                "translations": [
-                    {
-                        "lang": "cs",
-                        "texts": {
-                            "cyrillic": "Кам поспіхаш, лішко?\nНаплніт све бржішко.",
-                            "latin": "Kam pospícháš, liško?\nNaplnit své bříško."
-                        }
-                    },
-                    {
-                        "lang": "uk",
-                        "texts": {
-                            "cyrillic": "Куди поспішаєш, лисичко?\nНаповнити свій животик.",
-                            "latin": "Kudy pospišaješ, lysyčko?\nNapovnyty svij žyvotyk."
-                        }
-                    }
-                ]
-            },
-            {
-                "name": "traktor",
-                "position_image": {
-                    "left": "6.4",
-                    "top": "42.1",
-                    "width": "30.9"
-                },
-                "positions_text": [
-                    {
-                        "height": "4.2",
-                        "left": "51.8",
-                        "top": "51.6",
-                        "width": "25.5"
-                    },
-                    {
-                        "height": "4.2",
-                        "left": "38.8",
-                        "top": "57.0",
-                        "width": "31.4"
-                    }
-                ],
-                "translations": [
-                    {
-                        "lang": "cs",
-                        "texts": {
-                            "cyrillic": "Полем трактор єде,\nбразді гліни гнєде.",
-                            "latin": "Polem traktor jede,\nbrázdí hlíny hnědé."
-                        }
-                    },
-                    {
-                        "lang": "uk",
-                        "texts": {
-                            "cyrillic": "Трактор по полю їде,\nрозбиває тверду глину.",
-                            "latin": "Traktor po polju jide,\nrozbyvaje tverdu hlynu."
-                        }
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "number": 10,
-        "stories": [
-            {
-                "name": "balon",
-                "position_image": {
-                    "left": "83.2",
-                    "top": "8.8",
-                    "width": "16.3"
-                },
-                "positions_text": [
-                    {
-                        "height": "4.2",
-                        "left": "58.4",
-                        "top": "12.0",
-                        "width": "24.6"
-                    },
-                    {
-                        "height": "4.2",
-                        "left": "41.2",
-                        "top": "17.4",
-                        "width": "35.0"
-                    }
-                ],
-                "translations": [
-                    {
-                        "lang": "cs",
-                        "texts": {
-                            "cyrillic": "Аж вітр доване,\nбалон зас пржістане.",
-                            "latin": "Až vítr dovane,\nbalón zas přistane."
-                        }
-                    },
-                    {
-                        "lang": "uk",
-                        "texts": {
-                            "cyrillic": "Коли вітер дмухне,\nкуля знову приземлиться.",
-                            "latin": "Koly viter dmuchne,\nkulja znovu pryzemlyťsja."
-                        }
-                    }
-                ]
-            },
-            {
-                "name": "mys",
-                "position_image": {
-                    "left": "21.6",
-                    "top": "78.4",
-                    "width": "25.5"
-                },
-                "positions_text": [
-                    {
-                        "height": "4.2",
-                        "left": "61.5",
-                        "top": "79.8",
-                        "width": "15.8"
-                    },
-                    {
-                        "height": "4.2",
-                        "left": "50.3",
-                        "top": "85.2",
-                        "width": "21.7"
-                    }
-                ],
-                "translations": [
-                    {
-                        "lang": "cs",
-                        "texts": {
-                            "cyrillic": "Бєжі миш,\nгледа скриш.",
-                            "latin": "Běží myš,\nhledá skrýš."
-                        }
-                    },
-                    {
-                        "lang": "uk",
-                        "texts": {
-                            "cyrillic": "Мишка бігає,\nсхованку шукає.",
-                            "latin": "Myška bihaje,\nschovanku šukaje."
-                        }
-                    }
-                ]
-            },
-            {
-                "name": "zajic",
-                "position_image": {
-                    "left": "42.2",
-                    "top": "43.9",
-                    "width": "27.4"
-                },
-                "positions_text": [
-                    {
-                        "height": "4.2",
-                        "left": "66.5",
-                        "top": "60.5",
-                        "width": "26.3"
-                    },
-                    {
-                        "height": "4.2",
-                        "left": "54.9",
-                        "top": "66.0",
-                        "width": "31.6"
-                    }
-                ],
-                "translations": [
-                    {
-                        "lang": "cs",
-                        "texts": {
-                            "cyrillic": "Зайіц стржіга ушіма,\nнікдо сі го невшіма.",
-                            "latin": "Zajíc stříhá ušima,\nnikdo si ho nevšímá."
-                        }
-                    },
-                    {
-                        "lang": "uk",
-                        "texts": {
-                            "cyrillic": "Заєць вухом підслухає,\nніхто його не помічає.",
-                            "latin": "Zajec' vuchom pidsluchaje,\nnichto joho ne pomičaje."
-                        }
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "number": 11,
-        "stories": [
-            {
-                "name": "kocarek",
-                "position_image": {
-                    "left": "23.6",
-                    "top": "45.9",
-                    "width": "58.4"
-                },
-                "positions_text": [
-                    {
-                        "height": "4.2",
-                        "left": "33.2",
-                        "top": "49.4",
-                        "width": "30.0"
-                    },
-                    {
-                        "height": "4.2",
-                        "left": "23.5",
-                        "top": "54.9",
-                        "width": "35.1"
-                    }
-                ],
-                "translations": [
-                    {
-                        "lang": "cs",
-                        "texts": {
-                            "cyrillic": "Кдиж мамінка зазпіва,\nмімінко се усміва.",
-                            "latin": "Když maminka zazpívá,\nmiminko se usmívá."
-                        }
-                    },
-                    {
-                        "lang": "uk",
-                        "texts": {
-                            "cyrillic": "Коли мама заспіває,\nнемовлятко посміхається.",
-                            "latin": "Koly mama zaspivaje,\nnemovljatko posmichajeťsja."
-                        }
-                    }
-                ]
-            },
-            {
-                "name": "sova",
-                "position_image": {
-                    "left": "70.0",
-                    "top": "7.6",
-                    "width": "10.3"
-                },
-                "positions_text": [
-                    {
-                        "height": "4.2",
-                        "left": "36.0",
-                        "top": "13.3",
-                        "width": "30.4"
-                    },
-                    {
-                        "height": "4.2",
-                        "left": "23.3",
-                        "top": "18.8",
-                        "width": "35.0"
-                    }
-                ],
-                "translations": [
-                    {
-                        "lang": "cs",
-                        "texts": {
-                            "cyrillic": "Коукні на стром знова,\nседла сі там сова.",
-                            "latin": "Koukni na strom znova,\nsedla si tam sova."
-                        }
-                    },
-                    {
-                        "lang": "uk",
-                        "texts": {
-                            "cyrillic": "Зазирни на дерево знову,\nна гілочці сидить.",
-                            "latin": "Zazyrny na derevo znovu,\nna hiločci sydyť."
-                        }
-                    }
-                ]
-            }
-        ]
-    }
+	{
+		"number": 0,
+		"stories": []
+	},
+	{
+		"number": 1,
+		"stories": [
+			{
+				"name": "batole",
+				"position_image": {
+					"left": "28.4",
+					"top": "79.6",
+					"width": "30.6"
+				}
+			},
+			{
+				"name": "holubice",
+				"position_image": {
+					"left": "44.0",
+					"top": "21.7",
+					"width": "32.6"
+				}
+			},
+			{
+				"name": "kluk",
+				"position_image": {
+					"left": "71.2",
+					"top": "67.9",
+					"width": "22.8"
+				}
+			},
+			{
+				"name": "motyl",
+				"position_image": {
+					"left": "15.2",
+					"top": "6.2",
+					"width": "14.3"
+				}
+			}
+		]
+	},
+	{
+		"number": 2,
+		"stories": [
+			{
+				"name": "jesterka",
+				"position_image": {
+					"left": "20.9",
+					"top": "85.1",
+					"width": "25.5"
+				},
+				"positions_text": [
+					{
+						"height": "4.2",
+						"left": "62.9",
+						"top": "80.9",
+						"width": "20.1"
+					},
+					{
+						"height": "4.2",
+						"left": "54.5",
+						"top": "86.4",
+						"width": "21.2"
+					}
+				],
+				"translations": [
+					{
+						"lang": "cs",
+						"texts": {
+							"cyrillic": "Відіш єштєрку?\nЛезе по штєрку.",
+							"latin": "Vidíš ještěrku?\nLeze po štěrku."
+						}
+					},
+					{
+						"lang": "uk",
+						"texts": {
+							"cyrillic": "Бачиш ящірку?\nЛізе на гравій.",
+							"latin": "Bačyš jaščirku?\nLize na hravij."
+						}
+					}
+				]
+			},
+			{
+				"name": "kviti",
+				"position_image": {
+					"left": "76.7",
+					"top": "50.0",
+					"width": "13.6"
+				},
+				"positions_text": [
+					{
+						"height": "4.2",
+						"left": "47.0",
+						"top": "48.9",
+						"width": "28.6"
+					},
+					{
+						"height": "4.2",
+						"left": "34.0",
+						"top": "54.3",
+						"width": "41.0"
+					}
+				],
+				"translations": [
+					{
+						"lang": "cs",
+						"texts": {
+							"cyrillic": "Квіті росте мезі класи,\nконец лета уж се гласі.",
+							"latin": "Kvítí roste mezi klasy,\nkonec léta už se hlásí."
+						}
+					},
+					{
+						"lang": "uk",
+						"texts": {
+							"cyrillic": "Квіти ростуть серед колосків,\nкінець літа вже наближається.",
+							"latin": "Kvity rostuť sered koloskiv,\nkinec' lita vže nablyžajeťsja."
+						}
+					}
+				]
+			},
+			{
+				"name": "snek",
+				"position_image": {
+					"left": "16.3",
+					"top": "62.1",
+					"width": "11.2"
+				},
+				"positions_text": [
+					{
+						"height": "4.2",
+						"left": "29.3",
+						"top": "65.2",
+						"width": "28.8"
+					},
+					{
+						"height": "4.2",
+						"left": "17.4",
+						"top": "70.7",
+						"width": "37.0"
+					}
+				],
+				"translations": [
+					{
+						"lang": "cs",
+						"texts": {
+							"cyrillic": "Снадно догнат шнека,\nвждить на тебе чека!",
+							"latin": "Snadno dohnat šneka,\nvždyť na tebe čeká!"
+						}
+					},
+					{
+						"lang": "uk",
+						"texts": {
+							"cyrillic": "Легко наздогнати равлика,\nколи він на тебе чекає.",
+							"latin": "Lehko nazdohnaty ravlyka,\nkoly vin na tebe čekaje."
+						}
+					}
+				]
+			},
+			{
+				"name": "vazka",
+				"position_image": {
+					"left": "54.3",
+					"top": "17.8",
+					"width": "9.2"
+				},
+				"positions_text": [
+					{
+						"height": "4.2",
+						"left": "26.2",
+						"top": "15.3",
+						"width": "26.1"
+					},
+					{
+						"height": "4.2",
+						"left": "16.6",
+						"top": "20.7",
+						"width": "35.1"
+					}
+				],
+				"translations": [
+					{
+						"lang": "cs",
+						"texts": {
+							"cyrillic": "Здраві тє пан важка,\nмотила є брашка.",
+							"latin": "Zdraví tě pan vážka,\nmotýla je bráška."
+						}
+					},
+					{
+						"lang": "uk",
+						"texts": {
+							"cyrillic": "Пан Бабка тебе вітає,\nйого брат метелик злітає.",
+							"latin": "Pan Babka tebe vitaje,\njoho brat metelyk zlitaje."
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"number": 3,
+		"stories": [
+			{
+				"name": "cyklista",
+				"position_image": {
+					"left": "0.5",
+					"top": "41.0",
+					"width": "63.0"
+				},
+				"positions_text": [
+					{
+						"height": "4.2",
+						"left": "56.6",
+						"top": "46.3",
+						"width": "33.4"
+					},
+					{
+						"height": "4.2",
+						"left": "50.5",
+						"top": "51.7",
+						"width": "35.6"
+					}
+				],
+				"translations": [
+					{
+						"lang": "cs",
+						"texts": {
+							"cyrillic": "За леси, за лоуки, за поле\nвидал се камарад на коле.",
+							"latin": "Za lesy, za louky, za pole\nvydal se kamarád na kole."
+						}
+					},
+					{
+						"lang": "uk",
+						"texts": {
+							"cyrillic": "За ліси, за луки, за поля\nдруг поїхав на велосипеді.",
+							"latin": "Za lisy, za luky, za polja\ndruh pojichav na velosypedi."
+						}
+					}
+				]
+			},
+			{
+				"name": "veverka",
+				"position_image": {
+					"left": "68.2",
+					"top": "12.0",
+					"width": "18.9"
+				},
+				"positions_text": [
+					{
+						"height": "4.2",
+						"left": "39.2",
+						"top": "14.6",
+						"width": "24.2"
+					},
+					{
+						"height": "4.2",
+						"left": "31.4",
+						"top": "20.0",
+						"width": "30.1"
+					}
+				],
+				"translations": [
+					{
+						"lang": "cs",
+						"texts": {
+							"cyrillic": "Веверка ма оржішек\nа зрзави кожішек.",
+							"latin": "Veverka má oříšek\na zrzavý kožíšek."
+						}
+					},
+					{
+						"lang": "uk",
+						"texts": {
+							"cyrillic": "У білочки є горішок\nі руденький кожушок.",
+							"latin": "U biločky je horišok\ni rudeňkyj kožušok."
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"number": 4,
+		"stories": [
+			{
+				"name": "beruska",
+				"position_image": {
+					"left": "30.9",
+					"top": "84.1",
+					"width": "6.9"
+				},
+				"positions_text": [
+					{
+						"height": "4.2",
+						"left": "22.7",
+						"top": "72.0",
+						"width": "28.9"
+					},
+					{
+						"height": "4.2",
+						"left": "13.1",
+						"top": "77.5",
+						"width": "33.7"
+					}
+				],
+				"translations": [
+					{
+						"lang": "cs",
+						"texts": {
+							"cyrillic": "Берушка є червена,\nкдо ві, цо то знамена.",
+							"latin": "Beruška je červená,\nkdo ví, co to znamená."
+						}
+					},
+					{
+						"lang": "uk",
+						"texts": {
+							"cyrillic": "Божа корівка є червона,\nі хто знає, що це означає.",
+							"latin": "Boža korivka je červona,\ni chto znaje, ščo ce označaje."
+						}
+					}
+				]
+			},
+			{
+				"name": "duha",
+				"position_image": {
+					"left": "41.2",
+					"top": "1.1",
+					"width": "68.7"
+				},
+				"positions_text": [
+					{
+						"height": "4.2",
+						"left": "27.2",
+						"top": "22.6",
+						"width": "31.0"
+					},
+					{
+						"height": "4.2",
+						"left": "19.2",
+						"top": "28.0",
+						"width": "31.5"
+					}
+				],
+				"translations": [
+					{
+						"lang": "cs",
+						"texts": {
+							"cyrillic": "Слунце в капках дештє,\nвідіш дугу єштє?",
+							"latin": "Slunce v kapkách deště,\nvidíš duhu ještě?"
+						}
+					},
+					{
+						"lang": "uk",
+						"texts": {
+							"cyrillic": "Сонце в краплях дощу,\nти вже бачиш веселку?",
+							"latin": "Sonce v krapljach došču,\nty vže bačyš veselku?"
+						}
+					}
+				]
+			},
+			{
+				"name": "houba",
+				"position_image": {
+					"left": "15.8",
+					"top": "66.4",
+					"width": "8.3"
+				},
+				"positions_text": [
+					{
+						"height": "4.2",
+						"left": "37.6",
+						"top": "51.3",
+						"width": "30.8"
+					},
+					{
+						"height": "4.2",
+						"left": "28.1",
+						"top": "56.7",
+						"width": "35.5"
+					}
+				],
+				"translations": [
+					{
+						"lang": "cs",
+						"texts": {
+							"cyrillic": "Виростла ту гоуба,\nпод клобоукем глоуба.",
+							"latin": "Vyrostla tu houba,\npod kloboukem hloubá."
+						}
+					},
+					{
+						"lang": "uk",
+						"texts": {
+							"cyrillic": "Тут росте грибочок,\nпід капелюшком бурмоче.",
+							"latin": "Tut roste hrybočok,\npid kapeljuškom burmoče."
+						}
+					}
+				]
+			},
+			{
+				"name": "zaba",
+				"position_image": {
+					"left": "54.6",
+					"top": "75.5",
+					"width": "14.2"
+				},
+				"positions_text": [
+					{
+						"height": "4.2",
+						"left": "72.7",
+						"top": "65.0",
+						"width": "26.0"
+					},
+					{
+						"height": "4.2",
+						"left": "63.6",
+						"top": "70.5",
+						"width": "27.7"
+					}
+				],
+				"translations": [
+					{
+						"lang": "cs",
+						"texts": {
+							"cyrillic": "Тагле жаба нескаче,\nобчас є йі до плаче.",
+							"latin": "Tahle žába neskáče,\nobčas je jí do pláče."
+						}
+					},
+					{
+						"lang": "uk",
+						"texts": {
+							"cyrillic": "Ця жаба не стрибає,\nіноді вона ридає.",
+							"latin": "Cja žaba ne strybaje,\ninodi vona rydaje."
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"number": 5,
+		"stories": [
+			{
+				"name": "kun",
+				"position_image": {
+					"left": "9.9",
+					"top": "41.4",
+					"width": "72.8"
+				},
+				"positions_text": [
+					{
+						"height": "4.2",
+						"left": "66.7",
+						"top": "48.6",
+						"width": "24.2"
+					},
+					{
+						"height": "4.2",
+						"left": "54.2",
+						"top": "54.0",
+						"width": "32.3"
+					}
+				],
+				"translations": [
+					{
+						"lang": "cs",
+						"texts": {
+							"cyrillic": "Дівка седі в седле,\nпозорує єдле.",
+							"latin": "Dívka sedí v sedle,\npozoruje jedle."
+						}
+					},
+					{
+						"lang": "uk",
+						"texts": {
+							"cyrillic": "Дівчина сидить у сідлі,\nспостерігає за ялинкою.",
+							"latin": "Divčyna sydyť u sidli,\nsposterihaje za jalynkoju."
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"number": 6,
+		"stories": [
+			{
+				"name": "jahody",
+				"position_image": {
+					"left": "17.6",
+					"top": "71.4",
+					"width": "13.8"
+				},
+				"positions_text": [
+					{
+						"height": "4.2",
+						"left": "23.5",
+						"top": "81.2",
+						"width": "20.7"
+					},
+					{
+						"height": "4.2",
+						"left": "13.1",
+						"top": "86.7",
+						"width": "24.3"
+					}
+				],
+				"translations": [
+					{
+						"lang": "cs",
+						"texts": {
+							"cyrillic": "Ягоди воні\nстейнє як влоні.",
+							"latin": "Jahody voní\nstejně jak vloni."
+						}
+					},
+					{
+						"lang": "uk",
+						"texts": {
+							"cyrillic": "Пахне полуниця\nтак само, як торік.",
+							"latin": "Pachne polunycja\ntak samo, jak torik."
+						}
+					}
+				]
+			},
+			{
+				"name": "letadlo",
+				"position_image": {
+					"left": "71.6",
+					"top": "10.4",
+					"width": "21.6"
+				},
+				"positions_text": [
+					{
+						"height": "4.2",
+						"left": "54.7",
+						"top": "13.0",
+						"width": "16.1"
+					},
+					{
+						"height": "4.2",
+						"left": "44.0",
+						"top": "18.5",
+						"width": "18.4"
+					}
+				],
+				"translations": [
+					{
+						"lang": "cs",
+						"texts": {
+							"cyrillic": "Летадло леті,\nє плне дєті.",
+							"latin": "Letadlo letí,\nje plné dětí."
+						}
+					},
+					{
+						"lang": "uk",
+						"texts": {
+							"cyrillic": "Летить літак\nповний дітей.",
+							"latin": "Letyť litak\npovnyj ditej."
+						}
+					}
+				]
+			},
+			{
+				"name": "srnka",
+				"position_image": {
+					"left": "41.4",
+					"top": "37.4",
+					"width": "58.9"
+				},
+				"positions_text": [
+					{
+						"height": "4.2",
+						"left": "77.8",
+						"top": "69.5",
+						"width": "19.1"
+					},
+					{
+						"height": "4.2",
+						"left": "67.8",
+						"top": "74.9",
+						"width": "24.9"
+					}
+				],
+				"translations": [
+					{
+						"lang": "cs",
+						"texts": {
+							"cyrillic": "Срна а срнец\nзрна сні грнец.",
+							"latin": "Srna a srnec\nzrna sní hrnec."
+						}
+					},
+					{
+						"lang": "uk",
+						"texts": {
+							"cyrillic": "Родина косуль\nзерна їсть горщик.",
+							"latin": "Rodyna kosuľ\nzerna jisť horščyk."
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"number": 7,
+		"stories": [
+			{
+				"name": "jezek",
+				"position_image": {
+					"left": "36.2",
+					"top": "77.6",
+					"width": "24.1"
+				},
+				"positions_text": [
+					{
+						"height": "4.2",
+						"left": "59.9",
+						"top": "69.6",
+						"width": "28.8"
+					},
+					{
+						"height": "4.2",
+						"left": "51.6",
+						"top": "75.1",
+						"width": "28.1"
+					}
+				],
+				"translations": [
+					{
+						"lang": "cs",
+						"texts": {
+							"cyrillic": "Єжек в травє дупе,\nклацек под нім кржупе.",
+							"latin": "Ježek v trávě dupe,\nklacek pod ním křupe."
+						}
+					},
+					{
+						"lang": "uk",
+						"texts": {
+							"cyrillic": "Їжачок в траві дуп,\nпалиця під ним хруп.",
+							"latin": "Jižačok v travi dup,\npalycja pid nym chrup."
+						}
+					}
+				]
+			},
+			{
+				"name": "sykorka",
+				"position_image": {
+					"left": "48.7",
+					"top": "13.9",
+					"width": "24.2"
+				},
+				"positions_text": [
+					{
+						"height": "4.2",
+						"left": "61.0",
+						"top": "27.0",
+						"width": "26.4"
+					},
+					{
+						"height": "4.2",
+						"left": "49.9",
+						"top": "32.4",
+						"width": "25.4"
+					}
+				],
+				"translations": [
+					{
+						"lang": "cs",
+						"texts": {
+							"cyrillic": "Сикорка сі наржіка,\nже при є моц веліка.",
+							"latin": "Sýkorka si naříká,\nže prý je moc veliká."
+						}
+					},
+					{
+						"lang": "uk",
+						"texts": {
+							"cyrillic": "Синиця жаліється,\nщо вона завелика.",
+							"latin": "Synycja žalijeťsja,\nščo vona zavelyka."
+						}
+					}
+				]
+			},
+			{
+				"name": "vcela",
+				"position_image": {
+					"left": "28.4",
+					"top": "33.7",
+					"width": "10.0"
+				},
+				"positions_text": [
+					{
+						"height": "4.2",
+						"left": "25.4",
+						"top": "43.3",
+						"width": "21.0"
+					},
+					{
+						"height": "4.2",
+						"left": "6.5",
+						"top": "48.7",
+						"width": "35.5"
+					}
+				],
+				"translations": [
+					{
+						"lang": "cs",
+						"texts": {
+							"cyrillic": "Вчелічка бзучі,\nкдиж квєти пучі.",
+							"latin": "Včelička bzučí,\nkdyž květy pučí."
+						}
+					},
+					{
+						"lang": "uk",
+						"texts": {
+							"cyrillic": "Бджола бзучить,\nколи квіти розпускаються.",
+							"latin": "Bdžola bzučyť,\nkoly kvity rozpuskajuťsja."
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"number": 8,
+		"stories": [
+			{
+				"name": "ctyrlistek",
+				"position_image": {
+					"left": "68.3",
+					"top": "79.5",
+					"width": "9.6"
+				},
+				"positions_text": [
+					{
+						"height": "4.2",
+						"left": "35.0",
+						"top": "82.6",
+						"width": "33.2"
+					},
+					{
+						"height": "4.2",
+						"left": "22.4",
+						"top": "88.1",
+						"width": "40.7"
+					}
+				],
+				"translations": [
+					{
+						"lang": "cs",
+						"texts": {
+							"cyrillic": "Чтиржлістек ті штєсті несе,\nєн єстлі го найдеш в лесе.",
+							"latin": "Čtyřlístek ti štěstí nese,\njen jestli ho najdeš v lese."
+						}
+					},
+					{
+						"lang": "uk",
+						"texts": {
+							"cyrillic": "Чотирилисник принесе удачу,\nякщо ти його знайдеш у лісі.",
+							"latin": "Čotyrylysnyk prynese udaču,\njakščo ty joho znajdeš u lisi."
+						}
+					}
+				]
+			},
+			{
+				"name": "orel",
+				"position_image": {
+					"left": "41.6",
+					"top": "5.0",
+					"width": "42.7"
+				},
+				"positions_text": [
+					{
+						"height": "4.2",
+						"left": "62.7",
+						"top": "27.4",
+						"width": "23.8"
+					},
+					{
+						"height": "4.2",
+						"left": "46.4",
+						"top": "32.8",
+						"width": "34.8"
+					}
+				],
+				"translations": [
+					{
+						"lang": "cs",
+						"texts": {
+							"cyrillic": "Орел ті вше пові,\nале псст – тедь лові.",
+							"latin": "Orel ti vše poví,\nale psst – teď loví."
+						}
+					},
+					{
+						"lang": "uk",
+						"texts": {
+							"cyrillic": "Орел тобі все розповість,\nале тсс – він полює.",
+							"latin": "Orel tobi vse rozpovisť,\nale tss – vin poljuje."
+						}
+					}
+				]
+			},
+			{
+				"name": "pejskari",
+				"position_image": {
+					"left": "5.6",
+					"top": "50.2",
+					"width": "41.1"
+				},
+				"positions_text": [
+					{
+						"height": "4.2",
+						"left": "60.0",
+						"top": "48.6",
+						"width": "26.9"
+					},
+					{
+						"height": "4.2",
+						"left": "49.0",
+						"top": "54.0",
+						"width": "31.7"
+					}
+				],
+				"translations": [
+					{
+						"lang": "cs",
+						"texts": {
+							"cyrillic": "Пан а пані се псікем\nпрохазі се лесікем.",
+							"latin": "Pán a paní se psíkem\nprochází se lesíkem."
+						}
+					},
+					{
+						"lang": "uk",
+						"texts": {
+							"cyrillic": "Пан і пані з песиком\nпрогулюються лісиком.",
+							"latin": "Pan i pani z pesykom\nprohuljujuťsja lisykom."
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"number": 9,
+		"stories": [
+			{
+				"name": "liska",
+				"position_image": {
+					"left": "31.3",
+					"top": "77.8",
+					"width": "56.5"
+				},
+				"positions_text": [
+					{
+						"height": "4.2",
+						"left": "45.8",
+						"top": "68.4",
+						"width": "28.0"
+					},
+					{
+						"height": "4.2",
+						"left": "29.6",
+						"top": "73.9",
+						"width": "35.9"
+					}
+				],
+				"translations": [
+					{
+						"lang": "cs",
+						"texts": {
+							"cyrillic": "Кам поспіхаш, лішко?\nНаплніт све бржішко.",
+							"latin": "Kam pospícháš, liško?\nNaplnit své bříško."
+						}
+					},
+					{
+						"lang": "uk",
+						"texts": {
+							"cyrillic": "Куди поспішаєш, лисичко?\nНаповнити свій животик.",
+							"latin": "Kudy pospišaješ, lysyčko?\nNapovnyty svij žyvotyk."
+						}
+					}
+				]
+			},
+			{
+				"name": "traktor",
+				"position_image": {
+					"left": "6.4",
+					"top": "42.1",
+					"width": "30.9"
+				},
+				"positions_text": [
+					{
+						"height": "4.2",
+						"left": "51.8",
+						"top": "51.6",
+						"width": "25.5"
+					},
+					{
+						"height": "4.2",
+						"left": "38.8",
+						"top": "57.0",
+						"width": "31.4"
+					}
+				],
+				"translations": [
+					{
+						"lang": "cs",
+						"texts": {
+							"cyrillic": "Полем трактор єде,\nбразді гліни гнєде.",
+							"latin": "Polem traktor jede,\nbrázdí hlíny hnědé."
+						}
+					},
+					{
+						"lang": "uk",
+						"texts": {
+							"cyrillic": "Трактор по полю їде,\nрозбиває тверду глину.",
+							"latin": "Traktor po polju jide,\nrozbyvaje tverdu hlynu."
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"number": 10,
+		"stories": [
+			{
+				"name": "balon",
+				"position_image": {
+					"left": "83.2",
+					"top": "8.8",
+					"width": "16.3"
+				},
+				"positions_text": [
+					{
+						"height": "4.2",
+						"left": "58.4",
+						"top": "12.0",
+						"width": "24.6"
+					},
+					{
+						"height": "4.2",
+						"left": "41.2",
+						"top": "17.4",
+						"width": "35.0"
+					}
+				],
+				"translations": [
+					{
+						"lang": "cs",
+						"texts": {
+							"cyrillic": "Аж вітр доване,\nбалон зас пржістане.",
+							"latin": "Až vítr dovane,\nbalón zas přistane."
+						}
+					},
+					{
+						"lang": "uk",
+						"texts": {
+							"cyrillic": "Коли вітер дмухне,\nкуля знову приземлиться.",
+							"latin": "Koly viter dmuchne,\nkulja znovu pryzemlyťsja."
+						}
+					}
+				]
+			},
+			{
+				"name": "mys",
+				"position_image": {
+					"left": "21.6",
+					"top": "78.4",
+					"width": "25.5"
+				},
+				"positions_text": [
+					{
+						"height": "4.2",
+						"left": "61.5",
+						"top": "79.8",
+						"width": "15.8"
+					},
+					{
+						"height": "4.2",
+						"left": "50.3",
+						"top": "85.2",
+						"width": "21.7"
+					}
+				],
+				"translations": [
+					{
+						"lang": "cs",
+						"texts": {
+							"cyrillic": "Бєжі миш,\nгледа скриш.",
+							"latin": "Běží myš,\nhledá skrýš."
+						}
+					},
+					{
+						"lang": "uk",
+						"texts": {
+							"cyrillic": "Мишка бігає,\nсхованку шукає.",
+							"latin": "Myška bihaje,\nschovanku šukaje."
+						}
+					}
+				]
+			},
+			{
+				"name": "zajic",
+				"position_image": {
+					"left": "42.2",
+					"top": "43.9",
+					"width": "27.4"
+				},
+				"positions_text": [
+					{
+						"height": "4.2",
+						"left": "66.5",
+						"top": "60.5",
+						"width": "26.3"
+					},
+					{
+						"height": "4.2",
+						"left": "54.9",
+						"top": "66.0",
+						"width": "31.6"
+					}
+				],
+				"translations": [
+					{
+						"lang": "cs",
+						"texts": {
+							"cyrillic": "Зайіц стржіга ушіма,\nнікдо сі го невшіма.",
+							"latin": "Zajíc stříhá ušima,\nnikdo si ho nevšímá."
+						}
+					},
+					{
+						"lang": "uk",
+						"texts": {
+							"cyrillic": "Заєць вухом підслухає,\nніхто його не помічає.",
+							"latin": "Zajec' vuchom pidsluchaje,\nnichto joho ne pomičaje."
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"number": 11,
+		"stories": [
+			{
+				"name": "kocarek",
+				"position_image": {
+					"left": "23.6",
+					"top": "45.9",
+					"width": "58.4"
+				},
+				"positions_text": [
+					{
+						"height": "4.2",
+						"left": "33.2",
+						"top": "49.4",
+						"width": "30.0"
+					},
+					{
+						"height": "4.2",
+						"left": "23.5",
+						"top": "54.9",
+						"width": "35.1"
+					}
+				],
+				"translations": [
+					{
+						"lang": "cs",
+						"texts": {
+							"cyrillic": "Кдиж мамінка зазпіва,\nмімінко се усміва.",
+							"latin": "Když maminka zazpívá,\nmiminko se usmívá."
+						}
+					},
+					{
+						"lang": "uk",
+						"texts": {
+							"cyrillic": "Коли мама заспіває,\nнемовлятко посміхається.",
+							"latin": "Koly mama zaspivaje,\nnemovljatko posmichajeťsja."
+						}
+					}
+				]
+			},
+			{
+				"name": "sova",
+				"position_image": {
+					"left": "70.0",
+					"top": "7.6",
+					"width": "10.3"
+				},
+				"positions_text": [
+					{
+						"height": "4.2",
+						"left": "36.0",
+						"top": "13.3",
+						"width": "30.4"
+					},
+					{
+						"height": "4.2",
+						"left": "23.3",
+						"top": "18.8",
+						"width": "35.0"
+					}
+				],
+				"translations": [
+					{
+						"lang": "cs",
+						"texts": {
+							"cyrillic": "Коукні на стром знова,\nседла сі там сова.",
+							"latin": "Koukni na strom znova,\nsedla si tam sova."
+						}
+					},
+					{
+						"lang": "uk",
+						"texts": {
+							"cyrillic": "Зазирни на дерево знову,\nна гілочці сидить.",
+							"latin": "Zazyrny na derevo znovu,\nna hiločci sydyť."
+						}
+					}
+				]
+			}
+		]
+	}
 ]
