@@ -63,3 +63,13 @@
 		</div>
 	</div>
 </nav>
+
+<style>
+	.navbar {
+		background-color: rgba(255, 255, 255, 0.69);
+		/* background-color: white; */
+		background-image: none;
+		transition: top 0.3s;
+		/* opacity: 0.5; */
+	}
+</style>
