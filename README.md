@@ -132,7 +132,7 @@ Thanks to the kind colleagues in Medallia's Prague branch, we now have a proper 
 
 ### 2022-05-22
 
-I've shared the website in a couple of (semi-)static places and forums,
+I've shared the website in a couple of (semi-)public places and forums,
 including a [reddit post about the book as a Svelte project](https://www.reddit.com/r/sveltejs/comments/uvbdbx/bilingual_book_for_ukranian_children_as_an/).
 
 Still, there hasn't been much traffic yet (58 website visits (according to 🐐) and 4 GitHub ⭐ so far) and
