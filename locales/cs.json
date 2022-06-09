@@ -20,6 +20,8 @@
 		"editing": "Redakce a korektura",
 		"language": "Jazyková spolupráce",
 		"supervision": "Supervize a fundraising",
+		"voice": "Namluvily",
+		"graphicHelp": "Grafická spolupráce",
 		"acknowledgement": "Děkuji všem, kteří pomohli uvést projekt do života a vzdali se honoráře ve prospěch jeho smyslu. Tereza Axmannová"
 	},
 	"footerSection": {
@@ -33,6 +35,7 @@
 		"cyrillic": "Cyrilice"
 	},
 	"languages": {
+		"cs": "Čeština",
 		"en": "Angličtina",
 		"uk": "Ukrajinština"
 	}

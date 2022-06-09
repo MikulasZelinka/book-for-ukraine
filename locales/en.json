@@ -20,6 +20,8 @@
 		"editing": "Editing and proofreading",
 		"language": "Language cooperation",
 		"supervision": "Supervision and fundraising",
+		"voice": "Voice actors",
+		"graphicHelp": "Graphic design consultant",
 		"acknowledgement": "I'd like to thank everyone who has helped make this project happen and for working on it for free to support its cause. Tereza Axmannová"
 	},
 	"footerSection": {
@@ -33,6 +35,7 @@
 		"cyrillic": "Cyrillic"
 	},
 	"languages": {
+		"cs": "Czech",
 		"en": "English",
 		"uk": "Ukranian"
 	}

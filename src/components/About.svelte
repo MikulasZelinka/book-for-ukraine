@@ -27,17 +27,27 @@
 					{$t('authorsSection.content')}: Tereza Axmannová, tereza.axmann<span style="display:none">name</span
 					>@gmail.com
 				</p>
-				<p>{$t('authorsSection.graphicDesign')}: Tereza Drnovcová</p>
-				<p>
-					{$t('authorsSection.typesetting')}: Martin Koukl, martin.design.grafika<span style="display:none">name</span
-					>@gmail.com
-				</p>
-				<p>{$t('authorsSection.editing')}: Eva Trčková</p>
-
-				<p>{$t('authorsSection.language')}: Petra Součková</p>
 				<p>{$t('authorsSection.supervision')}: Viktor Vilhelm</p>
+				<p>{$t('authorsSection.graphicDesign')}: Tereza Drnovcová</p>
+				<p>{$t('authorsSection.language')}: Petra Součková</p>
+				<p>{$t('authorsSection.editing')}: Eva Trčková</p>
+				<p>{$t('authorsSection.typesetting')}: Linda Hrubešová, Minimax studio</p>
+				<p>{$t('authorsSection.graphicHelp')}: Martin Koukl</p>
+
 				<h4>{$t('authorsSection.translation')}</h4>
 				<ul>
+					<li>
+						<span class="fi fi-ua" />
+						{$t('languages.uk')}: Anastasia Litvincová
+					</li>
+				</ul>
+
+				<h4>{$t('authorsSection.voice')}</h4>
+				<ul>
+					<li>
+						<span class="fi fi-cz" />
+						{$t('languages.cs')}: Tereza Axmannová
+					</li>
 					<li>
 						<span class="fi fi-ua" />
 						{$t('languages.uk')}: Anastasia Litvincová
