@@ -116,12 +116,12 @@ def export_layers(background_layer, path: Path, target_width=0, target_height=0)
             layer_image.crop((half_width, 0, width, height)).save(path / 'images' / f'{layer.name}_1.jpg',
                                                                   quality=60)
 
-    with open(path / 'in' / 'images.json', 'w') as f:
+    with open(path / 'images.json', 'w') as f:
         json.dump(layer_dict, f, sort_keys=True, indent=4)
 
 
 if __name__ == '__main__':
-    psd = PSDImage.open(r'E:\code\svitej\static\resources\in\VitejApojdSiPovidatV04.psd')
+    psd = PSDImage.open(r'E:\code\book-for-ukraine\static\in\VitejApojdSiPovidatV04.psd')
 
     layers = {}
 
@@ -134,6 +134,6 @@ if __name__ == '__main__':
 
     export_layers(
         layers['pozadi'],
-        path=Path(r'E:\code\svitej\static\resources'),
+        path=Path(r'E:\code\book-for-ukraine\static\in'),
         target_width=720 * 2,  # target 720 for a single page
     )
