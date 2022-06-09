@@ -14,7 +14,7 @@ python export_texts_from_pdf.py
 python merge_to_pages.py
 ```
 
-This will (hopefully) populate [`resources`](../static/resources) with all the required final assets.
+This will (hopefully) populate [`static`](../static) with all the required final assets.
 
 ## Prerequisites
 
@@ -22,14 +22,14 @@ The [`in`](../static/in) folder (which is ignored and missing from the repo) sho
 
 ### Texts
 
-- `Překlady básniček – Povídání modro-žluté krajiny - Básničky.csv`
+- `Překlady textů a webu – Povídání modro-žluté krajiny - Dvojverší.csv`
   - All translated texts
   - Source: exported from the [main spreadsheet](https://docs.google.com/spreadsheets/d/1Gb0XqligJd2rXgUbyGpjv3FkJ4oXwpma8pFi9hiwHqY/edit#gid=0) as CSV
 
 #### Text positions
 
 - `VitejApojdSiPovidatV04.pdf`
-  - Typeset text positions, exported from InDesign to PDF
+  - Typeset text positions, exported (from InDesign?) to PDF
   - Source: typesetter shares the file manually
 
 ### Audio
