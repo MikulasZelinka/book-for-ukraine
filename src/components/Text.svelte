@@ -21,9 +21,11 @@
 	export let translations: Translation[];
 	export let positions: Position[];
 
+	export let align: string;
+
 	export let columnWidth: number;
 
-	$: fontSize = columnWidth / 41;
+	$: fontSize = columnWidth / 30;
 
 	let langToAudio = new Map<string, HTMLAudioElement>();
 	// let langToAudio = {};
@@ -103,7 +105,7 @@
 		<p
 			on:click={() => play(translation.lang)}
 			class:playing={langIsPlaying[translation.lang]}
-			style="text-align: {translation.lang == 'cs' ? 'right' : 'left'}; font-size: {fontSize}px;
+			style="text-align: {align}; font-size: {fontSize}px;
       ">
 			{translation.texts[$currentScript === Script.default ? languageScripts.get(translation.lang) : $currentScript]}
 		</p>
@@ -117,9 +119,9 @@
 		text-align: left;
 		/* Ubuntu doesn't have variable font weight, we animate scale instead */
 		/* font-weight: 500; */
-		font-weight: 700;
+		font-weight: 500;
 		transition: all 0.4s ease-in-out;
-		text-shadow: 1px 1px white, 1px -1px white, -1px 1px white, -1px -1px white;
+		/* text-shadow: 1px 1px white, 1px -1px white, -1px 1px white, -1px -1px white; */
 		line-height: 1.2;
 		cursor: pointer;
 	}
