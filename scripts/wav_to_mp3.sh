@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-IN=/mnt/e/code/svitej/static/in/audio
-OUT=/mnt/e/code/svitej/static/audio
+IN=/mnt/e/code/book-for-ukraine/static/in/audio
+OUT=/mnt/e/code/book-for-ukraine/static/audio
 
 mkdir -p "$OUT"/cs
 mkdir -p "$OUT"/uk
@@ -9,15 +9,13 @@ mkdir -p "$OUT"/uk
 cd "$IN"/cs
 for f in *.wav; do ffmpeg -i "$f" -vn -ar 44100 -ac 2 -q:a 2 "$OUT"/cs/"${f%.*}.mp3"; done
 
-cd "$IN"/ua
+cd "$IN"/uk
 for f in *.wav; do ffmpeg -i "$f" -vn -ar 44100 -ac 2 -q:a 2 "$OUT"/uk/"${f%.*}.mp3"; done
 
-# add the 'cs' prefix
 cd "$OUT"/cs
-mmv '*' 'cs_#1'
+# add the 'cs' prefix
+rename 's/^([a-z]+).*(\..+)$/cs_${1}${2}/' *.mp3
 
 cd "$OUT"/uk
-# remove alternate takes
-rm *[0-9]\.*
-# rename the 'ua ' prefix
-mmv 'ua *' 'uk_#1'
+# add the 'uk' prefix
+rename 's/^([a-z]+).*(\..+)$/uk_${1}${2}/' *.mp3
