@@ -122,7 +122,8 @@
 		font-weight: 500;
 		transition: all 0.4s ease-in-out;
 		/* text-shadow: 1px 1px white, 1px -1px white, -1px 1px white, -1px -1px white; */
-		line-height: 1.2;
+		/* text-shadow: 0px 0px 22px white; */
+		line-height: 1.1;
 		cursor: pointer;
 	}
 
