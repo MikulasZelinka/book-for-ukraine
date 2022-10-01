@@ -12,7 +12,7 @@
 	const pages = getPages();
 </script>
 
-<!-- <Banner /> -->
+<Banner />
 
 <main>
 	<div class="columns is-gapless is-multiline">
