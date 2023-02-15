@@ -29,16 +29,11 @@ The book texts require fine-grained translations and human-defined typesetting.
 
 Currently, the following languages are supported:
 
-### Book languages
-
-- 🇨🇿 Čeština
-- 🇺🇦 Українська
-
-### Website languages
-
-- 🇨🇿 Čeština
-- 🇬🇧 English
-- 🇺🇦 Українська
+| Language      | Website | Book Texts | Book Audio |
+| ------------- | :-----: | :--------: | :--------: |
+| 🇨🇿 Čeština    |    ✔    |     ✔      |     ✔      |
+| 🇺🇦 Українська |    ✔    |     ✔      |     ✔      |
+| 🇬🇧 English    |    ✔    |     ❌     |     ❌     |
 
 ## TODO
 
