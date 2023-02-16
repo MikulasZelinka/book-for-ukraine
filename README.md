@@ -3,15 +3,13 @@
 An open-source implementation of the Czech-Ukrainian book for children,
 [**Povídání modro-žluté krajiny**](https://ukrajinskaknizka.cz).
 
-The book isn't available yet (work in progress!),
-but the web version is available (in 🇨🇿 and 🇺🇦) to browse for free: https://ukrajinskaknizka.cz
-
-More [languages](#languages) are soon to come.
+The book has been [succesfully crowdfunded](https://www.donio.cz/ukrajinska-knizka) and is now available!
+The web version is available (in 🇨🇿 and 🇺🇦) to browse for free: https://ukrajinskaknizka.cz
 
 Please, do get in touch ([create an issue!](https://github.com/MikulasZelinka/book-for-ukraine/issues/new))
 if you'd like to collaborate on this project in any way, e.g.:
 
-- help translate or record in(to) your native language,
+- it would be great to support more languages – help translate and/or record in(to) your native [language](#languages),
 - implement any of the [fixes or features mentioned below](#TODO) or in [Issues](https://github.com/MikulasZelinka/book-for-ukraine/issues).
 
 In short, all forms of contribution are welcome :)
@@ -244,7 +242,7 @@ The website can display arbitrary images, texts (their position is given in a JS
 I'm testing it using placeholder data.
 We can also reorder the languages and theoretically support any number of them.
 
-Whenever we have final assets, simply linking them should be enoug to have a functional web (audio)book :)
+Whenever we have final assets, simply linking them should be enough to have a functional web (audio)book :)
 
 ## License
 

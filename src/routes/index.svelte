@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { t } from 'svelte-intl-precompile';
 
-	import Banner from '../components//Banner.svelte';
+	import Banner from '../components/Banner.svelte';
 	import Page from '../components/Page.svelte';
 	import About from '../components/About.svelte';
 
@@ -12,7 +12,7 @@
 	const pages = getPages();
 </script>
 
-<!-- <Banner /> -->
+<Banner />
 
 <main>
 	<div class="columns is-gapless is-multiline">

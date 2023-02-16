@@ -1,17 +1,9 @@
 <section class="hero is-warning pt-5 ">
 	<div class="hero-body pb-5">
-		<!-- <p class="title">Toto je ochutnávka připravovaného webu, který bude dostupný co nejdříve.</p> -->
-		<!-- <p class="subtitle">
-			V pátek 10. 6. 2022 nás můžete navštívit u <strong>
-				<a href="https://cesky.radio.cz/otevrenim-ukrajinskeho-stanku-zacal-veletrh-svet-knihy-8752831"
-					>ukrajinského stánku</a
-				></strong>
-			na <strong> <a href="https://www.svetknihy.cz/">veletrhu Svět knihy v Praze</a></strong>.
-		</p> -->
 		<p class="subtitle">
-			Vydání knížky můžete podpořit v <strong>
-				<a href="https://www.donio.cz/ukrajinska-knizka">kampani Ukrajinská knížka na Donio</a></strong
-			>. Za všechny příspěvky Vám moc děkujeme.
+			Knížka je na světě, <a href="https://www.donio.cz/ukrajinska-knizka">děkujeme za podporu</a>! Máte-li zájem o
+			výtisky pro konkrétní ukrajinské děti, kontaktujte nás na
+			<strong>tereza.axmann<span style="display:none">name</span>@gmail.com</strong>.
 		</p>
 	</div>
 </section>
